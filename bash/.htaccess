@@ -1,0 +1,5 @@
+php_value register_globals Off
+
+DirectoryIndex index.html index.php
+
+PHP_VALUE default_charset windows-1251

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>smf:smf-2.0.14</id>
+	<name>SMF 2.0.14 Update</name>
+	<version>1.0</version>
+	<type>modification</type>
+
+	<install for="2.0.13">
+		<readme parsebbc="true">readme.txt</readme>
+		<code type="inline"><![CDATA[<?php
+			$required_php_version = '5.3.0';
+			if (version_compare(PHP_VERSION, $required_php_version, '<'))
+			{
+				fatal_error('This update requires a minimum of PHP ' . $required_php_version . ' in order to function. (You are currently running PHP ' . PHP_VERSION . ')');
+			}
+
+			// Add proxy settings.
+			require_once($sourcedir . '/Subs-Admin.php');
+			if (!isset($GLOBALS['image_proxy_maxsize']))
+				updateSettingsFile(array(
+					'image_proxy_secret' => '\'' . substr(sha1(mt_rand()), 0, 20) . '\'',
+					'image_proxy_maxsize' => 5190,
+					'image_proxy_enabled' => 0,
+				));
+		?>]]></code>
+		<require-file name="Sources/Class-CurlFetchWeb.php" destination="$sourcedir">Curl loader</require-file>
+		<require-file name="proxy.php" destination="$boarddir">Image proxy</require-file>
+		<modification type="file" format="xml">smf_2-0-14_patch.xml</modification>
+	</install>
+	<uninstall for="2.0.14">
+		<readme type="inline">
+			This will uninstall the security fixes of your SMF 2.0.13 forum. This is generally NOT a good idea.
+		</readme>
+		<modification type="file" reverse="true" format="xml">smf_2-0-14_patch.xml</modification>
+	</uninstall>
+</package-info>

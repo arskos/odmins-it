@@ -1,0 +1,234 @@
+/* Normal, standard links. */
+a:link, a:visited
+{
+	color: #C5C5C7;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #C5C5C7;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* Navigation links - for the link tree. */
+.nav, .nav:link, .nav:visited
+{
+	color: #C5C5C7;
+	background-color: transparent;
+	text-decoration: none;
+}
+a.nav:hover
+{
+	color: #C5C5C7;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* Tables should show empty cells too. */
+table
+{
+	empty-cells: show;
+}
+
+/* By default (td, body..) use Verdana in black. */
+body
+{
+	color: #C5C5C7;
+	background-color: #000000;
+	font-size: x-small;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+td
+{
+	color: #C5C5C7;
+	font-size: x-small;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+/* Input boxes - just a bit smaller than normal so they align well. */
+input, textarea, button
+{
+	font-size: 9pt;
+	color: #C5C5C7;
+	border: 1px solid #C5C5C7;
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #000000;
+}
+
+/* Checkboxes shouldn't have a background color. */
+input.check
+{
+	background-color: transparent;
+}
+
+/* Selects are a bit smaller, because it makes them look even better 8). */
+select
+{
+	font-size: 8pt;
+	font-weight: normal;
+	color: #C5C5C7;
+	font-family: verdana, arial, helvetica, sans-serif;
+	background-color: #000000;
+}
+
+/* Standard horizontal rule.. */
+hr
+{
+	color: #000000;
+	background-color: transparent;
+}
+/* A more colorful hr.. */
+.hrcolor
+{
+	height: 1px;
+	border: 0;
+	color: #C5C5C7;
+	background-color: #000000;
+}
+
+/* A quote, perhaps from another post. */
+.quote
+{
+	color: #C5C5C7;
+	background-color: #000000;
+	border: 1px solid #C5C5C7;
+	margin: 3px;
+	padding: 3px;
+	font-size: x-small;
+}
+
+/* A code block - maybe even PHP ;). */
+.code
+{
+	color: #C5C5C7;
+	background-color: #000000;
+	border: 1px solid #C5C5C7;
+	margin: 3px;
+	padding: 3px;
+	font-size: x-small;
+}
+
+/* The "Quote:" and "Code:" header parts... */
+.quoteheader, .codeheader
+{
+	color: #C5C5C7;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	font-size: x-small;
+}
+
+/* Generally, those [?] icons. */
+.help
+{
+	cursor: help;
+	background-color: transparent;
+}
+
+/* /me uses this a lot. */
+.meaction
+{
+	color: #C5C5C7;
+	background-color: transparent;
+}
+
+/* The main post box - this makes it as wide as possible. */
+.editor
+{
+	width: 100%;
+}
+
+/* Highlighted text - such as search results. */
+.highlight
+{
+	background-color: #C5C5C7;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* Alternating backgrounds... */
+.windowbg
+{
+	color: #C5C5C7;
+	background-color: #606060;
+}
+.windowbg2
+{
+	color: #C5C5C7;
+	background-color: #525252;
+}
+.windowbg3
+{
+	color: #C5C5C7;
+	background-color: #000000;
+}
+
+/* Titles - such as table headers. */
+tr.titlebg td, .titlebg a:link, .titlebg a:visited
+{
+	font-weight: bold;
+	font-style: normal;
+	color: #C5C5C7;
+}
+
+/* Titles - such as table headers. */
+.titlebg
+{
+	font-weight: bold;
+	background-color: transparent;
+	background-image: url(images/catbg.gif);
+	color: #C5C5C7;
+}
+.titlebg a:hover
+{
+	color: #C5C5C7;
+	text-decoration: underline;
+}
+
+/* The category headers, page indexes, and such things. */
+.catbg
+{
+	font-weight: bold;
+	background-color: transparent;
+	background-image: url(images/catbg.gif);
+	color: #C5C5C7;
+}
+
+/* The borders around things. */
+.bordercolor
+{
+	background-color: #000000;
+}
+.tborder
+{
+	border: 1px solid #000000;
+}
+
+/* Default font sizes. */
+.smalltext
+{
+	font-size: x-small;
+}
+.normaltext
+{
+	font-size: small;
+}
+.largetext
+{
+	font-size: large;
+}
+
+/* And this is the bottom, where the copyright is, etc. */
+#footerarea
+{
+	background-color: #000000;
+}
+
+/* Image border fix */
+img
+{
+	border: 0;
+}

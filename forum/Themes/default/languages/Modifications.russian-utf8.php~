@@ -1,0 +1,80 @@
+<?php
+// Version: 2.0; Modifications
+
+
+//Begin ILA in line attachment changes
+$txt['mods_cat_modifications_ila'] = 'In Line Attachments';
+$txt['ila_desc'] = 'Здесь можно изменить установки модификации In Line Attachment';
+$txt['ila_enabled'] = '(ILA) Активировать мод In Line Attachment';
+$txt['ila_alwaysfullsize'] = '(ILA) Все вложенные изображения ВСЕГДА отображать в полном размере';
+$txt['ila_basicmenu'] = '(ILA) Only show basic ILA menu';
+$txt['ila_insert'] = 'Вставить вложение';
+$txt['ila_title'] = 'Миниатюра в конце сообщения (по умолчанию) ';
+$txt['ila_option1'] = 'Миниатюра внутри сообщения';
+$txt['ila_option2'] = 'Полноразмерное изображение в сообщении';
+$txt['ila_option3'] = 'Текстовая ссылка в сообщении';
+$txt['ila_option4'] = 'Короткая текстовая ссылка в сообщении';
+$txt['ila_nopermission'] = ' [ Вы не авторизованы для просмотра вложений ] ';
+$txt['ila_invalid'] = ' [ Вложение повреждено или не существует ] ';
+$txt['ila_disabled'] = ' [ Вложения отключены ] ';
+$txt['ila_insert_next'] = ' в сообщение';
+$txt['ila_attachment_missing'] = ' [ Указанное вложение недоступно ]';
+$txt['ila_thereare'] = 'Только';
+$txt['ila_attachment'] = 'вложений';
+$txt['ila_forbidden_for_guest'] = ' [ Гостям не разрешен просмотр вложений ] ';
+$txt['ila_quote_link'] = ' (Ссылка на вложение) ';
+$txt['ila_quote_nolink'] = ' (Вложение) ';
+$txt['ila_none'] = 'как миниатюра';
+$txt['ila_img'] = 'как полноразмерное изображение';
+$txt['ila_url'] = 'как ссылка';
+$txt['ila_mini'] = 'как короткая ссылка';
+//End ILA in line attachment changes
+
+// Version: 0.1 Alpha; Tracker
+//Перевод на русский язык сделал Inter - http://smfrus.ru/index.php/topic,201
+//Modifications.russian-utf8.php
+
+$txt['permissiongroup_tracker'] = 'Трекер';
+$txt['permissiongroup_simple_tracker'] = 'Используйте трекер';
+$txt['permissionname_tracker_view'] = 'Просмотреть трекер';
+$txt['permissionname_tracker_download'] = 'Скачать';
+$txt['permissionname_tracker_delete'] = 'Удалить торрент';
+$txt['permissionname_tracker_delete_own'] = 'Иметь';
+$txt['permissionname_tracker_delete_any'] = 'Любой';
+$txt['permissionname_tracker_upload'] = 'Загрузить торренты';
+$txt['permissionname_tracker_admin'] = 'Админ';
+$txt['permissionname_tracker_view_stats'] = 'Посмотреть статистику';
+$txt['permissionname_tracker_view_stats_own'] = 'Иметь';
+$txt['permissionname_tracker_view_stats_any'] = 'Любой';
+
+$txt['cannot_tracker_view'] = 'Вам не разрешают просмотреть трекер';
+$txt['cannot_tracker_delete_own'] = 'Вам не разрешают удалить торренты';
+$txt['cannot_tracker_download'] = 'Вам не разрешают загрузить торрент';
+
+$txt['tracker_admin'] = 'Администрирование трекера';
+$txt['tracker_settings'] = 'Настройки трекера';
+
+$txt['trackerStats'] = 'Статистика трекера';
+
+$txt['torrent_ratio'] = 'Рейтинг';
+$txt['torrent_downloaded'] = 'Скачал';
+$txt['torrent_uploaded'] = 'Раздал';
+$txt['active_torrents'] = 'Активные торренты';
+$txt['active_downloads'] = 'Скачали';
+$txt['active_uploads'] = 'Раздали';
+
+$txt['torrent_ib_seeds'] = 'Сидеры';
+$txt['torrent_ib_leechs'] = 'Личеры';
+$txt['torrent_ib_transfer'] = 'Трансфер';
+$txt['torrent_ib_downloads'] = 'Скачали';
+$txt['torrent_ib_details'] = 'Детали торрента';
+
+// * Mod 'TopicStarter' by Digger
+$txt['TopicStarter_txt'] = 'Автор темы';
+// Mod 'TopicStarter' by Digger *
+      
+// Nickname To Reply
+$txt['nickname'] = 'Ник в ответ';
+$txt['nickname_hint'] = 'Вставить ник в форму быстрого ответа';
+
+?>

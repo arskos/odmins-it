@@ -1,0 +1,39 @@
+body {
+	background-color: BLACK;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: WHITE;
+	text-decoration: none;
+}
+.bash_main {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	background-color: BLACK;
+	color: GREEN;
+	text-decoration: none;
+}
+.blue2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0A011D;
+	text-decoration: none;
+}
+a.blue1:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #044476;
+	text-decoration: none;
+}
+a.blue1:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #0A011D;
+	text-decoration: underline;
+}
+.red1 {
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}

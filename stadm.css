@@ -1,0 +1,32 @@
+body {background: url(fon.gif);}
+.blue1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: 0A011D;
+	text-decoration: none;
+}
+.blue2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: 0A011D;
+	text-decoration: none;
+}
+a.blue1:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: 044476;
+	text-decoration: none;
+}
+a.blue1:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: 0A011D;
+	text-decoration: underline;
+}
+.red1 {
+	font-family: Comic Sans MS, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: FF0000;
+	text-decoration: none;
+}

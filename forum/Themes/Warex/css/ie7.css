@@ -1,0 +1,46 @@
+/* special styles for IE7 */
+
+.boards, #infocenter, .msgbody2
+{
+		  height: 0.1%;
+}
+.boards
+{
+		  margin-bottom: 10px;
+		  list-style-type: none;
+		  line-height: 16px;
+}
+
+.profilsag
+{
+width:280px;
+}
+.floatright
+{
+	float: right;margin-right:0px;
+}
+.aramaie
+{
+margin-left:0px;
+}
+.guestlo
+{
+margin-top:-5px;color:#ffffff;
+}
+.guestlo a:link
+{
+color:#ffffff;
+}
+#userarea
+{
+margin-left:250px;
+}
+.ieduzen
+{
+margin-right:150px;
+padding-top:10px;
+}
+#infocenter_login
+{
+margin-top:200px;margin-bottom:-200px;
+}

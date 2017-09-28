@@ -1,0 +1,1709 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+	<id>smf:smf-2.0.14</id>
+	<version>1.0</version>
+
+	<!-- Usual version update -->
+	<file name="$boarddir/index.php">
+		<operation>
+			<search position="replace"><![CDATA[* @version 2.0.13]]></search>
+			<add><![CDATA[* @version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$forum_version = 'SMF 2.0.13';]]></search>
+			<add><![CDATA[$forum_version = 'SMF 2.0.14';]]></add>
+		</operation>
+	</file>
+
+	<!-- Update the copyright year -->
+	<file name="$languagedir/index.english.php">
+		<operation error="ignore">
+			<search position="replace"><![CDATA[// Version: 2.0.12; index]]></search>
+			<add><![CDATA[// Version: 2.0.14; index]]></add>
+		</operation>
+		<operation error="ignore">
+			<search position="replace"><![CDATA[ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2016</a>, <a href="http://www.simplemachines.org" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>';]]></search>
+			<add><![CDATA[ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2017</a>, <a href="http://www.simplemachines.org" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>';]]></add>
+		</operation>
+	</file>
+	<file name="$languagedir/index.english-utf8.php" error="skip">
+		<operation error="ignore">
+			<search position="replace"><![CDATA[// Version: 2.0.12; index]]></search>
+			<add><![CDATA[// Version: 2.0.14; index]]></add>
+		</operation>
+		<operation error="ignore">
+			<search position="replace"><![CDATA[ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2016</a>, <a href="http://www.simplemachines.org" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>';]]></search>
+			<add><![CDATA[ <a href="http://www.simplemachines.org/about/smf/license.php" title="License" target="_blank" class="new_win">SMF &copy; 2017</a>, <a href="http://www.simplemachines.org" title="Simple Machines" target="_blank" class="new_win">Simple Machines</a>';]]></add>
+		</operation>
+	</file>
+
+	<!-- MySQLi Support -->
+	<file name="$sourcedir/Subs-Db-mysql.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.9]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Initialize the database settings
+function smf_db_initiate($db_server, $db_name, $db_user, $db_passwd, $db_prefix, $db_options = array())
+{
+	global $smcFunc, $mysql_set_mode;
+
+	// Map some database specific functions, only do this once.]]></search>
+			<add><![CDATA[// Initialize the database settings
+function smf_db_initiate($db_server, $db_name, $db_user, $db_passwd, $db_prefix, $db_options = array())
+{
+	global $smcFunc, $mysql_set_mode, $sourcedir;
+
+	// Checck for MySQLi first...
+	if (function_exists('mysqli_connect'))
+	{
+		$db = new SMF_DB_MySQLi;
+
+		// Delegate control over to the new database driver.
+		return $db->initiate($db_server, $db_name, $db_user, $db_passwd, $db_prefix, $db_options);
+	}
+
+	// Map some database specific functions, only do this once.]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Do a query.  Takes care of errors too.
+function smf_db_query($identifier, $db_string, $db_values = array(), $connection = null)
+{
+	global $db_cache, $db_count, $db_connection, $db_show_debug, $time_start;
+	global $db_unbuffered, $db_callback, $modSettings;]]></search>
+			<add><![CDATA[// Do a query.  Takes care of errors too.
+function smf_db_query($identifier, $db_string, $db_values = array(), $connection = null)
+{
+	global $db_cache, $db_count, $db_connection, $db_show_debug, $time_start;
+	global $db_unbuffered, $db_callback, $modSettings, $smcFunc;
+
+	// Checck for MySQLi first...
+	if (function_exists('mysqli_connect'))
+		return $smcFunc['db_query']($identifier, $db_string, $db_values, $connection);]]></add>
+		</operation>
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+class SMF_DB_MySQLi
+{
+	/**
+	 *  Maps the implementations in this file ($this->function_name)
+	 *  to the $smcFunc['db_function_name'] variable.
+	 *
+	 * @param string $db_server
+	 * @param string $db_name
+	 * @param string $db_user
+	 * @param string $db_passwd
+	 * @param string $db_prefix
+	 * @param array $db_options
+	 * @return null
+	 */
+	public function initiate($db_server, $db_name, $db_user, $db_passwd, $db_prefix, $db_options = array())
+	{
+		global $smcFunc, $mysql_set_mode;
+
+		// Map some database specific functions, only do this once.
+		if (!isset($smcFunc['db_fetch_assoc']) || $smcFunc['db_fetch_assoc'] != 'mysqli_fetch_assoc')
+			$smcFunc += array(
+				'db_query'                  => array($this, 'query'),
+				'db_quote'                  => array($this, 'quote'),
+				'db_fetch_assoc'            => 'mysqli_fetch_assoc',
+				'db_fetch_row'              => 'mysqli_fetch_row',
+				'db_free_result'            => 'mysqli_free_result',
+				'db_insert'                 => array($this, 'insert'),
+				'db_insert_id'              => array($this, 'insert_id'),
+				'db_num_rows'               => 'mysqli_num_rows',
+				'db_data_seek'              => 'mysqli_data_seek',
+				'db_num_fields'             => 'mysqli_num_fields',
+				'db_escape_string'          => 'addslashes',
+				'db_unescape_string'        => 'stripslashes',
+				'db_server_info'            => array($this, 'get_server_info'),
+				'db_affected_rows'          => array($this, 'affected_rows'),
+				'db_transaction'            => array($this, 'transaction'),
+				'db_error'                  => 'mysqli_error',
+				'db_select_db'              => array($this, 'select'),
+				'db_title'                  => 'MySQL',
+				'db_sybase'                 => false,
+				'db_case_sensitive'         => false,
+				'db_escape_wildcard_string' => array($this, 'escape_wildcard_string'),
+			);
+
+		if (!empty($db_options['persist']))
+			$connection = @mysqli_connect('p:' . $db_server, $db_user, $db_passwd);
+		else
+			$connection = @mysqli_connect($db_server, $db_user, $db_passwd);
+
+		// Something's wrong, show an error if its fatal (which we assume it is)
+		if (!$connection)
+		{
+			if (!empty($db_options['non_fatal']))
+				return null;
+			else
+				db_fatal_error();
+		}
+
+		// Select the database, unless told not to
+		if (empty($db_options['dont_select_db']) && !@mysqli_select_db($connection, $db_name) && empty($db_options['non_fatal']))
+			db_fatal_error();
+
+		// This makes it possible to have SMF automatically change the sql_mode and autocommit if needed.
+		if (isset($mysql_set_mode) && $mysql_set_mode === true)
+			$smcFunc['db_query']('', 'SET sql_mode = \'\', AUTOCOMMIT = 1',
+			array(),
+			false
+		);
+
+		return $connection;
+	}
+
+	/**
+	 * Wrap mysqli_select_db so the connection does not need to be specified
+	 *
+	 * @param string &database
+	 * @param object $connection
+	 */
+	public function select($database, $connection = null)
+	{
+		global $db_connection;
+
+		return mysqli_select_db($connection === null ? $db_connection : $connection, $database);
+	}
+
+	/**
+	 * Wrap mysqli_get_server_info so the connection does not need to be specified
+	 *
+	 * @param object $connection
+	 */
+	public function get_server_info($connection = null)
+	{
+		global $db_connection;
+
+		return mysqli_get_server_info($connection === null ? $db_connection : $connection);
+	}
+
+	/**
+	 * Callback for preg_replace_callback on the query.
+	 * It allows to replace on the fly a few pre-defined strings, for convenience ('query_see_board', 'query_wanna_see_board'), with
+	 * their current values from $user_info.
+	 * In addition, it performs checks and sanitization on the values sent to the database.
+	 *
+	 * @param $matches
+	 */
+	private function replacement__callback($matches)
+	{
+		global $db_callback, $user_info, $db_prefix;
+
+		list ($values, $connection) = $db_callback;
+		if (!is_object($connection))
+			db_fatal_error();
+
+		if ($matches[1] === 'db_prefix')
+			return $db_prefix;
+
+		if ($matches[1] === 'query_see_board')
+			return $user_info['query_see_board'];
+
+		if ($matches[1] === 'query_wanna_see_board')
+			return $user_info['query_wanna_see_board'];
+
+		if (!isset($matches[2]))
+			$this->error_backtrace('Invalid value inserted or no type specified.', '', E_USER_ERROR, __FILE__, __LINE__);
+
+		if (!isset($values[$matches[2]]))
+			$this->error_backtrace('The database value you\'re trying to insert does not exist: ' . htmlspecialchars($matches[2]), '', E_USER_ERROR, __FILE__, __LINE__);
+
+		$replacement = $values[$matches[2]];
+
+		switch ($matches[1])
+		{
+			case 'int':
+				if (!is_numeric($replacement) || (string) $replacement !== (string) (int) $replacement)
+					$this->error_backtrace('Wrong value type sent to the database. Integer expected. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+				return (string) (int) $replacement;
+			break;
+
+			case 'string':
+			case 'text':
+				return sprintf('\'%1$s\'', mysqli_real_escape_string($connection, $replacement));
+			break;
+
+			case 'array_int':
+				if (is_array($replacement))
+				{
+					if (empty($replacement))
+						$this->error_backtrace('Database error, given array of integer values is empty. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+
+					foreach ($replacement as $key => $value)
+					{
+						if (!is_numeric($value) || (string) $value !== (string) (int) $value)
+							$this->error_backtrace('Wrong value type sent to the database. Array of integers expected. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+
+						$replacement[$key] = (string) (int) $value;
+					}
+
+					return implode(', ', $replacement);
+				}
+				else
+					$this->error_backtrace('Wrong value type sent to the database. Array of integers expected. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+
+			break;
+
+			case 'array_string':
+				if (is_array($replacement))
+				{
+					if (empty($replacement))
+						$this->error_backtrace('Database error, given array of string values is empty. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+
+					foreach ($replacement as $key => $value)
+						$replacement[$key] = sprintf('\'%1$s\'', mysqli_real_escape_string($connection, $value));
+
+					return implode(', ', $replacement);
+				}
+				else
+					$this->error_backtrace('Wrong value type sent to the database. Array of strings expected. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+			break;
+
+			case 'date':
+				if (preg_match('~^(\d{4})-([0-1]?\d)-([0-3]?\d)$~', $replacement, $date_matches) === 1)
+					return sprintf('\'%04d-%02d-%02d\'', $date_matches[1], $date_matches[2], $date_matches[3]);
+				else
+					$this->error_backtrace('Wrong value type sent to the database. Date expected. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+			break;
+
+			case 'float':
+				if (!is_numeric($replacement))
+					$this->error_backtrace('Wrong value type sent to the database. Floating point number expected. (' . $matches[2] . ')', '', E_USER_ERROR, __FILE__, __LINE__);
+				return (string) (float) $replacement;
+			break;
+
+			case 'identifier':
+				// Backticks inside identifiers are supported as of MySQL 4.1. We don't need them for SMF.
+				return '`' . strtr($replacement, array('`' => '', '.' => '')) . '`';
+			break;
+
+			case 'raw':
+				return $replacement;
+			break;
+
+			default:
+				$this->error_backtrace('Undefined type used in the database query. (' . $matches[1] . ':' . $matches[2] . ')', '', false, __FILE__, __LINE__);
+			break;
+		}
+	}
+
+	/**
+	 * Just like the db_query, escape and quote a string, but not executing the query.
+	 *
+	 * @param string $db_string
+	 * @param array $db_values
+	 * @param object $connection = null
+	 */
+	public function quote($db_string, $db_values, $connection = null)
+	{
+		global $db_callback, $db_connection;
+
+		// Only bother if there's something to replace.
+		if (strpos($db_string, '{') !== false)
+		{
+			// This is needed by the callback function.
+			$db_callback = array($db_values, $connection === null ? $db_connection : $connection);
+
+			// Do the quoting and escaping
+			$db_string = preg_replace_callback('~{([a-z_]+)(?::([a-zA-Z0-9_-]+))?}~', array($this, 'replacement__callback'), $db_string);
+
+			// Clear this global variable.
+			$db_callback = array();
+		}
+
+		return $db_string;
+	}
+
+	/**
+	 * Do a query.  Takes care of errors too.
+	 *
+	 * @param string $identifier
+	 * @param string $db_string
+	 * @param array $db_values = array()
+	 * @param object $connection = null
+	 */
+	public function query($identifier, $db_string, $db_values = array(), $connection = null)
+	{
+		global $db_cache, $db_count, $db_connection, $db_show_debug, $time_start;
+		global $db_unbuffered, $db_callback, $modSettings;
+
+		// Comments that are allowed in a query are preg_removed.
+		static $allowed_comments_from = array(
+			'~\s+~s',
+			'~/\*!40001 SQL_NO_CACHE \*/~',
+			'~/\*!40000 USE INDEX \([A-Za-z\_]+?\) \*/~',
+			'~/\*!40100 ON DUPLICATE KEY UPDATE id_msg = \d+ \*/~',
+		);
+		static $allowed_comments_to = array(
+			' ',
+			'',
+			'',
+			'',
+		);
+
+		// Decide which connection to use.
+		$connection = $connection === null ? $db_connection : $connection;
+
+		// Special queries that need processing.
+		$replacements = array(
+			'alter_table_boards' => array(
+				'~(.+)~' => '',
+			),
+			'boardindex_fetch_boards' => array(
+				'~(.)$~' => '$1 ORDER BY b.board_order',
+			),
+			'messageindex_fetch_boards' => array(
+				'~(.)$~' => '$1 ORDER BY b.board_order',
+			),
+			'order_by_board_order' => array(
+				'~(.)$~' => '$1 ORDER BY b.board_order',
+			),
+		);
+
+		if (isset($replacements[$identifier]))
+			$db_string = preg_replace(array_keys($replacements[$identifier]), array_values($replacements[$identifier]), $db_string);
+
+		if (trim($db_string) == '')
+			return false;
+
+		// Get a connection if we are shutting down, sometimes the link is closed before sessions are written
+		if (!is_object($connection))
+		{
+			global $db_server, $db_user, $db_passwd, $db_name, $db_show_debug, $ssi_db_user, $ssi_db_passwd;
+
+			// Are we in SSI mode?  If so try that username and password first
+			if (SMF == 'SSI' && !empty($ssi_db_user) && !empty($ssi_db_passwd))
+			{
+				if (empty($db_persist))
+					$db_connection = @mysqli_connect($db_server, $ssi_db_user, $ssi_db_passwd);
+				else
+					$db_connection = @mysqli_connect('p:' . $db_server, $ssi_db_user, $ssi_db_passwd);
+			}
+			// Fall back to the regular username and password if need be
+			if (!$db_connection)
+			{
+				if (empty($db_persist))
+					$db_connection = @mysqli_connect($db_server, $db_user, $db_passwd);
+				else
+					$db_connection = @mysqli_connect('p:' . $db_server, $db_user, $db_passwd);
+			}
+
+			if (!$db_connection || !@mysqli_select_db($db_connection, $db_name))
+				$db_connection = false;
+
+			$connection = $db_connection;
+		}
+
+		// One more query....
+		$db_count = !isset($db_count) ? 1 : $db_count + 1;
+
+		if (empty($modSettings['disableQueryCheck']) && strpos($db_string, '\'') !== false && empty($db_values['security_override']))
+			$this->error_backtrace('Hacking attempt...', 'Illegal character (\') used in query...', true, __FILE__, __LINE__);
+
+		// Use "ORDER BY null" to prevent Mysql doing filesorts for Group By clauses without an Order By
+		if (strpos($db_string, 'GROUP BY') !== false && strpos($db_string, 'ORDER BY') === false && preg_match('~^\s+SELECT~i', $db_string))
+		{
+			// Add before LIMIT
+			if ($pos = strpos($db_string, 'LIMIT '))
+				$db_string = substr($db_string, 0, $pos) . "\t\t\tORDER BY null\n" . substr($db_string, $pos, strlen($db_string));
+			else
+				// Append it.
+				$db_string .= "\n\t\t\tORDER BY null";
+		}
+
+		if (empty($db_values['security_override']) && (!empty($db_values) || strpos($db_string, '{db_prefix}') !== false))
+		{
+			// Pass some values to the global space for use in the callback function.
+			$db_callback = array($db_values, $connection);
+
+			// Inject the values passed to this function.
+			$db_string = preg_replace_callback('~{([a-z_]+)(?::([a-zA-Z0-9_-]+))?}~', array($this, 'replacement__callback'), $db_string);
+
+			// This shouldn't be residing in global space any longer.
+			$db_callback = array();
+		}
+
+		// Debugging.
+		if (isset($db_show_debug) && $db_show_debug === true)
+		{
+			// Get the file and line number this function was called.
+			list ($file, $line) = $this->error_backtrace('', '', 'return', __FILE__, __LINE__);
+
+			// Initialize $db_cache if not already initialized.
+			if (!isset($db_cache))
+				$db_cache = array();
+
+			if (!empty($_SESSION['debug_redirect']))
+			{
+				$db_cache = array_merge($_SESSION['debug_redirect'], $db_cache);
+				$db_count = count($db_cache) + 1;
+				$_SESSION['debug_redirect'] = array();
+			}
+
+			// Don't overload it.
+			$st = microtime();
+			$db_cache[$db_count]['q'] = $db_count < 50 ? $db_string : '...';
+			$db_cache[$db_count]['f'] = $file;
+			$db_cache[$db_count]['l'] = $line;
+			$db_cache[$db_count]['s'] = array_sum(explode(' ', $st)) - array_sum(explode(' ', $time_start));
+		}
+
+		// First, we clean strings out of the query, reduce whitespace, lowercase, and trim - so we can check it over.
+		if (empty($modSettings['disableQueryCheck']))
+		{
+			$clean = '';
+			$old_pos = 0;
+			$pos = -1;
+			while (true)
+			{
+				$pos = strpos($db_string, '\'', $pos + 1);
+				if ($pos === false)
+					break;
+				$clean .= substr($db_string, $old_pos, $pos - $old_pos);
+
+				while (true)
+				{
+					$pos1 = strpos($db_string, '\'', $pos + 1);
+					$pos2 = strpos($db_string, '\\', $pos + 1);
+					if ($pos1 === false)
+						break;
+					elseif ($pos2 == false || $pos2 > $pos1)
+					{
+						$pos = $pos1;
+						break;
+					}
+
+					$pos = $pos2 + 1;
+				}
+				$clean .= ' %s ';
+
+				$old_pos = $pos + 1;
+			}
+			$clean .= substr($db_string, $old_pos);
+			$clean = trim(strtolower(preg_replace($allowed_comments_from, $allowed_comments_to, $clean)));
+
+			// We don't use UNION in SMF, at least so far.  But it's useful for injections.
+			if (strpos($clean, 'union') !== false && preg_match('~(^|[^a-z])union($|[^[a-z])~s', $clean) != 0)
+				$fail = true;
+			// Comments?  We don't use comments in our queries, we leave 'em outside!
+			elseif (strpos($clean, '/*') > 2 || strpos($clean, '--') !== false || strpos($clean, ';') !== false)
+				$fail = true;
+			// Trying to change passwords, slow us down, or something?
+			elseif (strpos($clean, 'sleep') !== false && preg_match('~(^|[^a-z])sleep($|[^[_a-z])~s', $clean) != 0)
+				$fail = true;
+			elseif (strpos($clean, 'benchmark') !== false && preg_match('~(^|[^a-z])benchmark($|[^[a-z])~s', $clean) != 0)
+				$fail = true;
+			// Sub selects?  We don't use those either.
+			elseif (preg_match('~\([^)]*?select~s', $clean) != 0)
+				$fail = true;
+
+			if (!empty($fail) && function_exists('log_error'))
+				$this->error_backtrace('Hacking attempt...', 'Hacking attempt...' . "\n" . $db_string, E_USER_ERROR, __FILE__, __LINE__);
+		}
+
+		if (empty($db_unbuffered))
+			$ret = @mysqli_query($connection, $db_string);
+		else
+			$ret = @mysqli_query($connection, $db_string, MYSQLI_USE_RESULT);
+
+		if ($ret === false && empty($db_values['db_error_skip']))
+			$ret = $this->error($db_string, $connection);
+
+		// Debugging.
+		if (isset($db_show_debug) && $db_show_debug === true)
+			$db_cache[$db_count]['t'] = array_sum(explode(' ', microtime())) - array_sum(explode(' ', $st));
+
+		return $ret;
+	}
+
+	/**
+	 * affected_rows
+	 * @param object $connection
+	 */
+	public function affected_rows($connection = null)
+	{
+		global $db_connection;
+
+		return mysqli_affected_rows($connection === null ? $db_connection : $connection);
+	}
+
+	/**
+	 * insert_id
+	 *
+	 * @param string $table
+	 * @param string $field = null
+	 * @param object $connection = null
+	 */
+	public function insert_id($table, $field = null, $connection = null)
+	{
+		global $db_connection, $db_prefix;
+
+		$table = str_replace('{db_prefix}', $db_prefix, $table);
+
+		// MySQL doesn't need the table or field information.
+		return mysqli_insert_id($connection === null ? $db_connection : $connection);
+	}
+
+	/**
+	 * Do a transaction.
+	 *
+	 * @param string $type - the step to perform (i.e. 'begin', 'commit', 'rollback')
+	 * @param object $connection = null
+	 */
+	public function transaction($type = 'commit', $connection = null)
+	{
+		global $db_connection;
+
+		// Decide which connection to use
+		$connection = $connection === null ? $db_connection : $connection;
+
+		if ($type == 'begin')
+			return @mysqli_query($connection, 'BEGIN');
+		elseif ($type == 'rollback')
+			return @mysqli_query($connection, 'ROLLBACK');
+		elseif ($type == 'commit')
+			return @mysqli_query($connection, 'COMMIT');
+
+		return false;
+	}
+
+	/**
+	 * Database error!
+	 * Backtrace, log, try to fix.
+	 *
+	 * @param string $db_string
+	 * @param object $connection = null
+	 */
+	private function error($db_string, $connection = null)
+	{
+		global $txt, $context, $sourcedir, $webmaster_email, $modSettings;
+		global $forum_version, $db_connection, $db_last_error, $db_persist;
+		global $db_server, $db_user, $db_passwd, $db_name, $db_show_debug, $ssi_db_user, $ssi_db_passwd;
+		global $smcFunc;
+
+		// Get the file and line numbers.
+		list ($file, $line) = $this->error_backtrace('', '', 'return', __FILE__, __LINE__);
+
+		// Decide which connection to use
+		$connection = $connection === null ? $db_connection : $connection;
+
+		// This is the error message...
+		$query_error = mysqli_error($connection);
+		$query_errno = mysqli_errno($connection);
+
+		// Error numbers:
+		//    1016: Can't open file '....MYI'
+		//    1030: Got error ??? from table handler.
+		//    1034: Incorrect key file for table.
+		//    1035: Old key file for table.
+		//    1205: Lock wait timeout exceeded.
+		//    1213: Deadlock found.
+		//    2006: Server has gone away.
+		//    2013: Lost connection to server during query.
+
+		// Log the error.
+		if ($query_errno != 1213 && $query_errno != 1205 && function_exists('log_error'))
+			log_error($txt['database_error'] . ': ' . $query_error . (!empty($modSettings['enableErrorQueryLogging']) ? "\n\n$db_string" : ''), 'database', $file, $line);
+
+		// Database error auto fixing ;).
+		if (function_exists('cache_get_data') && (!isset($modSettings['autoFixDatabase']) || $modSettings['autoFixDatabase'] == '1'))
+		{
+			// Force caching on, just for the error checking.
+			$old_cache = @$modSettings['cache_enable'];
+			$modSettings['cache_enable'] = '1';
+
+			if (($temp = cache_get_data('db_last_error', 600)) !== null)
+				$db_last_error = max(@$db_last_error, $temp);
+
+			if (@$db_last_error < time() - 3600 * 24 * 3)
+			{
+				// We know there's a problem... but what?  Try to auto detect.
+				if ($query_errno == 1030 && strpos($query_error, ' 127 ') !== false)
+				{
+					preg_match_all('~(?:[\n\r]|^)[^\']+?(?:FROM|JOIN|UPDATE|TABLE) ((?:[^\n\r(]+?(?:, )?)*)~s', $db_string, $matches);
+
+					$fix_tables = array();
+					foreach ($matches[1] as $tables)
+					{
+						$tables = array_unique(explode(',', $tables));
+						foreach ($tables as $table)
+						{
+							// Now, it's still theoretically possible this could be an injection.  So backtick it!
+							if (trim($table) != '')
+								$fix_tables[] = '`' . strtr(trim($table), array('`' => '')) . '`';
+						}
+					}
+
+					$fix_tables = array_unique($fix_tables);
+				}
+				// Table crashed.  Let's try to fix it.
+				elseif ($query_errno == 1016)
+				{
+					if (preg_match('~\'([^\.\']+)~', $query_error, $match) != 0)
+						$fix_tables = array('`' . $match[1] . '`');
+				}
+				// Indexes crashed.  Should be easy to fix!
+				elseif ($query_errno == 1034 || $query_errno == 1035)
+				{
+					preg_match('~\'([^\']+?)\'~', $query_error, $match);
+					$fix_tables = array('`' . $match[1] . '`');
+				}
+			}
+
+			// Check for errors like 145... only fix it once every three days, and send an email. (can't use empty because it might not be set yet...)
+			if (!empty($fix_tables))
+			{
+				// Subs-Admin.php for updateSettingsFile(), Subs-Post.php for sendmail().
+				require_once($sourcedir . '/Subs-Admin.php');
+				require_once($sourcedir . '/Subs-Post.php');
+
+				// Make a note of the REPAIR...
+				cache_put_data('db_last_error', time(), 600);
+				if (($temp = cache_get_data('db_last_error', 600)) === null)
+					updateSettingsFile(array('db_last_error' => time()));
+
+				// Attempt to find and repair the broken table.
+				foreach ($fix_tables as $table)
+					$smcFunc['db_query']('', "
+						REPAIR TABLE $table", false, false);
+
+				// And send off an email!
+				sendmail($webmaster_email, $txt['database_error'], $txt['tried_to_repair']);
+
+				$modSettings['cache_enable'] = $old_cache;
+
+				// Try the query again...?
+				$ret = $smcFunc['db_query']('', $db_string, false, false);
+				if ($ret !== false)
+					return $ret;
+			}
+			else
+				$modSettings['cache_enable'] = $old_cache;
+
+			// Check for the "lost connection" or "deadlock found" errors - and try it just one more time.
+			if (in_array($query_errno, array(1205, 1213, 2006, 2013)))
+			{
+				if (in_array($query_errno, array(2006, 2013)) && $db_connection == $connection)
+				{
+					// Are we in SSI mode?  If so try that username and password first
+					if (SMF == 'SSI' && !empty($ssi_db_user) && !empty($ssi_db_passwd))
+					{
+						if (empty($db_persist))
+							$db_connection = @mysqli_connect($db_server, $ssi_db_user, $ssi_db_passwd);
+						else
+							$db_connection = @mysqli_connect('p:' . $db_server, $ssi_db_user, $ssi_db_passwd);
+					}
+					// Fall back to the regular username and password if need be
+					if (!$db_connection)
+					{
+						if (empty($db_persist))
+							$db_connection = @mysqli_connect($db_server, $db_user, $db_passwd);
+						else
+							$db_connection = @mysqli_connect('p:' . $db_server, $db_user, $db_passwd);
+					}
+
+					if (!$db_connection || !@mysqli_select_db($db_connection, $db_name))
+						$db_connection = false;
+				}
+
+				if ($db_connection)
+				{
+					// Try a deadlock more than once more.
+					for ($n = 0; $n < 4; $n++)
+					{
+						$ret = $smcFunc['db_query']('', $db_string, false, false);
+
+						$new_errno = mysqli_errno($db_connection);
+						if ($ret !== false || in_array($new_errno, array(1205, 1213)))
+							break;
+					}
+
+					// If it failed again, shucks to be you... we're not trying it over and over.
+					if ($ret !== false)
+						return $ret;
+				}
+			}
+			// Are they out of space, perhaps?
+			elseif ($query_errno == 1030 && (strpos($query_error, ' -1 ') !== false || strpos($query_error, ' 28 ') !== false || strpos($query_error, ' 12 ') !== false))
+			{
+				if (!isset($txt))
+					$query_error .= ' - check database storage space.';
+				else
+				{
+					if (!isset($txt['mysql_error_space']))
+						loadLanguage('Errors');
+
+					$query_error .= !isset($txt['mysql_error_space']) ? ' - check database storage space.' : $txt['mysql_error_space'];
+				}
+			}
+		}
+
+		// Nothing's defined yet... just die with it.
+		if (empty($context) || empty($txt))
+			die($query_error);
+
+		// Show an error message, if possible.
+		$context['error_title'] = $txt['database_error'];
+		if (allowedTo('admin_forum'))
+			$context['error_message'] = nl2br($query_error) . '<br />' . $txt['file'] . ': ' . $file . '<br />' . $txt['line'] . ': ' . $line;
+		else
+			$context['error_message'] = $txt['try_again'];
+
+		// A database error is often the sign of a database in need of upgrade.  Check forum versions, and if not identical suggest an upgrade... (not for Demo/CVS versions!)
+		if (allowedTo('admin_forum') && !empty($forum_version) && $forum_version != 'SMF ' . @$modSettings['smfVersion'] && strpos($forum_version, 'Demo') === false && strpos($forum_version, 'CVS') === false)
+			$context['error_message'] .= '<br /><br />' . sprintf($txt['database_error_versions'], $forum_version, $modSettings['smfVersion']);
+
+		if (allowedTo('admin_forum') && isset($db_show_debug) && $db_show_debug === true)
+		{
+			$context['error_message'] .= '<br /><br />' . nl2br($db_string);
+		}
+
+		// It's already been logged... don't log it again.
+		fatal_error($context['error_message'], false);
+	}
+
+	/**
+	 * insert
+	 *
+	 * @param string $method - options 'replace', 'ignore', 'insert'
+	 * @param $table
+	 * @param $columns
+	 * @param $data
+	 * @param $keys
+	 * @param bool $disable_trans = false
+	 * @param object $connection = null
+	 */
+	public function insert($method = 'replace', $table, $columns, $data, $keys, $disable_trans = false, $connection = null)
+	{
+		global $smcFunc, $db_connection, $db_prefix;
+
+		$connection = $connection === null ? $db_connection : $connection;
+
+		// With nothing to insert, simply return.
+		if (empty($data))
+			return;
+
+		// Replace the prefix holder with the actual prefix.
+		$table = str_replace('{db_prefix}', $db_prefix, $table);
+
+		// Inserting data as a single row can be done as a single array.
+		if (!is_array($data[array_rand($data)]))
+			$data = array($data);
+
+		// Create the mold for a single row insert.
+		$insertData = '(';
+		foreach ($columns as $columnName => $type)
+		{
+			// Are we restricting the length?
+			if (strpos($type, 'string-') !== false)
+				$insertData .= sprintf('SUBSTRING({string:%1$s}, 1, ' . substr($type, 7) . '), ', $columnName);
+			else
+				$insertData .= sprintf('{%1$s:%2$s}, ', $type, $columnName);
+		}
+		$insertData = substr($insertData, 0, -2) . ')';
+
+		// Create an array consisting of only the columns.
+		$indexed_columns = array_keys($columns);
+
+		// Here's where the variables are injected to the query.
+		$insertRows = array();
+		foreach ($data as $dataRow)
+			$insertRows[] = $this->quote($insertData, array_combine($indexed_columns, $dataRow), $connection);
+
+		// Determine the method of insertion.
+		$queryTitle = $method == 'replace' ? 'REPLACE' : ($method == 'ignore' ? 'INSERT IGNORE' : 'INSERT');
+
+		// Do the insert.
+		$smcFunc['db_query']('', '
+			' . $queryTitle . ' INTO ' . $table . '(`' . implode('`, `', $indexed_columns) . '`)
+			VALUES
+				' . implode(',
+				', $insertRows),
+			array(
+				'security_override' => true,
+				'db_error_skip' => $table === $db_prefix . 'log_errors',
+			),
+			$connection
+		);
+	}
+
+	/**
+	 * This function tries to work out additional error information from a back trace.
+	 *
+	 * @param $error_message
+	 * @param $log_message
+	 * @param $error_type
+	 * @param $file
+	 * @param $line
+	 */
+	private function error_backtrace($error_message, $log_message = '', $error_type = false, $file = null, $line = null)
+	{
+		if (empty($log_message))
+			$log_message = $error_message;
+
+		foreach (debug_backtrace() as $step)
+		{
+			// Found it?
+			if (!method_exists($this, $step['function']) && strpos($step['function'], 'query') === false && !in_array(substr($step['function'], 0, 7), array('smf_db_', 'preg_re', 'db_erro', 'call_us')) && strpos($step['function'], '__') !== 0)
+			{
+				$log_message .= '<br />Function: ' . $step['function'];
+				break;
+			}
+
+			if (isset($step['line']))
+			{
+				$file = $step['file'];
+				$line = $step['line'];
+			}
+		}
+
+		// A special case - we want the file and line numbers for debugging.
+		if ($error_type == 'return')
+			return array($file, $line);
+
+		// Is always a critical error.
+		if (function_exists('log_error'))
+			log_error($log_message, 'critical', $file, $line);
+
+		if (function_exists('fatal_error'))
+		{
+			fatal_error($error_message, false);
+
+			// Cannot continue...
+			exit;
+		}
+		elseif ($error_type)
+			trigger_error($error_message . ($line !== null ? '<em>(' . basename($file) . '-' . $line . ')</em>' : ''), $error_type);
+		else
+			trigger_error($error_message . ($line !== null ? '<em>(' . basename($file) . '-' . $line . ')</em>' : ''));
+	}
+
+	/**
+	 * Escape the LIKE wildcards so that they match the character and not the wildcard.
+	 *
+	 * @param $string
+	 * @param bool $translate_human_wildcards = false, if true, turns human readable wildcards into SQL wildcards.
+	 */
+	public function escape_wildcard_string($string, $translate_human_wildcards=false)
+	{
+		$replacements = array(
+			'%' => '\%',
+			'_' => '\_',
+			'\\' => '\\\\',
+		);
+
+		if ($translate_human_wildcards)
+			$replacements += array(
+				'*' => '%',
+			);
+
+		return strtr($string, $replacements);
+	}
+}
+
+]]></add>
+		</operation>
+	</file>
+
+	<!-- cURL support for fetch_web_data -->
+	<file name="$sourcedir/Subs-Package.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.10]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// This is more likely; a standard HTTP URL.]]></search>
+			<add><![CDATA[// More likely a standard HTTP/s URL, first try to use cURL if available
+	elseif (isset($match[1]) && substr($match[1], 0, 4) === 'http' && function_exists('curl_init'))
+	{
+		// Include the file containing the curl_fetch_web_data class.
+		loadClassFile('Class-CurlFetchWeb.php');
+
+		$fetch_data = new curl_fetch_web_data();
+		$fetch_data->get_url_data($url, $post_data);
+
+		// no errors and a 200 result, then we have a good dataset, well we at least have data ;)
+		if ($fetch_data->result('code') == 200 && !$fetch_data->result('error'))
+			$data = $fetch_data->result('body');
+		else
+			return false;
+	}
+	// Fallback to sockets.]]></add>
+		</operation>
+	</file>
+
+	<!-- Session handling -->
+	<!-- Code contributed by Suki -->
+	<file name="$sourcedir/Load.php">
+		<operation>
+			<search position="replace"><![CDATA[array($session_id, $data, time()),
+			array('session_id')
+		);
+
+	return $result;]]></search>
+			<add><![CDATA[array($session_id, $data, time()),
+			array('session_id')
+		);
+
+	return true;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Just delete the row...
+	return $smcFunc['db_query']('', '
+		DELETE FROM {db_prefix}sessions
+		WHERE session_id = {string:session_id}',
+		array(
+			'session_id' => $session_id,
+		)
+	);]]></search>
+			<add><![CDATA[// Just delete the row...
+	$smcFunc['db_query']('', '
+		DELETE FROM {db_prefix}sessions
+		WHERE session_id = {string:session_id}',
+		array(
+			'session_id' => $session_id,
+		)
+	);
+
+	return true;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Clean up ;).
+	return $smcFunc['db_query']('', '
+		DELETE FROM {db_prefix}sessions
+		WHERE last_update < {int:last_update}',
+		array(
+			'last_update' => time() - $max_lifetime,
+		)
+	);]]></search>
+			<add><![CDATA[// Clean up ;).
+	$smcFunc['db_query']('', '
+		DELETE FROM {db_prefix}sessions
+		WHERE last_update < {int:last_update}',
+		array(
+			'last_update' => time() - $max_lifetime,
+		)
+	);
+
+	return $smcFunc['db_affected_rows']() != 0;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[return $sess_data;]]></search>
+			<add><![CDATA[return $sess_data != null ? $sess_data : '';]]></add>
+		</operation>
+	</file>
+
+	<!-- HTTPS Images -->
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.13]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['content' => '<img src="$1" alt="" class="bbc_img" />',
+				'validate' => create_function('&$tag, &$data, $disabled', '
+					$data = strtr($data, array(\'<br />\' => \'\'));
+					if (strpos($data, \'http://\') !== 0 && strpos($data, \'https://\') !== 0)
+						$data = \'http://\' . $data;
+				'),]]></search>
+			<add><![CDATA['content' => '<img src="$1" alt="" class="bbc_img" />',
+				'validate' => function (&$tag, &$data, $disabled)
+				{
+					global $image_proxy_enabled, $image_proxy_secret, $boardurl;
+
+					$data = strtr($data, array('<br>' => ''));
+					if (strpos($data, 'http://') !== 0 && strpos($data, 'https://') !== 0)
+						$data = 'http://' . $data;
+
+					if (substr($data, 0, 8) != 'https://' && $image_proxy_enabled)
+						$data = $boardurl . '/proxy.php?request=' . urlencode($data) . '&hash=' . md5($data . $image_proxy_secret);
+				},]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['content' => '<img src="$1" alt="{alt}"{width}{height} class="bbc_img resized" />',
+				'validate' => create_function('&$tag, &$data, $disabled', '
+					$data = strtr($data, array(\'<br />\' => \'\'));
+					if (strpos($data, \'http://\') !== 0 && strpos($data, \'https://\') !== 0)
+						$data = \'http://\' . $data;
+				'),]]></search>
+			<add><![CDATA['content' => '<img src="$1" alt="{alt}"{width}{height} class="bbc_img resized" />',
+				'validate' => function (&$tag, &$data, $disabled)
+				{
+					global $image_proxy_enabled, $image_proxy_secret, $boardurl;
+
+					$data = strtr($data, array('<br>' => ''));
+					if (strpos($data, 'http://') !== 0 && strpos($data, 'https://') !== 0)
+						$data = 'http://' . $data;
+
+					if (substr($data, 0, 8) != 'https://' && $image_proxy_enabled)
+						$data = $boardurl . '/proxy.php?request=' . urlencode($data) . '&hash=' . md5($data . $image_proxy_secret);
+				},]]></add>
+		</operation>
+	</file>
+
+	<!-- Image Proxy Settings -->
+	<file name="$sourcedir/ManageServer.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[array('disableHostnameLookup', $txt['disableHostnameLookup'], 'db', 'check', null, 'disableHostnameLookup'),]]></search>
+			<add><![CDATA[array('disableHostnameLookup', $txt['disableHostnameLookup'], 'db', 'check', null, 'disableHostnameLookup'),
+		'',
+		array('image_proxy_enabled', $txt['image_proxy_enabled'], 'file', 'check', null, 'image_proxy_enabled', 'subtext' => $txt['image_proxy_enabled_desc']),
+		array('image_proxy_secret', $txt['image_proxy_secret'], 'file', 'text', 30, 'image_proxy_secret', 'subtext' => $txt['image_proxy_secret_desc']),
+		array('image_proxy_maxsize', $txt['image_proxy_maxsize'], 'file', 'int', null, 'image_proxy_maxsize', 'postinput' => $txt['image_proxy_maxsize_postinput'], 'subtext' => $txt['image_proxy_maxsize_desc']),]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['boarddir', 'sourcedir', 'cachedir',]]></search>
+			<add><![CDATA['boarddir', 'sourcedir', 'cachedir',
+		'image_proxy_secret',]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$config_ints = array(]]></search>
+			<add><![CDATA[$config_ints = array(
+		'cache_enable',
+		'image_proxy_maxsize',]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['db_persist', 'db_error_send',
+		'maintenance',]]></search>
+			<add><![CDATA['db_persist', 'db_error_send',
+		'maintenance', 'image_proxy_enabled',]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['postinput' => '',]]></search>
+			<add><![CDATA['postinput' => isset($config_var['postinput']) ? $config_var['postinput'] : '',
+				'subtext' => isset($config_var['subtext']) ? $config_var['subtext'] : '',]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/languages/ManageSettings.english.php">
+		<operation>
+			<search position="replace"><![CDATA[$txt['meta_keywords'] = 'Meta keywords associated with forum<div class="smalltext">For search engines. Leave blank for default.</div>';]]></search>
+			<add><![CDATA[$txt['meta_keywords'] = 'Meta keywords associated with forum<div class="smalltext">For search engines. Leave blank for default.</div>';
+$txt['image_proxy_enabled'] = 'Enable Image Proxy';
+$txt['image_proxy_enabled_desc'] = 'This will proxy images posted within <b>[img]</b> tags.</b>';
+$txt['image_proxy_secret'] = 'Image Proxy Secret';
+$txt['image_proxy_secret_desc'] = 'This should be unique to your site. Be sure to keep it a secret.';
+$txt['image_proxy_maxsize'] = 'Maximum file size of images to cache';
+$txt['image_proxy_maxsize_postinput'] = 'KB';
+$txt['image_proxy_maxsize_desc'] = 'Images above this threshold are still shown.';]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/languages/ManageSettings.english-utf8.php" error="skip">
+		<operation error="ignore">
+			<search position="replace"><![CDATA[$txt['meta_keywords'] = 'Meta keywords associated with forum<div class="smalltext">For search engines. Leave blank for default.</div>';]]></search>
+			<add><![CDATA[$txt['meta_keywords'] = 'Meta keywords associated with forum<div class="smalltext">For search engines. Leave blank for default.</div>';
+$txt['image_proxy_enabled'] = 'Enable Image Proxy';
+$txt['image_proxy_enabled_desc'] = 'This will proxy images posted within <b>[img]</b> tags.</b>';
+$txt['image_proxy_secret'] = 'Image Proxy Secret';
+$txt['image_proxy_secret_desc'] = 'This should be unique to your site. Be sure to keep it a secret.';
+$txt['image_proxy_maxsize'] = 'Maximum file size of images to cache';
+$txt['image_proxy_maxsize_postinput'] = 'KB';
+$txt['image_proxy_maxsize_desc'] = 'Images above this threshold are still shown.';]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/languages/Help.english.php">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$helptxt['image_proxy_enabled'] = 'Whether to enable the image proxy';
+$helptxt['image_proxy_secret'] = 'Keep this a secret, protects your forum from hotlinking images. Change it in order to render current hotlinked images useless';
+$helptxt['image_proxy_maxsize'] = 'Maximum image size that the image proxy will cache: bigger images will be not be cached. Cached images are stored in your SMF cache folder, so make sure you have enough free space.';]]></add>
+		</operation>
+	</file>
+
+	<file name="$themedir/languages/Help.english-utf8.php" error="skip">
+		<operation>
+			<search position="end" />
+			<add><![CDATA[
+$helptxt['image_proxy_enabled'] = 'Whether to enable the image proxy';
+$helptxt['image_proxy_secret'] = 'Keep this a secret, protects your forum from hotlinking images. Change it in order to render current hotlinked images useless';
+$helptxt['image_proxy_maxsize'] = 'Maximum image size that the image proxy will cache: bigger images will be not be cached. Cached images are stored in your SMF cache folder, so make sure you have enough free space.';]]></add>
+		</operation>
+	</file>
+
+	<!-- HTTPS avatar -->
+	<!-- Code contributed by margarett -->
+	<file name="$sourcedir/Profile-Modify.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[elseif ($value == 'external' && allowedTo('profile_remote_avatar') && strtolower(substr($_POST['userpicpersonal'], 0, 7)) == 'http://' && empty($modSettings['avatar_download_external']))]]></search>
+			<add><![CDATA[elseif ($value == 'external' && allowedTo('profile_remote_avatar') && (strtolower(substr($_POST['userpicpersonal'], 0, 7)) == 'http://' || strtolower(substr($_POST['userpicpersonal'], 0, 8)) == 'https://') && empty($modSettings['avatar_download_external']))]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[elseif (substr($profile_vars['avatar'], 0, 7) != 'http://')]]></search>
+			<add><![CDATA[elseif (substr($profile_vars['avatar'], 0, 7) != 'http://' && substr($profile_vars['avatar'], 0, 8) != 'https://')]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[function profileLoadAvatarData()
+{
+	global $context, $cur_profile, $modSettings, $scripturl;]]></search>
+			<add><![CDATA[function profileLoadAvatarData()
+{
+	global $context, $cur_profile, $modSettings, $scripturl, $boardurl, $image_proxy_enabled;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[elseif (stristr($cur_profile['avatar'], 'http://') && $context['member']['avatar']['allow_external'])
+		$context['member']['avatar'] += array(
+			'choice' => 'external',
+			'server_pic' => 'blank.gif',
+			'external' => $cur_profile['avatar']
+		);]]></search>
+			<add><![CDATA[elseif ((stristr($cur_profile['avatar'], 'http://') || stristr($cur_profile['avatar'], 'https://')) && $context['member']['avatar']['allow_external'])
+	{
+		$context['member']['avatar'] += array(
+			'choice' => 'external',
+			'server_pic' => 'blank.gif',
+			'external' => $cur_profile['avatar'],
+			'external_original' => $cur_profile['avatar']
+		);
+
+		// If we have a proxied imaged, show the original url, not the proxy url.
+		if ($image_proxy_enabled && !empty($cur_profile['avatar_original']) && $cur_profile['avatar_original'] != $cur_profile['avatar'] && stristr($cur_profile['avatar'], $boardurl . '/proxy.php'))
+			$context['member']['avatar']['external_original'] = $cur_profile['avatar_original'];
+	}]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Get a list of all the avatars.
+	if ($context['member']['avatar']['allow_server_stored'])]]></search>
+			<add><![CDATA[// Ensure we have a original external.
+	if (!isset($context['member']['avatar']['external_original']))
+		$context['member']['avatar']['external_original'] = $context['member']['avatar']['external'];
+
+	// Get a list of all the avatars.
+	if ($context['member']['avatar']['allow_server_stored'])]]></add>
+		</operation>
+
+	</file>
+	<file name="$themedir/Profile.template.php">
+		<operation>
+			<search position="replace"><![CDATA[ * @version 2.0]]></search>
+			<add><![CDATA[ * @version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[<input type="text" name="userpicpersonal" size="45" value="', $context['member']['avatar']['external'], '" onfocus="selectRadioByName(document.forms.creator.avatar_choice, \'external\');" onchange="if (typeof(previewExternalAvatar) != \'undefined\') previewExternalAvatar(this.value);" class="input_text" />]]></search>
+			<add><![CDATA[<input type="text" name="userpicpersonal" size="45" value="', $context['member']['avatar']['external_original'], '" onfocus="selectRadioByName(document.forms.creator.avatar_choice, \'external\');" onchange="if (typeof(previewExternalAvatar) != \'undefined\') previewExternalAvatar(this.value);" class="input_text" />]]></add>
+		</operation>
+	</file>
+	<file name="$boarddir/SSI.php">
+		<operation>
+			<search position="replace"><![CDATA[global $smcFunc, $ssi_db_user, $scripturl, $ssi_db_passwd, $db_passwd, $cachedir;
+
+// Remember the current configuration so it can be set back.]]></search>
+			<add><![CDATA[global $smcFunc, $ssi_db_user, $scripturl, $ssi_db_passwd, $db_passwd, $cachedir;
+global $image_proxy_enabled, $image_proxy_secret, $image_proxy_maxsize;
+
+// Remember the current configuration so it can be set back.]]></add>
+		</operation>
+	</file>
+	<file name="$sourcedir/Load.php">
+		<operation>
+			<search position="replace"><![CDATA['href' => 'http://www.icq.com/whitepages/about_me.php?uin=' . $profile['icq'],
+			'link' => '<a class="icq new_win" href="http://www.icq.com/whitepages/about_me.php?uin=' . $profile['icq'] . '" target="_blank" title="' . $txt['icq_title'] . ' - ' . $profile['icq'] . '"><img src="http://status.icq.com/online.gif?img=5&amp;icq=' . $profile['icq'] . '" alt="' . $txt['icq_title'] . ' - ' . $profile['icq'] . '" width="18" height="18" /></a>',
+			'link_text' => '<a class="icq extern" href="http://www.icq.com/whitepages/about_me.php?uin=' . $profile['icq'] . '" title="' . $txt['icq_title'] . ' - ' . $profile['icq'] . '">' . $profile['icq'] . '</a>',]]></search>
+			<add><![CDATA['href' => 'https://www.icq.com/whitepages/about_me.php?uin=' . $profile['icq'],
+			'link' => '<a class="icq new_win" href="https://www.icq.com/whitepages/about_me.php?uin=' . $profile['icq'] . '" target="_blank" title="' . $txt['icq_title'] . ' - ' . $profile['icq'] . '"><img src="https://status.icq.com/online.gif?img=5&amp;icq=' . $profile['icq'] . '" alt="' . $txt['icq_title'] . ' - ' . $profile['icq'] . '" width="18" height="18" /></a>',
+			'link_text' => '<a class="icq extern" href="https://www.icq.com/whitepages/about_me.php?uin=' . $profile['icq'] . '" title="' . $txt['icq_title'] . ' - ' . $profile['icq'] . '">' . $profile['icq'] . '</a>',]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['href' => 'http://edit.yahoo.com/config/send_webmesg?.target=' . urlencode($profile['yim']),
+			'link' => '<a class="yim" href="http://edit.yahoo.com/config/send_webmesg?.target=' . urlencode($profile['yim']) . '" title="' . $txt['yim_title'] . ' - ' . $profile['yim'] . '"><img src="http://opi.yahoo.com/online?u=' . urlencode($profile['yim']) . '&amp;m=g&amp;t=0" alt="' . $txt['yim_title'] . ' - ' . $profile['yim'] . '" /></a>',
+			'link_text' => '<a class="yim" href="http://edit.yahoo.com/config/send_webmesg?.target=' . urlencode($profile['yim']) . '" title="' . $txt['yim_title'] . ' - ' . $profile['yim'] . '">' . $profile['yim'] . '</a>']]></search>
+			<add><![CDATA['href' => 'https://edit.yahoo.com/config/send_webmesg?.target=' . urlencode($profile['yim']),
+			'link' => '<a class="yim" href="https://edit.yahoo.com/config/send_webmesg?.target=' . urlencode($profile['yim']) . '" title="' . $txt['yim_title'] . ' - ' . $profile['yim'] . '"><img src="https://opi.yahoo.com/online?u=' . urlencode($profile['yim']) . '&amp;m=g&amp;t=0" alt="' . $txt['yim_title'] . ' - ' . $profile['yim'] . '" /></a>',
+			'link_text' => '<a class="yim" href="https://edit.yahoo.com/config/send_webmesg?.target=' . urlencode($profile['yim']) . '" title="' . $txt['yim_title'] . ' - ' . $profile['yim'] . '">' . $profile['yim'] . '</a>']]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['href' => 'http://members.msn.com/' . $profile['msn'],
+			'link' => '<a class="msn new_win" href="http://members.msn.com/' . $profile['msn'] . '" title="' . $txt['msn_title'] . ' - ' . $profile['msn'] . '"><img src="' . $settings['images_url'] . '/msntalk.gif" alt="' . $txt['msn_title'] . ' - ' . $profile['msn'] . '" /></a>',
+			'link_text' => '<a class="msn new_win" href="http://members.msn.com/' . $profile['msn'] . '" title="' . $txt['msn_title'] . ' - ' . $profile['msn'] . '">' . $profile['msn'] . '</a>']]></search>
+			<add><![CDATA['href' => 'https://members.msn.com/' . $profile['msn'],
+			'link' => '<a class="msn new_win" href="https://members.msn.com/' . $profile['msn'] . '" title="' . $txt['msn_title'] . ' - ' . $profile['msn'] . '"><img src="' . $settings['images_url'] . '/msntalk.gif" alt="' . $txt['msn_title'] . ' - ' . $profile['msn'] . '" /></a>',
+			'link_text' => '<a class="msn new_win" href="https://members.msn.com/' . $profile['msn'] . '" title="' . $txt['msn_title'] . ' - ' . $profile['msn'] . '">' . $profile['msn'] . '</a>']]></add>
+		</operation>
+	</file>
+
+
+	<!-- Continuued.. -->
+	<!-- Code contributed by Intit -->
+	<file name="$sourcedir/Load.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[		'avatar' => array(
+			'name' => $profile['avatar'],
+			'image' => $profile['avatar'] == '' ? ($profile['id_attach'] > 0 ? '<img class="avatar" src="' . (empty($profile['attachment_type']) ? $scripturl . '?action=dlattach;attach=' . $profile['id_attach'] . ';type=avatar' : $modSettings['custom_avatar_url'] . '/' . $profile['filename']) . '" alt="" />' : '') : (stristr($profile['avatar'], 'http://') ? '<img class="avatar" src="' . $profile['avatar'] . '"' . $avatar_width . $avatar_height . ' alt="" />' : '<img class="avatar" src="' . $modSettings['avatar_url'] . '/' . htmlspecialchars($profile['avatar']) . '" alt="" />'),
+			'href' => $profile['avatar'] == '' ? ($profile['id_attach'] > 0 ? (empty($profile['attachment_type']) ? $scripturl . '?action=dlattach;attach=' . $profile['id_attach'] . ';type=avatar' : $modSettings['custom_avatar_url'] . '/' . $profile['filename']) : '') : (stristr($profile['avatar'], 'http://') ? $profile['avatar'] : $modSettings['avatar_url'] . '/' . $profile['avatar']),
+			'url' => $profile['avatar'] == '' ? '' : (stristr($profile['avatar'], 'http://') ? $profile['avatar'] : $modSettings['avatar_url'] . '/' . $profile['avatar'])
+		),]]></search>
+			<add><![CDATA[		'avatar' => array(
+			'name' => $profile['avatar'],
+			'image' => $profile['avatar'] == '' ? ($profile['id_attach'] > 0 ? '<img class="avatar" src="' . (empty($profile['attachment_type']) ? $scripturl . '?action=dlattach;attach=' . $profile['id_attach'] . ';type=avatar' : $modSettings['custom_avatar_url'] . '/' . $profile['filename']) . '" alt="" />' : '') : ((stristr($profile['avatar'], 'http://') || stristr($profile['avatar'], 'https://')) ? '<img class="avatar" src="' . $profile['avatar'] . '"' . $avatar_width . $avatar_height . ' alt="" />' : '<img class="avatar" src="' . $modSettings['avatar_url'] . '/' . htmlspecialchars($profile['avatar']) . '" alt="" />'),
+			'href' => $profile['avatar'] == '' ? ($profile['id_attach'] > 0 ? (empty($profile['attachment_type']) ? $scripturl . '?action=dlattach;attach=' . $profile['id_attach'] . ';type=avatar' : $modSettings['custom_avatar_url'] . '/' . $profile['filename']) : '') : ((stristr($profile['avatar'], 'http://') || stristr($profile['avatar'], 'https://')) ? $profile['avatar'] : $modSettings['avatar_url'] . '/' . $profile['avatar']),
+			'url' => $profile['avatar'] == '' ? '' : ((stristr($profile['avatar'], 'http://') || stristr($profile['avatar'], 'https://')) ? $profile['avatar'] : $modSettings['avatar_url'] . '/' . $profile['avatar'])
+		),]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Load all the important user information...
+function loadUserSettings()
+{
+	global $modSettings, $user_settings, $sourcedir, $smcFunc;
+	global $cookiename, $user_info, $language;
+]]></search>
+			<add><![CDATA[// Load all the important user information...
+function loadUserSettings()
+{
+	global $modSettings, $user_settings, $sourcedir, $smcFunc;
+	global $cookiename, $user_info, $language;
+	global $boardurl, $image_proxy_enabled, $image_proxy_secret;
+]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[function loadMemberData($users, $is_name = false, $set = 'normal')
+{
+	global $user_profile, $modSettings, $board_info, $smcFunc;
+]]></search>
+			<add><![CDATA[function loadMemberData($users, $is_name = false, $set = 'normal')
+{
+	global $user_profile, $modSettings, $board_info, $smcFunc;
+	global $boardurl, $image_proxy_enabled, $image_proxy_secret;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$new_loaded_ids = array();
+		while ($row = $smcFunc['db_fetch_assoc']($request))
+		{
+			$new_loaded_ids[] = $row['id_member'];]]></search>
+			<add><![CDATA[$new_loaded_ids = array();
+		while ($row = $smcFunc['db_fetch_assoc']($request))
+		{
+			// If the image proxy is enabled, we still want the original URL when they're editing the profile...
+			if (isset($row['avatar']))
+				$row['avatar_original'] = $row['avatar'];
+
+			// Take care of proxying avatar if required, do this here for maximum reach
+			if ($image_proxy_enabled && !empty($row['avatar']) && stripos($row['avatar'], 'http://') !== false)
+				$row['avatar'] = $boardurl . '/proxy.php?request=' . urlencode($row['avatar']) . '&hash=' . md5($row['avatar'] . $image_proxy_secret);
+
+			$new_loaded_ids[] = $row['id_member'];]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (!empty($modSettings['cache_enable']) && $modSettings['cache_enable'] >= 2)
+				cache_put_data('user_settings-' . $id_member, $user_settings, 60);
+		}
+
+		// Did we find 'im?  If not, junk it.]]></search>
+			<add><![CDATA[if (!empty($modSettings['force_ssl']) && $image_proxy_enabled && stripos($user_settings['avatar'], 'http://') !== false)
+				$user_settings['avatar'] = strtr($boardurl, array('http://' => 'https://')) . '/proxy.php?request=' . urlencode($user_settings['avatar']) . '&hash=' . md5($user_settings['avatar'] . $image_proxy_secret);
+
+			if (!empty($modSettings['cache_enable']) && $modSettings['cache_enable'] >= 2)
+				cache_put_data('user_settings-' . $id_member, $user_settings, 60);
+		}
+
+		// Did we find 'im?  If not, junk it.]]></add>
+		</operation>
+	</file>
+
+	<!-- Continuued.. -->
+	<!-- Code contributed by Intit -->
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA[function setupThemeContext($forceload = false)
+{
+	global $modSettings, $user_info, $scripturl, $context, $settings, $options, $txt, $maintenance;
+	global $user_settings, $smcFunc;]]></search>
+			<add><![CDATA[function setupThemeContext($forceload = false)
+{
+	global $modSettings, $user_info, $scripturl, $context, $settings, $options, $txt, $maintenance;
+	global $user_settings, $smcFunc, $boardurl, $image_proxy_enabled, $image_proxy_secret;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[elseif (substr($user_info['avatar']['url'], 0, 7) == 'http://')
+		{
+			$context['user']['avatar']['href'] = $user_info['avatar']['url'];]]></search>
+			<add><![CDATA[elseif (substr($user_info['avatar']['url'], 0, 7) == 'http://' || substr($user_info['avatar']['url'], 0, 8) == 'https://')
+		{
+			if (substr($user_info['avatar']['url'], 0, 8) != 'https://' && $image_proxy_enabled)
+				$context['user']['avatar']['href'] = $boardurl . '/proxy.php?request=' . urlencode($user_info['avatar']['url']) . '&hash=' . md5($user_info['avatar']['url'] . $image_proxy_secret);
+			else
+				$context['user']['avatar']['href'] = $user_info['avatar']['url'];]]></add>
+		</operation>
+	</file>
+
+	<!-- Some ugly code that PHP 7 dislikes... seemed to be wrong, annyhow -->
+	<file name="$sourcedir/ManageSettings.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.6]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// By default do the basic settings.
+	$_REQUEST['sa'] = isset($_REQUEST['sa']) && isset($subActions[$_REQUEST['sa']]) ? $_REQUEST['sa'] : (!empty($defaultAction) ? $defaultAction : array_pop(array_keys($subActions)));
+	$context['sub_action'] = $_REQUEST['sa'];]]></search>
+			<add><![CDATA[// If no fallback was specified, use the first subaction.
+	$defaultAction = !empty($defaultAction) ? $defaultAction : key($subActions);
+
+	// I want...
+	$_REQUEST['sa'] = isset($_REQUEST['sa'], $subActions[$_REQUEST['sa']]) ? $_REQUEST['sa'] : $defaultAction;]]></add>
+		</operation>
+	</file>
+
+	<!-- Register an exceptions handler -->
+	<file name="$boarddir/index.php">
+		<operation>
+			<search position="replace"><![CDATA[// Register an error handler.
+set_error_handler('error_handler');]]></search>
+			<add><![CDATA[// Register an error handler.
+set_error_handler('error_handler');
+
+// Quickly catch random exceptions.
+set_exception_handler(function ($e) use ($db_show_debug)
+{
+	if (isset($db_show_debug) && $db_show_debug === true && allowedTo('admin_forum'))
+		fatal_error(nl2br($e), false);
+	else
+		fatal_error($e->getMessage(), false);
+});]]></add>
+		</operation>
+	</file>
+
+	<!-- Check session while logging in -->
+	<!-- Bug reported by q -->
+	<file name="$sourcedir/LogInOut.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.13]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Are you guessing with a script?
+	spamProtection('login');]]></search>
+			<add><![CDATA[// Are you guessing with a script?
+	checkSession('post');
+	spamProtection('login');]]></add>
+		</operation>
+	</file>
+
+	<!-- Add token to quick login form -->
+	<file name="$themedir/index.template.php">
+		<operation error="ignore">
+			<search position="replace"><![CDATA[@version 2.0]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[<input type="hidden" name="hash_passwrd" value="" />]]></search>
+			<add><![CDATA[<input type="hidden" name="hash_passwrd" value="" /><input type="hidden" name="', $context['session_var'], '" value="', $context['session_id'], '" />]]></add>
+		</operation>
+	</file>
+
+	<!-- Add to login forms -->
+	<file name="$themedir/Login.template.php">
+		<operation error="ignore">
+			<search position="replace"><![CDATA[@version 2.0]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[<p class="smalltext"><a href="', $scripturl, '?action=reminder">', $txt['forgot_your_password'], '</a></p>]]></search>
+			<add><![CDATA[<p class="smalltext"><a href="', $scripturl, '?action=reminder">', $txt['forgot_your_password'], '</a></p><input type="hidden" name="', $context['session_var'], '" value="', $context['session_id'], '" />]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[<p class="centertext smalltext"><a href="', $scripturl, '?action=reminder">', $txt['forgot_your_password'], '</a></p>]]></search>
+			<add><![CDATA[<p class="centertext smalltext"><a href="', $scripturl, '?action=reminder">', $txt['forgot_your_password'], '</a></p><input type="hidden" name="', $context['session_var'], '" value="', $context['session_id'], '" />]]></add>
+		</operation>
+		<!-- Add to template_maintenance() -->
+		<operation>
+			<search position="replace"><![CDATA[<input type="hidden" name="hash_passwrd" value="" />
+	</div>
+</form>';]]></search>
+			<add><![CDATA[<input type="hidden" name="', $context['session_var'], '" value="', $context['session_id'], '" /><p class="centertext"><input type="submit" value="', $txt['login'], '" class="button_submit" /><input type="hidden" name="hash_passwrd" value="" />
+	</div>
+</form>';]]></add>
+		</operation>
+	</file>
+
+	<!-- Sanitize poll options -->
+	<!-- Attack vector reported by NLNico -->
+	<file name="$sourcedir/Post.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['expire' => !isset($_POST['poll_expire']) ? '' : $_POST['poll_expire'],]]></search>
+			<add><![CDATA['expire' => !isset($_POST['poll_expire']) ? '' : (int) $_POST['poll_expire'],]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['hide' => empty($_POST['poll_hide']) ? 0 : $_POST['poll_hide'],]]></search>
+			<add><![CDATA['hide' => empty($_POST['poll_hide']) ? 0 : (int) $_POST['poll_hide'],]]></add>
+		</operation>
+	</file>
+
+	<!-- Sanitize poll options -->
+	<!-- Attack vector reported by NLNico -->
+	<file name="$sourcedir/Poll.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$context['poll']['expiration'] = $_POST['poll_expire'];]]></search>
+			<add><![CDATA[$context['poll']['expiration'] = (int) $_POST['poll_expire'];]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['hide_results' => empty($_POST['poll_hide']) ? 0 : $_POST['poll_hide'],]]></search>
+			<add><![CDATA['hide_results' => empty($_POST['poll_hide']) ? 0 : (int) $_POST['poll_hide'],]]></add>
+		</operation>
+	</file>
+
+	<!-- Sanitize reminder code -->
+	<!-- Attack vector reported by NLNico -->
+	<file name="$sourcedir/Reminder.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.13]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// Set your new password
+function setPassword()
+{
+	global $txt, $context;]]></search>
+			<add><![CDATA[// Set your new password
+function setPassword()
+{
+	global $txt, $context, $smcFunc;]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['code' => $_REQUEST['code'],]]></search>
+			<add><![CDATA['code' => $smcFunc['htmlspecialchars']($_REQUEST['code']),]]></add>
+		</operation>
+	</file>
+
+	<!-- Sanitize code -->
+	<!-- Attack vector reported by NLNico -->
+	<file name="$sourcedir/SplitTopics.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA['subject' => $_REQUEST['subname']]]></search>
+			<add><![CDATA['subject' => $smcFunc['htmlspecialchars']($_REQUEST['subname']),]]></add>
+		</operation>
+	</file>
+
+	<!-- Sanitize code -->
+	<!-- Attack vector reported by NLNico -->
+	<file name="$sourcedir/Profile.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.6]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[// If we've changed the password]]></search>
+			<add><![CDATA[// Changing the password? Allow only on the approved channel.
+			if ($current_area != 'account')
+				unset($profile_vars['passwd']);
+
+			// If we've changed the password]]></add>
+		</operation>
+	</file>
+
+	<!-- Email regex too strict -->
+	<!-- Code contributed by margarett -->
+	<file name="$sourcedir/Subs-Members.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (empty($regOptions['email']) || preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,15})$~', $regOptions['email']) === 0]]></search>
+			<add><![CDATA[if (empty($regOptions['email']) || filter_var($regOptions['email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+	</file>
+
+	<!-- Email validation is more than a single char check -->
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA[if (!isset($disabled['email']) && strpos($data, '@') !== false]]></search>
+			<add><![CDATA[if (!isset($disabled['email']) && filter_var($data, FILTER_VALIDATE_EMAIL) !== false]]></add>
+		</operation>
+	</file>
+
+	<!-- Email regex too strict -->
+	<file name="$sourcedir/Post.php">
+		<operation>
+			<search position="replace"><![CDATA[if (!allowedTo('moderate_forum') && preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_POST['email']) == 0]]></search>
+			<add><![CDATA[if (!allowedTo('moderate_forum') && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[elseif (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_REQUEST['email']) == 0]]></search>
+			<add><![CDATA[elseif (filter_var($_REQUEST['email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+	</file>
+
+	<!-- Email regex too strict -->
+	<file name="$sourcedir/Profile-Modify.php">
+		<operation>
+			<search position="replace"><![CDATA[if ($row['mask'] == 'email' && (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $value) === 0]]></search>
+			<add><![CDATA[if ($row['mask'] == 'email' && (filter_var($value, FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+	</file>
+
+	<!-- Email regex too strict -->
+	<file name="$sourcedir/Register.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.7]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if ($row['mask'] == 'email' && !empty($value) && (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $value) === 0]]></search>
+			<add><![CDATA[if ($row['mask'] == 'email' && !empty($value) && (filter_var($value, FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_POST['new_email']) == 0]]></search>
+			<add><![CDATA[if (filter_var($_POST['new_email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+	</file>
+
+	<!-- Email regex too strict -->
+	<file name="$sourcedir/ManageNews.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.10]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if ($curmem != '' && preg_match('~^[0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $curmem) !== 0]]></search>
+			<add><![CDATA[if ($curmem != '' && filter_var($curmem, FILTER_VALIDATE_EMAIL) !== false]]></add>
+		</operation>
+	</file>
+
+	<!-- Email regex too strict -->
+	<file name="$sourcedir/SendTopic.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_POST['y_email']) == 0]]></search>
+			<add><![CDATA[if (filter_var($_POST['ryemail'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_POST['r_email']) == 0]]></search>
+			<add><![CDATA[if (filter_var($_POST['r_email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_POST['y_email']) == 0]]></search>
+			<add><![CDATA[if (filter_var($_POST['y_email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if (preg_match('~^[0-9A-Za-z=_+\-/][0-9A-Za-z=_\'+\-/\.]*@[\w\-]+(\.[\w\-]+)*(\.[\w]{2,6})$~', $_POST['email']) == 0]]></search>
+			<add><![CDATA[if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false]]></add>
+		</operation>
+	</file>
+
+	<!-- Fix password acceptance when special characters were used in UTF-8 -->
+	<!-- Code contributed by mktek -->
+	<file name="$sourcedir/LogInOut.php">
+		<operation>
+			<search position="replace"><![CDATA[if ($context['character_set'] == 'utf8']]></search>
+			<add><![CDATA[if ($context['character_set'] == 'UTF-8']]></add>
+		</operation>
+	</file>
+
+	<!-- Correct some random logic errors -->
+	<!-- Code contributed by Z217 -->
+	<file name="$sourcedir/Profile-View.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[if ($modSettings['totalMessages'] > 50000 && $user_profile[$memID]['posts'] > 500)]]></search>
+			<add><![CDATA[if ($modSettings['totalMessages'] > 50000 || $user_profile[$memID]['posts'] > 500)]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$min_msg_member = max(0, $max_msg_member - $user_profile[$memID]['posts'] * 3);]]></search>
+			<add><![CDATA[$min_msg_member = max(0, $max_msg_member - 50000);]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[GROUP BY poster_ip',
+		array(]]></search>
+			<add><![CDATA[GROUP BY poster_ip
+		LIMIT {int:limit}',
+		array(
+			'limit' => min($user_profile[$memID]['posts'], 500),]]></add>
+		</operation>
+	</file>
+
+	<!-- Use ampersandas insteaad of semi-colons for PayPal's return link -->
+	<!-- Code contributed by bjornforum -->
+	<file name="$sourcedir/Profile-Actions.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.12]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$fields = $gateways[$id]->fetchGatewayFields($context['sub']['id'] . '+' . $memID, $context['sub'], $context['value'], $period, $scripturl . '?action=profile;u=' . $memID . ';area=subscriptions;sub_id=' . $context['sub']['id'] . ';done');]]></search>
+			<add><![CDATA[$fields = $gateways[$id]->fetchGatewayFields($context['sub']['id'] . '+' . $memID, $context['sub'], $context['value'], $period, $scripturl . '?action=profile&u=' . $memID . '&area=subscriptions&sub_id=' . $context['sub']['id'] . '&done');]]></add>
+		</operation>
+	</file>
+
+	<!-- Fix sending multiple MIME-Version headers in notification mail -->
+	<!-- Code contributed by WadaNon -->
+	<file name="$sourcedir/ScheduledTasks.php">
+		<operation>
+			<search position="replace"><![CDATA[@version 2.0.9]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[$result = smtp_mail(array($email['to']), $email['subject'], $email['body'], $email['send_html'] ? $email['headers'] : 'Mime-Version: 1.0' . "\r\n" . $email['headers']);]]></search>
+			<add><![CDATA[$result = smtp_mail(array($email['to']), $email['subject'], $email['body'], $email['headers']);]]></add>
+		</operation>
+	</file>
+
+	<!-- Fix sending multiple Content-Type headers in all requests -->
+	<file name="$sourcedir/Subs.php">
+		<operation>
+			<search position="replace"><![CDATA[header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
+
+		// Are we debugging the template/html content?
+		if (!isset($_REQUEST['xml']) && isset($_GET['debug']) && !$context['browser']['is_ie'] && !WIRELESS)
+			header('Content-Type: application/xhtml+xml');
+		elseif (!isset($_REQUEST['xml']) && !WIRELESS)
+			header('Content-Type: text/html; charset=' . (empty($context['character_set']) ? 'ISO-8859-1' : $context['character_set']));]]></search>
+			<add><![CDATA[header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');]]></add>
+		</operation>
+	</file>
+
+	<!-- Roll this back per 2.0.13 -->
+	<file name="$sourcedir/Subs-Post.php">
+		<operation error="ignore">
+			<search position="replace"><![CDATA[@version 2.0.13]]></search>
+			<add><![CDATA[@version 2.0.14]]></add>
+		</operation>
+		<operation error="ignore">
+			<search position="replace"><![CDATA[	$message = preg_replace_callback('~\[nobbc\](.+?)\[/nobbc\]~is', 'nobbc__preg_callback', $message);
+
+	// Remove empty bbc.
+	while (preg_match('~\[([^\]=\s]+)[^\]]*\]\s*\[/\1\]\s?~i', $message))
+	{
+		$message = preg_replace('~\[([^\]=\s]+)[^\]]*\]\s*\[/\1\]\s?~i', '', $message);
+	}]]></search>
+			<add><![CDATA[	$message = preg_replace_callback('~\[nobbc\](.+?)\[/nobbc\]~is', 'nobbc__preg_callback', $message) ;]]></add><!-- Insert weird space to prevent reversal -->
+		</operation>
+	</file>
+</modification>

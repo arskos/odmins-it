@@ -1,0 +1,2889 @@
+AWSTATS DATA FILE 6.95 (build 1.943)
+# If you remove this file, all statistics for date 201202 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.forum.odmins-it.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1964                
+POS_TIME 2650                
+POS_VISITOR 78039               
+POS_DAY 126625              
+POS_DOMAIN 3585                
+POS_LOGIN 3821                
+POS_ROBOT 3976                
+POS_WORMS 4635                
+POS_EMAILSENDER 4766                
+POS_EMAILRECEIVER 4909                
+POS_SESSION 126968              
+POS_SIDER 127184              
+POS_FILETYPES 5044                
+POS_OS 5279                
+POS_BROWSER 5570                
+POS_SCREENSIZE 7173                
+POS_UNKNOWNREFERER 7247                
+POS_UNKNOWNREFERERBROWSER 8465                
+POS_ORIGIN 8600                
+POS_SEREFERRALS 8751                
+POS_PAGEREFS 8948                
+POS_SEARCHWORDS 12215               
+POS_KEYWORDS 53152               
+POS_MISC 2312                
+POS_ERRORS 72496               
+POS_CLUSTER 3677                
+POS_SIDER_404 72631               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20120301000040 4478 1101941 77223107176
+FirstTime 20120221125726
+LastTime 20120229235856
+LastUpdate 20120301000141 4478 0 4477 0 0
+TotalVisits 1878                
+TotalUnique 1174                
+MonthHostsKnown 0                   
+MonthHostsUnknown 1202                
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 513 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 421 888 10366087 95 110 2589656
+1 435 754 9576985 47 57 571609
+2 337 476 6933950 24 28 386156
+3 545 626 12613709 55 59 431347
+4 411 532 8516305 41 46 483827
+5 501 514 9707833 50 52 867478
+6 446 674 9493163 35 41 497814
+7 376 667 8111343 34 42 521825
+8 514 786 10545105 45 55 809246
+9 519 1325 13376717 33 59 518183
+10 576 1420 15337400 38 77 559021
+11 674 1666 15756437 43 71 414543
+12 565 1428 12405822 70 97 1180417
+13 834 2738 22669173 79 119 834890
+14 826 2414 21820294 84 127 914133
+15 841 2012 21495578 80 112 1162172
+16 782 2485 24300743 75 127 1401045
+17 699 2309 21350172 90 166 718066
+18 802 2233 21442555 68 105 1243492
+19 861 2102 22774227 77 115 1477931
+20 832 2117 22053602 85 115 1509799
+21 986 2646 24890147 58 91 587854
+22 749 1972 18522993 52 84 850618
+23 697 1879 20201453 60 91 1162619
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 15229 36663 384261793
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 14
+yandex 345 2446197 20120229144911 0
+googlebot 281 2471341 20120229235040 0
+robot 126 687135 20120229235656 0
+[\s_+:,\.\;\/\\-]bot 119 5244480 20120229231202 0
+powermarks 113 2948584 20120227230452 0
+mail\.ru 37 1653883 20120228102217 0
+no_user_agent 25 622605 20120228181630 0
+bot[\s_+:,\.\;\/\\-] 21 191013 20120229212654 0
+findlinks 4 248826 20120229083050 0
+seznambot 3 21110 20120229232613 0
+favicon 1 58319 20120226030008 0
+discovery 2 7015 20120221205030 0
+mj12bot 2 77675 20120228005512 0
+netcraft 1 0 20120228023841 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+css 2170 43314316 0 0
+png 6141 34686072 0 0
+php 12405 170401758 0 0
+cur 629 198534 0 0
+html 2194 57158665 0 0
+js 5260 70561399 0 0
+jpg 3 1007 0 0
+Unknown 1 13880 0 0
+gif 7860 7926162 0 0
+END_FILETYPES
+
+# OS ID - Hits
+BEGIN_OS 21
+linuxsuse 30
+linuxandroid 213
+winlong 917
+winxp 13602
+win2000 1029
+winvista 37
+winunknown 219
+win95 348
+j2me 262
+wince 134
+win2003 876
+linuxdebian 84
+winnt 540
+win98 68
+linuxubuntu 342
+linux 7055
+macosx 122
+winme 199
+win16 71
+Unknown 694
+win2008 9821
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 94
+firefox3.6.24 221
+msie6.0 4104
+chrome16.0.912.76 80
+chrome12.0.742.100 82
+firefox3.6 36
+firefox10.0 819
+firefox3.0.1 1
+firefox4.0 33
+msie4.01 75
+safari5.0 84
+safari5.0.6 11
+chrome13.0.782.218 51
+msie8.0 856
+opera7.60 130
+firefox6.0.1 36
+msie7.0 1148
+chrome17.0.963.46 299
+firefox9.0.1 413
+opera9.64 36
+firefox3.6.27 73
+chrome19.0.1041.0 38
+opera7.11 120
+firefox3.0 13
+firefox13.0 59
+opera9.01 67
+firefox10.0.1 543
+firefox7.0.1 80
+netscape0.6 125
+chrome5.0.375.86 56
+firefox3.5.5 58
+mozilla 1058
+chrome16.0.912.77 106
+netscape5.0 69
+firefox3.6.3 72
+chrome18.0.1025.39 41
+chrome15.0.874.122 37
+firefox8.0.1 313
+firefox10.0.2 3489
+chrome15.0.874.106 104
+firefox5.0 72
+firefox3.0.7 1
+firefox4.0.1 323
+android 213
+firefox3.6.6 30
+dillo 1
+firefox8.0 76
+firefox9.0 30
+opera9.00 148
+msie3.02 93
+firefox3.5.3 38
+opera9.80 9940
+chrome15.0.874.121 153
+netscape4.76 73
+firefox6.0.2 36
+netscape0.91 94
+chrome17.0.919.0 75
+firefox3.5.8 56
+msie2.0 151
+chrome10.0.648.204 45
+chrome6.0.472.63 88
+msie5.0 136
+msie9.0 655
+chrome16.0.912.63 168
+opera7.54 61
+chrome19.0.1037.0 42
+Unknown 239
+firefox11.0 114
+chrome8.0.552.224 42
+chrome18.0.1015.0 38
+chrome17.0.963.56 6329
+chrome6.0.475.1 39
+firefox3.5.1 82
+firefox3.6.25 36
+opera8.00 100
+chrome12.0.742 151
+chrome17.0.1000.0 53
+firefox3.6.16 3
+opera8.01 100
+msie5.5 548
+konqueror4.4 58
+chrome12.0.742.122 37
+chrome7.0.520.1 48
+netscape4.79 100
+chrome18.0.966.0 35
+safari4.0 18
+firefox1.0.7 7
+chrome16.0.912.75 255
+msie10.0 37
+firefox5.0.1 35
+opera9.60 37
+safari5.1 36
+firefox3.6.12 75
+chrome16.0.950.0 38
+firefox3.6.8 139
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 15
+Opera/9.80_(S60;_SymbOS;_Opera_Mobi/SYB-1111151947;_U;_ru)_Presto/2.9.201_Version/11.50 20120223154233
+Opera/9.80_(Series_60;_Opera_Mini/6.5.27309/27.1227;_U;_ru)_Presto/2.8.119_Version/11.10 20120222200256
+Opera/9.80_(Series_60;_Opera_Mini/6.1.25570/27.1210;_U;_ru)_Presto/2.8.119_Version/11.10 20120221220213
+Opera/9.80_(Android;_Opera_Mini/5.1.21126/27.1245;_U;_ru)_Presto/2.8.119_Version/11.10 20120224170003
+xpymep.exe 20120229233424
+Opera/9.80_(Android;_Opera_Mini/6.5.27452/27.1227;_U;_ru)_Presto/2.8.119_Version/11.10 20120223162744
+Mozilla/5.0_(compatible;_Konqueror/4.4)_KHTML/4.4.5_(like_Gecko) 20120222132034
+Opera/9.80_(Series_60;_Opera_Mini/6.5.27309/27.1251;_U;_ru)_Presto/2.8.119_Version/11.10 20120226233741
+Opera/9.80_(Series_60;_Opera_Mini/6.5.27324/27.1251;_U;_ru)_Presto/2.8.119_Version/11.10 20120225184830
+Mozilla/4.0_(compatible;) 20120223195010
+Mozilla/2.0_(Compatible;_SIS_1.2;_IIgs) 20120229121231
+Mozilla/4.0_(compatible;_Synapse) 20120228231330
+Opera/9.80_(Android;_Opera_Mini/6.5.27452/27.1251;_U;_ru)_Presto/2.8.119_Version/11.10 20120226013636
+Dillo/0.6.4 20120229171230
+gvfs/1.10.1 20120224192911
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+gvfs/1.10.1 20120224192911
+xpymep.exe 20120229233424
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 895 1117
+From1 0 0
+From2 439 439
+From3 525 556
+From4 13370 34551
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+google 198 198
+search 1 1
+rambler 4 4
+yandex 236 236
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 76
+http://www.franczyza.pro 248 248
+http://yandex.ua/yandsearch 18 18
+http://orderviagra-online.com 17 17
+http://www.mytubefor.eu 14 14
+http://cepopope.posterous.com 12 12
+http://onlinepharmacy-order.com 9 9
+http://uistone.ru 8 8
+http://odmins-it.ru 8 8
+http://uristportal.ru 8 8
+http://yandex.by/yandsearch 8 8
+http://slax.org.ru/links.html 5 5
+http://www.seoforum.ru 1 1
+http://www.polo-ralphlaurenpascher.biz 3 3
+http://slax.org.ru/forum/index.php 2 2
+http://dorama.su 5 5
+http://uristportal.ru 2 2
+http://regnew.ru 1 1
+http://www.general-mechanics.ru/stati/istorii-nashich-klientov 1 1
+http://webcache.googleusercontent.com/search 3 34
+http://cable-rzn.ru 7 7
+http://sarbinowo-letni-dworek.com 1 1
+http://woman.bezdoz.ru/index/kak_prigotovit_kuricu_v_aehrogrile/0-32 5 5
+http://odmins-it.ru 1 1
+http://myltivarka.ru 2 2
+http://vedlozero.ru 2 2
+http://mielno.mail.pl 1 1
+http://smartorange.com.ua/blog/raznoe/11-mifov-o-neobchodimosti-sozdaniya-sayta 5 5
+http://bezdoz.ru/publ/skachat/5_platev_s_vykrojkami_manequim/14-1-0-335 5 5
+http://www.cracktheinterview.net/profile.php 1 1
+http://ajc.su/mobilnye-os/android-mobilnye-os/preparirovanie-android-ili-poluchaem-na-planshete-polnocennyj-linux/ 4 4
+http://images.yandex.ua/yandsearch 1 1
+http://xenopses.ru/prodam_honda_dio_honda_takt_honda_lid.html 5 5
+http://webalta.ru/search 1 1
+http://sergeevs.eu 2 2
+http://21099.ru/tuning/15-sistemy-4-x-drosselnogo-vpuska.html 5 5
+http://fifa-2013.ru 3 3
+http://CREDITCARDDEBTHELP.US 1 1
+http://www.schoolbuild.ru 3 3
+http://gosciniecmagnat.pl/wesela-zamosc.html 1 1
+http://www.2nt.ru 2 2
+http://informportal.org/dance/ 4 4
+http://serialz.com.ua 3 3
+http://yeyisize.suga.com.ar 1 1
+http://remurem.ru/tsveta_v_inter_ere/zheltiy_tsvet_v_inter_ere 4 4
+http://justcauseit.com/blogs/onlinecashadvance/about-advantages-and-disadvantages-cash-advance-loans 1 1
+http://0027.ru 3 3
+http://rusbyte.ru 1 1
+http://odmins-it.ru/logs/ 3 3
+http://balabukha.com 5 5
+http://online-tnt.com 5 5
+http://www.audiobureau.com 2 2
+http://www.hiwaar.org/vb/register.php 1 1
+http://www.allofftopic.com/profile.php 1 1
+http://mielno-noclegi.mil.pl 1 1
+http://8gamers.ru 3 3
+http://web2list.com/site/www.all-drugs-pharmacy.com 1 1
+http://forum.ru-board.com/topic.cgi 1 1
+http://planet-best.ru 3 3
+http://fileburg.ru/load/50 5 5
+http://go.mail.ru/search 1 1
+http://www.sax-sex.com/sax_sex_saxophone.php 5 5
+http://vk.com/away.php 1 1
+http://www.artwhite.ru 4 4
+http://yandex.kz/yandsearch 7 7
+http://mielno-admiral.com 2 2
+http://wpolscemamymocne-seo.biz.pl/sport,i,turystyka/mielno,s,1790/ 1 1
+http://odmins-it.ru/page/dossier/ 2 2
+http://moregirls.org 2 2
+http://st-arenda.com 2 2
+http://www.kabuls.com/stories/1415258/debtconsolidationloancanHow_Do_You_Apply_Online_For_A_Debt_Consolida.html 1 1
+http://medivin.ru/default_027.html 5 5
+http://kcj-imp.com/shop/spectehnika/zemlerojnaya_tehnika/mini-pogruzchiki_s_bortovym_povorotom/bobcat_s185_2003g_n1/ 5 5
+http://bull-board.ru/zapchasti_dlya_samoletov_idti.html 5 5
+http://www.airjordanchaussurefr.com 1 1
+http://www.gaycountry.ru/80-milonov-vitaliy-valentinovich.html 1 1
+http://odmins-it.ru/book/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 312
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+gpt 16
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b4%d0%bb%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d0%b0 7
+gpt+%f0%e0%e7%e4%e5%eb 6
+%f3%e4%e0%eb%e5%ed%ed%fb%e9+%f0%e5%e5%f1%f2%f0 6
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 6
+%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d0%b8%d0%b5+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0 5
+%d0%92%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b1%d0%b0%d0%b7%d1%8b+%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85+postgresql 5
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d1%8c%d1%81%d1%8f+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d0%be%d0%bc+%d0%bd%d0%b0+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 5
+%f0%e0%e7%e4%e5%eb+%e7%e0%f9%e8%f9%e5%ed%ed%fb%e9+gpt 5
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80+xp 5
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+fglrx+ubuntu 1
+%d0%ba%d0%b0%d0%ba+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd+%d1%81+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+freebsd+vs+debian+gateway 1
+%d0%be%d1%82%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%ba%d0%b8+%d0%bf%d0%b0%d0%bb%d1%86%d0%b5%d0%b2+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b0%d1%87%d0%bf%d0%b0%d0%b4 1
+%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c+%d0%b1%d0%b0%d0%bd%d0%bd%d0%b5%d1%80+%d0%b2+smf 1
+plop+boot+manager 1
+%d0%b2%d1%8b%d0%bf%d0%b8%d0%bb%d0%b8%d1%82%d1%8c+%d0%bb%d0%be%d0%b1%d0%b7%d0%b8%d0%ba%d0%be%d0%bc+%d1%81%d0%ba%d0%b2%d0%be%d1%80%d0%b5%d1%87%d0%bd%d0%b8%d0%ba 1
+%d1%80%d0%b0%d0%b4%d0%b8%d0%be+%d0%bc%d0%be%d0%bd%d1%82%d0%b5+%d0%ba%d0%b0%d1%80%d0%bb%d0%be+mplayer 1
+ocs+ng 1
+%d0%bf%d1%80%d0%b5%d0%b2%d1%80%d0%b0%d1%89%d0%b5%d0%bd%d0%b8%d0%b5+ubuntu+%d0%b2+macos-x 1
+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b3%d0%be+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0 1
+x+session+warning+unable+to+write+to+%2ftmp%3b+x+session+may+exit+with+an+error 1
+%d0%b4%d0%be%d0%bc%d0%b0%d1%88%d0%bd%d0%b5%d0%b5+%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b5+%d0%bc%d0%b5%d1%81%d1%82%d0%be 2
+slax+for+virtualbox 1
+debian+%d1%84%d0%b0%d0%b9%d0%bb%d0%be%d0%b2%d1%8b%d0%b9+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80 2
+rfr+eghfdkznm+aimp+xthtp+k.nep 1
+jabber+talisman 1
+freebsd+%d0%b8%d0%bb%d0%b8+debian 2
+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+pg_clog 1
+%d0%ba%d0%b0%d0%ba+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c+postfixadmin+dovecot+mysql+apache+freebsd8 4
+%d0%b4%d0%bb%d1%8f+%d1%87%d0%b5%d0%b3%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%bd%d0%b0+%d1%82%d1%80%d0%b8%d0%ba%d0%be%d0%bb%d0%be%d1%80 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd 2
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82+%d0%ba+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%83+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d0%b8%d1%82%d1%83%d0%b7 1
+there+is+a+problem+whith+the+configuration+server.+/usr/lib/libgconf2-4/gconf-sanity-chek-2+exited+with+status+256 1
+smfpd+process 2
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80+%d0%bf%d0%be+%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b9+%d1%81%d0%b5%d1%82%d0%b8 1
+%d0%98%d0%a1%d0%a2%d0%9e%d0%a0%d0%98%d0%98+%d0%a3%d0%a2%d0%9e%d0%9f%d0%9b%d0%95%d0%9d%d0%98%d0%af 1
+%d0%b3%d0%be%d1%82%d0%be%d0%b2%d1%8b%d0%b9+%d1%84%d0%b0%d0%b9%d0%bb+iptables+debian 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%b0+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%bf%d0%ba+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%bd8 1
+%d0%b1%d0%bb%d1%8e%d1%82%d0%be%d0%b7+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0+%d0%b4%d0%bb%d1%8f+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0 1
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%bc%d0%b5%d1%81%d1%82%d0%b8%d1%82%d1%8c+%d1%84%d0%b0%d0%b9%d0%bb+%d0%be%d1%82%d0%b2%d0%b5%d1%82%d0%be%d0%b2+%d0%b2+initrd 1
+conky+pig 1
+%d0%ba%d0%b0%d0%ba+%d0%b2%d1%8b%d0%b7%d0%b2%d0%b0%d1%82%d1%8c+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0+%d0%bd%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b9+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%b5 1
+compiz+%d1%81%d0%bb%d0%be%d0%b9+%d0%b2%d0%b8%d0%b4%d0%b6%d0%b5%d1%82%d0%be%d0%b2 1
+ejabberd+mysql 1
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%b5%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c+ubuntu+%d0%b2+mac+os 1
+glpi+ocsng 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80+%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8f 1
+ejabberd+register+user+moderator 1
+%d0%ba%d0%be%d0%b4+%d1%80%d0%b0%d0%b7%d0%b1%d0%bb%d0%be%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b8+%d0%b4%d0%bb%d1%8f+%d0%bc%d0%be%d0%b4%d0%b5%d0%bc%d0%b0+huawei+e150 1
+%e3%e4%e5+%e2+%ea%ee%ec%ef%fc%fe%f2%e5%f0%e5+%e1%eb%fe%f2%f3%e7 3
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b4%d0%bb%d1%8f+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0 1
+windows+sockets+11003 1
+%d1%87%d1%82%d0%be+%d1%82%d0%b0%d0%ba%d0%be%d0%b5+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd+gpt 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b2+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 1
+%d0%bd%d0%b0+linux+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82%d0%be%d0%bc+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0 1
+5800+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b2%d0%b8%d0%bd%d0%b0%d0%bc%d0%bf+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%f0%e0%fc%ee%f2%e0+%f1+%f3%e4%e0%eb%e5%ed%ed%fb%ec+%f0%e5%e5%f1%f2%f0%ee%ec 1
+insserv+starting+smfpd+depends+on+stop-bootlogd+and+therefore+on+system+facility+%60%24all+which+can+not+be+true! 1
+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%bd%d0%b5%d0%ba%d1%82+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bd%d0%b5+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%b0%d0%b2%d0%bb%d0%b8%d0%b2%d0%b0%d0%b5%d1%82%d1%81%d1%8f 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be+%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c+%d1%82%d0%b8%d0%bf+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba%d0%b0+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%8b 2
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%81+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+bluetouth 1
+error+11003 1
+%e1%eb%fe%f2%f3%e7+%e4%eb%ff+%ea%ee%ec%ef%e0 3
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bf%d0%ba+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 2
+%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0+%d0%b4%d0%bb%d1%8f+%d0%b4%d0%b8%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d0%be%d0%b3%d0%be+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%91%d0%bb%d1%8e%d1%82%d1%83%d0%b7. 1
+cmd+-+%d0%b2%d0%b5%d1%80%d0%bd%d1%83%d1%82%d1%8c+%d0%ba%d0%be%d0%b4+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8+dsquery 1
+%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%8b+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%be%d0%b3%d0%be+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0 1
+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b3%d0%be+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0+hkey_current_user 1
+ocs-ng 1
+%d1%84%d0%b0%d0%b9%d1%80%d0%b2%d0%be%d0%bb%d0%bb+%d0%bd%d0%b0+openmediavault 1
+k.nep+ecnfyjdkty+yj+yt+jnj+hf%3bftnz 1
+%d0%bd%d0%b5+%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%b2%d0%b0%d0%b5%d1%82%d1%81%d1%8f+%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0+%d1%81+%d1%84%d0%bb%d0%b5%d1%88%d0%ba%d0%b8 1
+%d1%83%d0%bf%d1%80%d0%be%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bc+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d1%83 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b8%d1%82%d1%8c+%d0%b4%d1%80%d0%b0%d0%b9%d0%b2%d0%b5%d1%80%d0%b0+ati+ubuntu 2
+postgresql+8.3+%d0%b3%d0%b4%d0%b5+%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%81%d1%8f+%d0%b1%d0%b0%d0%b7%d0%b0 1
+%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5%d0%bc+%d0%ba%d0%be%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+acronis+disk+director+grub2 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bc+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%be%d0%b9+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%bd%d0%be%d0%ba%d0%b8%d0%b0+5230 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf+%d0%ba+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d1%83 2
+hp6730b+%d0%be%d1%82%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%be%d0%ba+%d0%bf%d0%b0%d0%bb%d1%8c%d1%86%d0%b0+%d0%bd%d0%b0+%d1%82%d0%b0%d1%87%d0%bf%d0%b0%d0%b4%d0%b5 1
+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%ba%d0%b0+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d0%b5%d0%bc%d0%b0%d1%8f+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0 1
+%d0%b8%d0%ba%d0%be%d0%bd%d0%ba%d0%b8+mac+%d0%b4%d0%bb%d1%8f+ubuntu 1
+akadostream 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%81+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+bluetooth 1
+find+ip 4
+%ea%e8%f2%e0%e9%f4%ee%ed%fb 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 4
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+postfix+mysql+php 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+proftpd+mod_delay+%d1%81%d0%ba%d0%be%d1%80%d0%be%d1%81%d1%82%d1%8c 1
+%d0%ba%d0%b0%d0%ba+%d0%bd%d0%b0+%d0%ba%d0%be%d0%bf%d1%8c%d1%8e%d1%82%d0%be%d1%80%d0%b5+%d0%b2+%d0%ba%d0%bb%d1%83%d1%87%d0%b8%d1%82%d1%8c+%d0%b1%d1%8c%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%ba%d0%b0%d0%ba+%d0%bd%d0%b0%d0%b9%d1%82%d0%b8+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%bd%d0%b0+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 1
+%d0%9c%d0%be%d0%b6%d0%bd%d0%be+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d1%81+%d0%bf%d0%be%d0%b4%d1%83%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%81%d1%8f+%d0%ba+%d0%ba%d0%be%d0%bf%d1%83+%d0%b8+%d1%81%d0%b8%d0%b4%d0%b5%d1%82%d1%8c+%d0%b2+%d0%bd%d0%b5%d1%82%d0%b5 1
+asus+k50d+%d0%b1%d0%b8%d0%be%d1%81+%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0+%d1%81+%d1%84%d0%bb%d0%b5%d1%88%d0%ba%d0%b8 1
+plpbt.bin 2
+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%ba%d0%b0+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5%d0%bc 1
+%e4%f0%e0%e9%e2%e5%f0+ati+%e4%eb%ff+ubuntu+10.04 3
+virtualbox+bridge+debian 1
+%d0%bf%d1%80%d0%b5%d0%b2%d1%80%d0%b0%d1%89%d0%b5%d0%bd%d0%b8%d0%b5+ubuntu+%d0%b2+mac+os-x 1
+hdb700touch+%d0%b2%d0%b0%d1%80%d0%b8%d0%b0%d0%bd%d1%82%d1%8b+%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%be%d0%ba 1
+%d0%9e%d0%a1+fedora+%d0%bc%d0%be%d0%b6%d0%b5%d1%82+%d0%b2%d1%8b%d1%85%d0%be%d0%b4%d0%b8%d1%82%d1%8c+%d0%b2+%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82 1
+%d0%bf%d1%80%d0%be%d0%b1%d0%bb%d0%b5%d0%bc%d0%b0+%d1%81+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%be%d0%bc+%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8+usr%2flib%2flibgconfz-4%2fgconf-sanity-check+z+%d0%b7%d0%b0%d0%b2%d0%b5%d1%80%d1%88%d0%b8%d0%bb%d0%be%d1%81%d1%8c+%d1%81+%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5%d0%bc+35 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd 1
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+%d0%bc%d0%be%d1%81%d1%82%d0%b0+%d0%bd%d0%b0+%d1%85%d0%be%d1%81%d1%82%d0%be%d0%b2%d0%be%d0%b9+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%b5 1
+smb+udp+debian 1
+ubuntu+10.04+ati+driver+install 1
+starting+depends+on+rmnologin+and+therefore+on+system+facility+%60%24all+which+can+not+be+true 1
+%d1%80%d0%b5%d0%b7%d0%b8%d0%bd%d0%be%d0%b2%d1%8b%d0%b5+%d1%82%d0%b0%d0%b1%d0%bb%d0%b8%d1%86%d1%8b 2
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+bluetooth+java 1
+%d0%b3%d0%b4%d0%b5+postgresql+%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82+%d0%b1%d0%b0%d0%b7%d1%8b 2
+%d0%b7%d0%b2%d0%b5%d1%80%d0%b5%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d0%b8 1
+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0+%d0%bd%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%bc+%d0%bf%d0%ba 1
+virtualbox+debian+%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9+%d0%bc%d0%be%d1%81%d1%82 1
+vista+%d1%81%d0%b5%d1%82%d1%8c+%d0%bd%d0%b5+%d1%83%d0%b4%d0%b0%d0%bb%d0%be%d1%81%d1%8c+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d1%8c+%d0%b4%d0%be%d1%87%d0%b5%d1%80%d0%bd%d1%8e%d1%8e+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%83 1
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c%d1%81%d1%8f+%d0%ba+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%83+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+usr+lib+libgconf2-4+gconf-sanity-check-2+exited+with+status+256 3
+%d0%ba%d0%b0%d0%ba+%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d1%8c+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 1
+%d1%87%d0%b5%d0%bc+%d0%bf%d0%b0%d1%85%d0%bd%d0%b5%d1%82+%d0%b3%d0%be%d1%80%d1%8f%d1%89%d0%b0%d1%8f+%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d0%ba%d0%b0%3f 1
+1%d0%a1+winsock+11003 1
+regedit+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be 1
+http+%2f%2f89.20.132.26+8000 1
+%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d1%8c+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80+%d0%bd%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%bc 1
+apt-get+%d0%ba%d1%80%d0%b8%d0%b2%d1%8b%d0%b5+%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d1%8b 1
+conky+rp5.ru 1
+openmediavault 1
+htlfrnjh+elfk%60yyjuj+httcnhf 1
+%d0%bd%d0%b5+%d1%83%d0%b4%d0%b0%d0%bb%d0%be%d1%81%d1%8c+%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%82%d1%8c+%d0%bf%d0%b0%d1%80%d0%b0%d0%bc%d0%b5%d1%82%d1%80+util-linux+--configure 1
+%d0%ba%d0%b0%d0%ba+%d0%bd%d0%b0+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5+%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d1%82%d0%b0%d0%bd%d0%ba+%d1%88%d0%bf%d0%b8%d0%be%d0%bd+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 4
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 2
+%d0%b3%d0%b4%d0%b5+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b2+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 3
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d1%81%d1%83 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%bf%d0%bb%d0%b0%d0%bd%d1%88%d0%b5%d1%82+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 2
+modding+sony+ericsson 1
+%d1%80%d0%b0%d0%b7%d0%b1%d0%bb%d0%be%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c+heawei+e150 1
+freebsd+vs+debian 1
+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0+%d1%81+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%bc+windows+xp 1
+%d0%bf%d0%b0%d1%82%d1%87+%d0%b1%d0%b0%d1%80%d0%bc%d0%b8%d0%bd%d0%b0 1
+linux+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+%d0%b1%d0%b5%d1%81%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d0%bd%d0%be%d0%b9+%d1%81%d0%b5%d1%82%d0%b8+%d0%b2+%d0%ba%d0%be%d0%bd%d1%81%d0%be%d0%bb%d0%b8 1
+insserv+starting+smfpd+depends+on+stop-bootlogd 1
+%d0%be%d1%82%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bd%d0%be%d1%83%d1%82%d0%b1%d1%83%d0%ba%d0%b0+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%ba770 1
+virtualbox+%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9+%d0%bc%d0%be%d1%81%d1%82+pppoe 1
+%d1%84%d0%b0%d0%b9%d0%bb%d0%be%d0%b2%d1%8b%d0%b9+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80+%d0%bd%d0%b0+debian 1
+virtualbox+%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82+linux+%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9+%d0%bc%d0%be%d1%81%d1%82 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d1%8b+%d1%87%d1%82%d0%be+%d0%b1%d1%8b+%d0%bb%d0%b0%d0%b7%d0%b8%d1%82%d1%8c+%d1%81+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0+%d0%b2+%d0%ba%d0%be%d0%bc%d0%bf%d0%b5+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%ba%d0%b0%d0%ba+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd 4
+digest-md5+dovecot+postfixadmin 1
+%d0%ba%d0%b0%d0%ba+%d1%83%d0%b4%d0%b0%d0%bb%d0%b8%d1%82%d1%8c+vlc 1
+nano+/etc/dovecot/dovecot-mysql.conf 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%87%d0%b8%d1%82%d1%8c+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80+%d0%b8%d0%b7+%d0%bf%d0%be%d0%b4+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d0%b0 1
+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0+%d1%81+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%bc+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%bc 1
+%d0%a3%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 1
+%d1%80%d0%b0%d0%b7%d0%bb%d0%be%d1%87%d0%b8%d1%82%d1%8c+%d0%bc%d0%be%d0%b4%d0%b5%d0%bc+huawei+e150 1
+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b1%d0%b0%d0%b7%d1%8b+%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85+postgre 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%81+%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c%d1%8e+lg+kp500 1
+%d0%b2%d0%b5%d0%b1+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80+%d0%bd%d0%b0+fedora 1
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+%d1%87%d0%b0%d1%81%d1%82%d0%be%d1%82%d1%8b+%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d1%80%d0%b0 1
+%d0%9d%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d1%8c+windows+sockets 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bd%d0%be%d1%83%d1%82%d0%b1%d1%83%d0%ba%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%b2%d0%b7%d0%bb%d0%be%d0%bc+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+shell+scripting+read 1
+%d0%b4%d0%be%d0%ba%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5+%d1%81%d0%b5%d1%82%d0%b8 1
+gpt+windows+xp 1
+%d0%ba%d0%b0%d0%ba+%d1%83%d0%b4%d0%b0%d0%bb%d0%b8%d1%82%d1%8c+%d0%b4%d1%80%d0%b0%d0%b9%d0%b2%d0%b5%d1%80%d0%b0+ati+ubuntu+10.04 1
+ping+ctnb+jn+1+-+255 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0+%d0%b4%d0%bb%d1%8f+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0 1
+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 1
+%d0%bf%d1%80%d0%be%d1%81%d0%bc%d0%be%d1%82%d1%80+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82 1
+%d0%ba%d0%b0%d0%ba+%d0%bd%d0%b0%d0%b9%d1%82%d0%b8+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b2+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 2
+linux+find+%d0%ba%d0%be%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%82%d0%be%d1%80 1
+kantrol+kampyutera+cherez+blyutut 1
+fedora+%d0%bd%d0%b0+flaytouch 1
+%d0%b4%d1%80%d0%b0%d0%b9%d0%b2%d0%b5%d1%80+ati+%d0%b4%d0%bb%d1%8f+ubuntu+10.04 1
+interneta+192.168.0.100 1
+%d0%b3%d0%b4%d0%b5+%d1%85%d1%80%d0%b0%d0%bd%d1%8f%d1%82%d1%81%d1%8f+%d0%b1%d0%b0%d0%b7%d1%8b+postgresql 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%b0%d1%8f+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0+%d1%81+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%bc 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+bluetooth 1
+%d0%a4%d0%b0%d0%b9%d0%bb%d1%8b+sim+sid 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d1%83+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b9+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d1%8b 1
+%d0%ba%d0%be%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%82%d0%be%d1%80+%d0%ba%d0%be%d0%bc%d0%bc%d0%b0%d0%bd%d0%b4%d1%8b+find 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 1
+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf+%d0%b2+%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80+%d1%81+%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c%d1%8e+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%ba%d0%be%d0%b4%d1%8b+%d1%80%d0%b0%d0%b7%d0%b1%d0%bb%d0%be%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b8+%d0%bc%d0%be%d0%b4%d0%b5%d0%bc%d0%b0+e150 1
+%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d1%81%d1%80%d0%b0%d0%b2%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b4%d0%b8%d1%81%d1%82%d1%80%d0%b8%d0%b1%d1%83%d1%82%d0%b8%d0%b2%d0%be%d0%b2+linux 1
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd+gpt+windows+xp 2
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+irda 1
+%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%bd%d0%b0+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 1
+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0+%d0%bf%d1%80%d0%b0%d0%b2+%d0%bd%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%be%d0%b9+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%b5 1
+%d0%b1%d0%b5%d0%bb%d1%82%d0%b5%d0%bb%d0%b5%d0%ba%d0%be%d0%bc+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%bd%d0%b5%d0%ba%d1%82+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bd%d0%b5+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%b0%d0%b2%d0%bb%d0%b8%d0%b2%d0%b0%d0%b5%d1%82%d1%81%d1%8f 1
+%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0+%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%bb%d0%b0+%d0%bd%d0%b0+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba%d0%b8 1
+%d1%81%d0%be%d0%ba%d0%b5%d1%82%d1%8b+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b0+11003 1
+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f+%d0%ba%d1%80%d1%83%d0%b6%d0%ba%d0%b0 1
+%d0%9a%d0%90%d0%9a+%d0%9f%d0%9e%d0%9b%d0%ac%d0%97%d0%9e%d0%92%d0%90%d0%a2%d0%ac%d0%a1%d0%af+%d0%91%d0%9b%d0%ae%d0%a2%d0%a3%d0%97%d0%9e%d0%9c+%d0%9d%d0%90+%d0%9a%d0%9e%d0%9c%d0%9f%d0%ac%d0%ae%d0%a2%d0%95%d0%a0%d0%95 1
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80+%d0%ba+%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b9+%d1%81%d0%b5%d1%82%d0%b8 1
+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80+web+%d0%b4%d0%bb%d1%8f+%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b9+%d1%81%d0%b5%d1%82%d0%b8+linux 1
+%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c+%d0%ba%d1%82%d0%be+%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d0%bb+%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8e+%d0%b2+ithappens 1
+%d0%bf%d0%be%d1%81%d1%82+3%d0%b4%d0%b5%d0%bd%d1%8c 1
+%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf+%d0%ba+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d1%83 1
+%ea%e0%ea+%ef%ee%e4%ed%ff%f2%fc+%e2%e5%e1-%f1%e5%f0%e2%e5%f0+%ed%e0+%ed%ee%f3%f2%e1%f3%ea%e5 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80+%d0%ba+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d1%83+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d0%b8%d1%82%d1%83%d0%b7 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d0%be%d0%bc 1
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d1%91%d0%bd+gpt+rfr+djccnfyjdbnm 2
+%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+smfpd 1
+%d0%bf%d0%b0%d1%82%d1%87+%d0%91%d0%b0%d1%80%d0%bc%d0%b8%d0%bd%d0%b0 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0+%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d0%be%d0%b9+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%83%d1%82%d1%83%d0%b7 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%81+android+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+openmediavault+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0+%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%be%d1%80%d0%b8%d0%b9 1
+%ea%e0%ea+ecnfyjdbnm+slax+%ed%e0+%e6%e5%f1%f2%ea%e8%e9+%e4%e8%f1%ea 3
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%bd%d0%b5+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b0%d0%b5%d1%82%d1%81%d1%8f+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%ba+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%83 1
+%d0%ba%d0%b0%d0%ba+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c+%5ctpa%5cpreset%5cdefault%5cjava 1
+%d0%ba%d0%b0%d0%ba+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d1%8c+web-%d0%b1%d1%80%d0%b0%d1%83%d0%b7%d0%b5%d1%80+%d0%bd%d0%b0+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 1
+%d0%b6%d0%b5%d0%bd%d1%81%d0%ba%d0%be%d0%b5+%d1%82%d0%b5%d0%bb%d0%be+%d0%bb%d0%b5%d1%82%d0%be 1
+%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80+%d0%b4%d0%bb%d1%8f+ubuntu+%d0%ba%d0%b0%d0%ba+mac 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 2
+%d1%84%d0%b5%d1%88+%d0%bf%d0%be%d0%b4%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81+%d0%bd%d0%be%d0%b2%d1%8b%d0%b9+%d1%81%d1%86%d0%b5%d0%bd%d0%b0%d1%80%d0%b8%d0%b9+pre-installation+%d0%b2%d0%be%d0%b7%d0%b2%d1%80%d0%b0%d1%82%d0%b8%d0%bb+%d0%ba%d0%be%d0%b4+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8+1 2
+squeezy+%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%b0%d1%80%d0%b8%d0%b9+main 1
+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b1%d0%b0%d0%b7%d1%8b+%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85+postgresql 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%ba%d0%be%d0%bc%d1%82%d1%8e%d1%82%d0%be%d1%80+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd 1
+postgres+%d1%84%d0%b0%d0%b9%d0%bb%d1%8b+%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85 1
+freebsd+9+vs+debian 1
+gconf-sanity-check-2+status+256 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d1%81%d0%b0%d0%bc%d1%81%d1%83%d0%bd%d0%b3+%d0%b4%d1%83%d0%be%d1%81+780+%d0%ba+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%83+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+gpt+%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c 1
+slax+%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0+%d1%81+hdd 1
+avast+from+root+debian 1
+9797+%d0%bb%d0%b5%d0%b3%d0%be+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bf%d0%be+%d0%b2%d0%bb%d0%b1%d1%82%d1%83%d0%b7 1
+%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d0%be%d0%b2%d1%8b%d0%b5+%d0%bf%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b8+active+directory 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+bluetooth 2
+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%b0%d1%8f+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0+%d1%81+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%bc 1
+%d0%ba%d0%b0%d0%ba+%d0%bf%d1%80%d0%be%d1%81%d0%bc%d0%be%d1%82%d1%80%d0%b5%d1%82%d1%8c+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%bb%d0%b2%d1%81 1
+%d0%b2%d1%8b%d1%82%d0%b0%d1%89%d0%b8%d1%82%d1%8c+%d0%b8%d0%b7+%d0%b1%d0%be%d0%bb%d0%be%d1%82%d0%b0+%d1%82%d1%80%d0%b0%d0%ba%d1%82%d0%be%d1%80 1
+debian+wheezy+postfix+postfixadmin+dovecot 1
+eghfdktybt+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d1%81 1
+%d1%82%d0%be%d0%bf%d0%be%d1%80+%d0%b2+%d1%81%d0%bf%d0%b8%d0%bd%d0%b5+%d0%ba%d0%b0%d1%80%d1%82%d0%b8%d0%bd%d0%ba%d0%b8 1
+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b3%d0%be+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0 1
+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b3%d0%be 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd+se+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d1%83 1
+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%be%d0%b9+%d0%be%d1%81 1
+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf%d0%b0+%d0%ba+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%bc%d1%83+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d1%83 1
+restart+%d0%b4%d0%bb%d1%8f+dsl 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+nokia+5230 1
+%d0%ba%d0%b0%d0%ba+%d1%81%d0%be%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%8c+%d0%bb%d0%be%d0%b3+%d0%bf%d0%b8%d0%bd%d0%b3%d0%be%d0%b2 1
+%d1%81%d0%b5%d1%82%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%bd%d0%b8%d0%b5 1
+jcyjds+c+%d0%b2+linux 1
+%d0%91%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b4%d0%bb%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d0%b0 1
+multiboot+usb+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9+%d1%81%d0%b0%d0%b9%d1%82 1
+%d0%bf%d1%80%d0%be%d0%b3%d0%b0+%d0%bd%d0%b0+%d0%bd%d0%be%d0%ba%d0%b8%d1%8f+5130+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%be%d1%82%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0+%d0%b0%d0%b2%d0%b0%d1%81%d1%82 1
+bios+%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%ba%d0%b0+%d1%84%d0%bb%d0%b5%d1%88%d0%ba%d0%b8+%d0%ba%d0%b0%d0%ba+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%b2%d0%be%d0%b4%d0%b0+a 1
+e+fglrx+%d0%bf%d0%be%d0%b4%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd+%d1%81%d1%86%d0%b5%d0%bd%d0%b0%d1%80%d0%b8%d0%b9+post-installation+%d0%b2%d0%be%d0%b7%d0%b2%d1%80%d0%b0%d1%82%d0%b8%d0%bb+%d0%ba%d0%be%d0%b4+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8+10+e+fglrx-amdcccle+%d0%bf%d1%80%d0%be%d0%b1%d0%bb%d0%b5%d0%bc%d1%8b+%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%b8%d0%bc%d0%be%d1%81%d1%82%d0%b5%d0%b9+--+%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d1%8f%d0%b5%d0%bc+%d0%bd%d0%b5+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%bd%d0%bd%d1%8b%d0%bc 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0 1
+ipfw+%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5+%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb+drop+forward 1
+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d1%81%d0%ba%d0%be%d0%b5+%d0%ba%d0%be%d1%84%d0%b5 2
+multiboot+flash 1
+multiboot+flash+usb 1
+%d1%81%d0%ba%d0%b2%d0%be%d1%80%d0%b5%d1%87%d0%bd%d0%b8%d0%ba+%d1%87%d0%b5%d1%80%d1%82%d0%b5%d0%b6 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%bf%d0%bb%d0%b5%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b2%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+plpbt.bin+%d0%b2%d0%b8%d1%81%d0%bd%d0%b5%d1%82 2
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80%d0%b0+%d0%ba+%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b9+%d1%81%d0%b5%d1%82%d0%b8 1
+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80+windows+xp+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b0+%d1%81%d0%be%d0%b5%d0%b4%d0%b8%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f+11003 1
+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%be%d0%b3%d0%be+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0 1
+bash+%d0%b4%d0%be%d0%b1%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8f 1
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+iwconfig+debian 1
+%d0%ba%d0%b0%d0%ba+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd+%d0%ba+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%83 1
+%d0%ba%d1%80%d1%83%d0%b6%d0%ba%d0%b0+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd+%d0%bf%d0%be+%d0%b2%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%ba%d0%b0%d0%ba+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%bd%d0%be%d0%ba%d0%b8%d1%8f+%d0%bd8+%d0%bf%d0%be+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b4%d0%bb%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0 1
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd+gpt 1
+%d0%b2+linux+%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%ba%d0%b0+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba%d0%b0+mysql+php 1
+%d0%b0%d0%b2%d1%82%d0%be%d1%80+%d1%82%d0%b5%d0%bc%d1%8b+smf 1
+%d0%a0%d0%90%d0%97%d0%94%d0%95%d0%9b+%d0%97%d0%90%d0%a9%d0%95%d0%a9%d0%81%d0%9d+gpt 1
+%d0%ba%d0%be%d1%80%d0%bf%d1%83%d1%81+%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8f 2
+%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d1%8c+137+%d0%bf%d0%be%d1%80%d1%82+debian 1
+debian+avast 1
+%d1%81%d0%be%d1%80%d1%81+%d0%bb%d0%b8%d1%81%d1%82+%d0%b4%d0%bb%d1%8f+%d1%81%d0%ba%d0%b2%d0%b8%d0%b7%d0%b8 1
+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%8b+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 1
+%d1%82%d0%b0%d1%87%d0%bf%d0%b0%d0%b4+%d0%be%d1%82%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%ba%d0%b8+%d0%bf%d0%b0%d0%bb%d1%8c%d1%86%d0%b5%d0%b2 1
+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf+%d0%ba+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%bc%d1%83+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d1%83 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b+%d0%b4%d0%bb%d1%8f+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+gpt+windows+7 1
+%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0+%d1%81+%d1%84%d0%bb%d0%b5%d1%88%d0%ba%d0%b8+%d0%b1%d0%b5%d0%b7+%d0%b1%d0%b8%d0%be%d1%81 1
+rutracker+ubuntu+desktop+usb+live+cd 1
+%d0%b8%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%b5%d0%bd+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9+gpt 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc+%d0%b4%d0%bb%d1%8f+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d0%bf%d1%80%d0%b8+%d0%bf%d0%be%d0%bc%d0%be%d1%89%d0%b8+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+ext3grep+%d0%ba%d0%b0%d0%ba+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c 1
+%d0%ba%d0%b0%d0%ba+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%82%d1%8c+%d1%81+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%ba%d0%be%d0%bc%d0%bf 1
+echo+%e2%80%9cnameserver+192.168.0.1%e2%80%9d+%3e+%2fetc%2fresolv.conf 1
+there+is+a+problem+whith+the+configuration+server.+%2fusr%2flib%2flibgconf2-4%2fgconf-sanity-chek-2+exited+with+status+256 3
+%ea%e0%ea+%ef%ee%eb%fc%e7%ee%e2%e0%f2%fc%f1%ff+%e1%eb%fe%f2%f3%e7%ee%ec+%ed%e0+%ea%ee%ec%ef%fc%fe%f2%e5%f0%e5 1
+elfktyyj+httcnh 1
+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%b1%d0%b0%d0%b7%d1%8b+%d1%80%d1%83%d0%ba+postgresql 1
+%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0+%d0%b4%d0%bb%d1%8f+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+ati+fglrx+ubuntu+uninstall 1
+avast+debian 1
+fglrx+%d0%ba%d0%be%d0%b4+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8+1+ubuntu 1
+%d0%ba%d0%b0%d0%ba+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d1%81%d0%be%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc 1
+multiboot+usb+flash+drive 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7+%d0%b0%d0%bd%d0%b4%d1%80%d0%be%d0%b9%d0%b4 1
+debian+%d0%bd%d0%b5+%d1%81%d1%82%d0%b0%d1%80%d1%82%d1%83%d0%b5%d1%82+aavast 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5+%d1%82%d0%b5%d0%bb%d0%b5%d0%b2%d0%b8%d0%b7%d0%be%d1%80%d0%be%d0%bc+%d1%87%d0%b5%d1%80%d0%b5%d0%b7+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%b4%d0%be%d0%ba%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5+%d1%85%d0%b0%d1%80%d0%b0%d0%ba%d1%82%d0%b5%d1%80%d0%b8%d1%81%d1%82%d0%b8%d0%ba+%d1%81%d0%b5%d1%82%d0%b8 1
+virtualbox+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0+%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b3%d0%be+%d0%bc%d0%be%d1%81%d1%82%d0%b0+debian 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 623
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7 72
+%d1%87%d0%b5%d1%80%d0%b5%d0%b7 69
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 42
+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc 40
+%d0%ba%d0%b0%d0%ba 40
+gpt 38
+%d0%b4%d0%bb%d1%8f 24
+%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb 24
+%d0%bd%d0%b0 24
+%d0%b2 21
+%d0%b1%d0%b5%d0%b7 1
+sid 1
+%d1%84%d0%bb%d0%b5%d1%88%d0%ba%d0%b8 4
+%d0%b4%d1%80%d0%b0%d0%b9%d0%b2%d0%b5%d1%80%d0%b0 3
+vlc 1
+%d1%81%d0%be%d1%80%d1%81 1
+aimp 1
+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d1%91%d0%bd 2
+ocs 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9 17
+%d0%bd8 2
+%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%bb%d0%b0 1
+%d1%84%d0%b0%d0%b9%d0%bb 2
+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b5 15
+install 1
+%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%b8%d1%82%d1%8c 2
+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd 4
+%d1%82%d0%b0%d1%87%d0%bf%d0%b0%d0%b4 2
+ping 1
+bluetouth 1
+%ef%ee%eb%fc%e7%ee%e2%e0%f2%fc%f1%ff 1
+%d0%b1%d0%b5%d0%bb%d1%82%d0%b5%d0%bb%d0%b5%d0%ba%d0%be%d0%bc 1
+%d0%b1%d0%bb%d0%b8%d1%82%d1%83%d0%b7 2
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d0%be%d0%bc 7
+8000 1
+system 2
+%d1%84%d0%be%d1%80%d0%bc%d0%b0%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c 1
+true 1
+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%bc 4
+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0 10
+%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d0%be%d0%b2%d1%8b%d0%b5 1
+%d0%9f%d0%9e%d0%9b%d0%ac%d0%97%d0%9e%d0%92%d0%90%d0%a2%d0%ac%d0%a1%d0%af 1
+%d0%b2%d0%b8%d0%b4%d0%b6%d0%b5%d1%82%d0%be%d0%b2 1
+can 2
+%d0%b1%d0%b5%d1%81%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d0%bd%d0%be%d0%b9 1
+%d1%82%d0%b5%d0%bc%d1%8b 1
+%d0%9a%d0%9e%d0%9c%d0%9f%d0%ac%d0%ae%d0%a2%d0%95%d0%a0%d0%95 1
+pppoe 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f 10
+warning 1
+%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d0%b8%d0%b5 5
+%ef%ee%e4%ed%ff%f2%fc 1
+%d1%82%d0%b5%d0%bb%d0%be 1
+regedit 1
+a 5
+windows 8
+%d0%bc%d0%b5%d1%81%d1%82%d0%be 2
+http 1
+ctnb 1
+%d0%b8 1
+apache 4
+%d0%ba%d0%be%d0%bd%d1%81%d0%be%d0%bb%d0%b8 1
+may 1
+%d0%bb%d0%b5%d1%82%d0%be 1
+192.168.0.100 1
+%d0%bc%d0%be%d1%81%d1%82 3
+djccnfyjdbnm 2
+%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%81%d1%8f 1
+stop-bootlogd 2
+freebsd8 4
+%d1%84%d0%b0%d0%b9%d1%80%d0%b2%d0%be%d0%bb%d0%bb 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d0%b5 5
+%d0%b7%d0%b0%d0%b3%d1%80%d1%83%d0%b7%d0%ba%d0%b0 4
+%d1%81%d0%ba%d0%be%d1%80%d0%be%d1%81%d1%82%d1%8c 1
+squeezy 1
+status 8
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%b0%d1%8f 1
+proftpd 1
+problem 4
+%d0%bd%d0%b0%d0%b9%d1%82%d0%b8 3
+%2fusr%2flib%2flibgconf2-4%2fgconf-sanity-chek-2 3
+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d1%8c 3
+%d1%81%d0%b5%d1%82%d0%b8 7
+%d1%81%d1%82%d0%b0%d1%80%d1%82%d1%83%d0%b5%d1%82 1
+%d1%82%d0%b8%d0%bf 2
+%f3%e4%e0%eb%e5%ed%ed%fb%e9 6
+%2f%2f89.20.132.26 1
+ericsson 1
+uninstall 1
+%d0%b7%d0%b0%d0%b2%d0%b5%d1%80%d1%88%d0%b8%d0%bb%d0%be%d1%81%d1%8c 1
+there 4
+%d0%bf%d0%be%d0%b4%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81 3
+%d0%b4%d1%80%d0%b0%d0%b9%d0%b2%d0%b5%d1%80 1
+heawei 1
+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%be%d0%bc 1
+jabber 1
+%d0%bd%d0%be%d0%ba%d0%b8%d1%8f 2
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc 1
+on 5
+avast 3
+%d0%b2%d0%bb%d1%8e%d1%82%d1%83%d0%b7 2
+%d0%b1%d0%be%d0%bb%d0%be%d1%82%d0%b0 1
+plpbt.bin 4
+iwconfig 1
+%d0%bd%d0%be%d1%83%d1%82%d0%b1%d1%83%d0%ba%d0%be%d0%bc 1
+web-%d0%b1%d1%80%d0%b0%d1%83%d0%b7%d0%b5%d1%80 1
+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%b2%d0%be%d0%b4%d0%b0 1
+z 1
+bluetooth 5
+11003 5
+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%b0%d0%bc 1
+%d1%81%d0%be%d0%ba%d0%b5%d1%82%d1%8b 1
+%e4%e8%f1%ea 3
+%ea%ee%ec%ef%fc%fe%f2%e5%f0%e5 4
+%d1%81%d0%ba%d0%b2%d0%b8%d0%b7%d0%b8 1
+%d0%ba%d0%be%d0%bc%d0%bf%d0%b5 1
+%d0%b2%d0%be%d0%b7%d0%b2%d1%80%d0%b0%d1%82%d0%b8%d0%bb 3
+%d0%bc%d0%be%d0%bd%d1%82%d0%b5 1
+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d1%83 5
+ext3grep 1
+jnj 1
+%d0%b2%d0%b7%d0%bb%d0%be%d0%bc 1
+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d1%8b%d0%b9 2
+error 2
+%d0%b4%d0%b8%d1%81%d1%82%d1%80%d0%b8%d0%b1%d1%83%d1%82%d0%b8%d0%b2%d0%be%d0%b2 1
+%d1%8d%d0%bb%d0%b5%d0%bc%d0%b5%d0%bd%d1%82%d0%be%d0%bc 1
+%d1%81%d1%86%d0%b5%d0%bd%d0%b0%d1%80%d0%b8%d0%b9 3
+%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80 7
+%d0%bf%d0%be%d1%80%d1%82 1
+%d0%b1%d0%bb%d1%83%d1%82%d1%83%d0%b7 1
+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d1%83 6
+openmediavault 3
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be 4
+%d0%b8%d0%ba%d0%be%d0%bd%d0%ba%d0%b8 1
+%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%bb%d1%8f%d0%b5%d0%bc 1
+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 4
+%ed%ee%f3%f2%e1%f3%ea%e5 1
+1 4
+%d1%87%d1%82%d0%be 2
+%d0%b2%d1%8b%d1%85%d0%be%d0%b4%d0%b8%d1%82%d1%8c 1
+cmd 1
+e150 4
+xthtp 1
+hf%3bftnz 1
+%d0%be%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%82%d1%8c 1
+%d1%80%d0%b0%d0%b7%d0%b1%d0%bb%d0%be%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d1%82%d1%8c 1
+therefore 2
+%ed%e0 5
+huawei 2
+8.3 1
+postgre 1
+sockets 2
+5230 2
+9797 1
+usr%2flib%2flibgconfz-4%2fgconf-sanity-check 1
+yj 1
+%d0%bd%d0%be%d0%ba%d0%b8%d0%b0 1
+%d0%b2%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c 1
+initrd 1
+blyutut 1
+%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d0%be%d0%b9 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c%d1%81%d1%8f 1
+%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c 2
+smb 1
+which 2
+grub2 1
+%d0%b2%d0%b8%d0%bd%d0%b0%d0%bc%d0%bf 1
+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8 5
+%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%b8%d0%bc%d0%be%d1%81%d1%82%d0%b5%d0%b9 1
+%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80 5
+%d1%87%d0%b5%d0%bc 1
+insserv 2
+%d0%ba%d1%80%d1%83%d0%b6%d0%ba%d0%b0 2
+server. 4
+mac 4
+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%b0%d1%8f 1
+postgres 1
+ithappens 1
+%d0%bb%d0%b0%d0%b7%d0%b8%d1%82%d1%8c 1
+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf 5
+%d1%83%d1%81%d0%b8%d0%bb%d0%b8%d1%82%d0%b5%d0%bb%d1%8f 2
+%d0%be%d1%81 1
+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d1%83 1
+boot 1
+multiboot 4
+exited 7
+and 2
+%f0%e0%fc%ee%f2%e0 1
+interneta 1
+bios 1
+%d0%bf%d1%80%d0%be%d0%b2%d0%be%d0%b4%d0%ba%d0%b0%3f 1
+is 4
+apt-get 1
+%d0%bf%d1%80%d0%be%d0%b3%d0%b0 1
+fglrx-amdcccle 1
+%d1%81%d0%b5%d1%82%d1%8c 1
+137 1
+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%b5 3
+ng 1
+%d1%81%d0%be%d1%82%d0%be%d0%b2%d0%be%d0%b3%d0%be 1
+%d0%bf%d0%b0%d0%bb%d1%86%d0%b5%d0%b2 1
+%d0%9d%d0%90 1
+%d0%a4%d0%b0%d0%b9%d0%bb%d1%8b 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d1%81%d1%83 1
+smfpd 5
+android 1
+%d0%b2%d0%b5%d0%b1 1
+%d1%82%d1%80%d0%b0%d0%ba%d1%82%d0%be%d1%80 1
+asus 1
+os 1
+%d0%bf%d1%80%d0%be%d1%88%d0%b8%d0%b2%d0%be%d0%ba 1
+%d0%b4%d0%be%d1%81%d1%82%d1%83%d0%bf%d0%b0 1
+%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d1%8c 3
+%e2%80%9cnameserver 1
+flash 3
+%d0%b7%d0%b0%d1%89%d0%b8%d1%89%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9 19
+active 1
+%d0%ba 15
+linux 8
+c 1
+dsl 1
+%d0%bf%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b8 1
+%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d1%8b 1
+true! 1
+%d0%bf%d1%80%d0%be%d0%b1%d0%bb%d0%b5%d0%bc%d1%8b 1
+modding 1
+%d0%b4%d0%b0%d0%bd%d0%bd%d1%8b%d1%85 8
+plop 1
+%d0%b4%d0%b8%d1%81%d0%ba%d0%be%d0%bd%d0%b5%d0%ba%d1%82 2
+%d0%bd%d0%b5%d1%82%d0%b5 1
+%d0%b1%d0%bb%d1%8e%d1%82%d0%be%d0%b7 1
+%e2 3
+lg 1
+director 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%bc%d1%83 2
+%d0%b2%d1%8b%d1%82%d0%b0%d1%89%d0%b8%d1%82%d1%8c 1
+shell 1
+elfk%60yyjuj 1
+%d0%bd%d0%be%d0%b2%d1%8b%d0%b9 2
+nokia 1
+%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d1%80%d0%b0 1
+%d0%a0%d0%90%d0%97%d0%94%d0%95%d0%9b 1
+%d0%bf%d1%80%d0%b0%d0%b2%d0%b8%d0%bb 1
+%d1%80%d1%83%d0%ba 1
+%d0%bf%d0%bb%d0%b5%d0%b5%d1%80%d0%be%d0%bc 1
+%d0%bf%d1%80%d0%b5%d0%b2%d1%80%d0%b0%d1%89%d0%b5%d0%bd%d0%b8%d0%b5 2
+%d0%9d%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be 1
+%d0%bf%d1%80%d0%be%d0%b1%d0%bb%d0%b5%d0%bc%d0%b0 1
+%d0%b2%d1%8b%d0%b7%d0%b2%d0%b0%d1%82%d1%8c 1
+%d1%87%d0%b5%d1%80%d1%82%d0%b5%d0%b6 1
+256 8
+post-installation 1
+%d0%ba%d0%be%d0%bf%d1%8c%d1%8e%d1%82%d0%be%d1%80%d0%b5 1
+sony 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d1%81 2
+ecnfyjdkty 1
+7 1
+mod_delay 1
+%d0%bf%d0%bb%d0%b0%d0%bd%d1%88%d0%b5%d1%82 2
+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0 4
+255 1
+%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8f 2
+%d1%81%d0%b5%d1%82%d0%b5%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d0%b6%d0%b5%d0%bd%d1%81%d0%ba%d0%be%d0%b5 1
+%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80%d0%be%d0%bc 1
+rutracker 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b5 1
+%d1%81 18
+%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%ba%d0%b0 1
+%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%b0%d1%80%d0%b8%d0%b9 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%bc 1
+with 8
+%d0%b2%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c 2
+eghfdkznm 1
+ip 4
+web 1
+%f3%e4%e0%eb%e5%ed%ed%fb%ec 1
+to 2
+%d0%bf%d0%be%d0%b4%d1%83%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%81%d1%8f 1
+%e6%e5%f1%f2%ea%e8%e9 3
+httcnh 1
+xp 10
+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%be%d0%bc 1
+192.168.0.1%e2%80%9d 1
+an 1
+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80 20
+%d0%b0%d0%b2%d1%82%d0%be%d1%80 1
+/usr/lib/libgconf2-4/gconf-sanity-chek-2 1
+%3e 1
+%d1%82%d0%be%d0%bf%d0%be%d1%80 1
+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d1%81%d0%ba%d0%b0%d1%8f 2
+%d0%b2%d0%b0%d1%80%d0%b8%d0%b0%d0%bd%d1%82%d1%8b 1
+read 1
+1%d0%a1 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0 3
+%d0%bd%d0%be%d1%83%d1%82%d0%b1%d1%83%d0%ba%d0%b0 1
+%d0%ba%d0%b0%d1%80%d1%82%d0%b8%d0%bd%d0%ba%d0%b8 1
+%d0%b2%d1%8b%d0%bf%d0%b8%d0%bb%d0%b8%d1%82%d1%8c 1
+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba%d0%b0 3
+process 2
+%d0%ba%d0%bb%d1%83%d1%87%d0%b8%d1%82%d1%8c 1
+%d1%81%d0%be%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82%d1%8c 1
+disk 1
+x 2
+-- 1
+jn 1
+%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b 1
+/etc/dovecot/dovecot-mysql.conf 1
+%d0%98%d0%a1%d0%a2%d0%9e%d0%a0%d0%98%d0%98 1
+fedora 3
+%d0%ba770 1
+%d0%91%d0%9b%d0%ae%d0%a2%d0%a3%d0%97%d0%9e%d0%9c 1
+9 1
+%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 2
+%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d0%bb 1
+%d1%85%d0%be%d1%81%d1%82%d0%be%d0%b2%d0%be%d0%b9 1
+vs 3
+%d0%be%d1%82%d0%b2%d0%b5%d1%82%d0%be%d0%b2 1
+%d0%bf%d0%b8%d0%bd%d0%b3%d0%be%d0%b2 1
+%d0%b4%d0%be%d0%ba%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5 2
+%5ctpa%5cpreset%5cdefault%5cjava 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b8%d1%82%d1%8c 5
+%d0%bf%d0%be%d0%b4 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%87%d0%b8%d1%82%d1%8c 1
+e 2
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5%d0%bc 2
+%d0%b1%d0%b0%d0%bd%d0%bd%d0%b5%d1%80 1
+%d0%bf%d0%b0%d1%85%d0%bd%d0%b5%d1%82 1
+%d0%bf%d0%b0%d0%bb%d1%8c%d1%86%d0%b0 1
+%e3%e4%e5 3
+--configure 1
+ubuntu 17
+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%be%d0%b3%d0%be 2
+%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%be%d1%80%d0%b8%d0%b9 1
+35 1
+slax 5
+vista 1
+- 2
+%e1%eb%fe%f2%f3%e7%ee%ec 1
+%2ftmp%3b 1
+%d0%ba%d1%80%d0%b8%d0%b2%d1%8b%d0%b5 1
+kp500 1
+%d1%83%d0%b7%d0%bd%d0%b0%d1%82%d1%8c 1
+%d0%ba%d0%b0%d1%80%d0%bb%d0%be 1
+java 1
+manager 1
+se 1
+%d0%b8%d0%b7 2
+kantrol 1
+%d0%b1%d0%b0%d0%b7%d1%8b 11
+driver 1
+%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d0%b9 4
+%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b3%d1%83%d1%80%d0%b0%d1%86%d0%b8%d0%b8 1
+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d0%b0 1
+%d0%b8%d1%81%d0%bf%d1%80%d0%b0%d0%b2%d0%b5%d0%bd 1
+%d1%81%d0%bf%d0%b8%d0%bd%d0%b5 1
+%d1%85%d0%b0%d1%80%d0%b0%d0%ba%d1%82%d0%b5%d1%80%d0%b8%d1%81%d1%82%d0%b8%d0%ba 1
+postfix 2
+rp5.ru 1
+compiz 1
+user 1
+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d1%8b 1
+%d1%82%d0%b0%d1%87%d0%bf%d0%b0%d0%b4%d0%b5 1
+%d1%81%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%b8%d0%b5%d0%bc 1
+ocsng 1
+ocs-ng 1
+%d0%91%d0%bb%d1%8e%d1%82%d1%83%d0%b7 1
+%d0%bf%d0%b0%d1%82%d1%87 2
+whith 4
+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%83 1
+gateway 1
+%d0%ba%d0%be%d0%bc%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80 2
+%60%24all 2
+%d0%ba%d0%be%d0%bf%d1%8c%d1%8e%d1%82%d0%b5%d1%80%d0%be%d0%bc 1
+macos-x 1
+%d0%bb%d0%b5%d0%b3%d0%be 1
+cd 1
+%d1%82%d0%b0%d0%bd%d0%ba 1
+akadostream 1
+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba 2
+postfixadmin 6
+bridge 1
+register 1
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b5%d0%bd%d0%bd%d1%8b%d0%bc 1
+%ea%e8%f2%e0%e9%f4%ee%ed%fb 1
+%ea%ee%ec%ef%e0 3
+10.04 6
+5800 1
+%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%82%d1%8c 1
+%d0%b2%d0%b5%d1%80%d0%bd%d1%83%d1%82%d1%8c 1
+hdd 1
+780 1
+fglrx 4
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0 7
+%d1%81%d0%bb%d0%be%d0%b9 1
+irda 1
+%d0%bc%d0%be%d0%b4%d0%b5%d0%bc%d0%b0 2
+%d1%80%d0%b5%d0%b5%d1%81%d1%82%d1%80%d0%b0 15
+%e2%e5%e1-%f1%e5%f0%e2%e5%f0 1
+%d0%bf%d0%be%d0%b4%d0%ba%d0%bb%d1%8e%d1%87%d0%b0%d0%b5%d1%82%d1%81%d1%8f 1
+%d0%ba%d0%be%d0%bf%d1%83 1
+%d1%80%d0%b5%d0%b7%d0%b8%d0%bd%d0%be%d0%b2%d1%8b%d0%b5 2
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d1%8b 1
+aavast 1
+usb 4
+desktop 1
+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d1%81%d0%ba%d0%be%d0%b5 2
+%d0%b3%d0%be%d1%80%d1%8f%d1%89%d0%b0%d1%8f 1
+%d0%bb%d0%b2%d1%81 1
+%d0%b7%d0%b2%d0%b5%d1%80%d0%b5%d0%bc%d0%be%d0%b1%d0%b8%d0%bb%d0%b8 1
+htlfrnjh 1
+%d0%bc%d0%b0%d1%88%d0%b8%d0%bd%d0%ba%d0%b0 2
+echo 1
+%2fetc%2fresolv.conf 1
+%d0%be%d1%82%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%ba%d0%b8 2
+%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b3%d0%be 1
+k.nep 2
+%ea%e0%ea 5
+jcyjds 1
+%d0%b1%d1%8c%d1%8e%d1%82%d1%83%d0%b7 1
+os-x 1
+rmnologin 1
+flaytouch 1
+3%d0%b4%d0%b5%d0%bd%d1%8c 1
+%d0%bf%d0%ba 4
+libgconf2-4 3
+util-linux 1
+scripting 1
+sim 1
+%d1%80%d0%b0%d0%b7%d0%bb%d0%be%d1%87%d0%b8%d1%82%d1%8c 1
+%d0%b2%d0%b8%d1%81%d0%bd%d0%b5%d1%82 2
+php 2
+%d0%ba%d0%be%d0%bc%d0%bf%d0%b0 8
+%d1%82%d0%b5%d0%bb%d0%b5%d0%b2%d0%b8%d0%b7%d0%be%d1%80%d0%be%d0%bc 1
+%d1%84%d0%b5%d1%88 2
+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0 2
+%d1%82%d0%b0%d0%b1%d0%bb%d0%b8%d1%86%d1%8b 2
+pg_clog 1
+%d0%b4%d1%83%d0%be%d1%81 1
+iptables 1
+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd 13
+%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d1%8c%d1%81%d1%8f 5
+%f0%e5%e5%f1%f2%f0%ee%ec 1
+%d0%b2%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%b0%d0%b2%d0%bb%d0%b8%d0%b2%d0%b0%d0%b5%d1%82%d1%81%d1%8f 2
+%d0%be%d1%82%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0 1
+%d1%81%d1%80%d0%b0%d0%b2%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5 1
+eghfdktybt 1
+udp 1
+lib 3
+%d0%a3%d0%a2%d0%9e%d0%9f%d0%9b%d0%95%d0%9d%d0%98%d0%af 1
+dovecot 6
+debian 20
+gconf-sanity-check-2 4
+%d0%bf%d1%80%d0%b0%d0%b2 1
+%d0%91%d0%bb%d1%8e%d1%82%d1%83%d0%b7. 1
+%d1%83%d0%bf%d1%80%d0%be%d0%b2%d0%bb%d1%8f%d1%82%d1%8c 1
+%d0%bc%d0%be%d1%81%d1%82%d0%b0 2
+%d0%b4%d0%be%d0%b1%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b0 2
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b3%d0%be 4
+%d0%9c%d0%be%d0%b6%d0%bd%d0%be 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d0%b5%d0%bc%d0%b0%d1%8f 1
+%d0%bf%d0%be%d0%bc%d0%b5%d1%81%d1%82%d0%b8%d1%82%d1%8c 1
+%d1%85%d1%80%d0%b0%d0%bd%d1%8f%d1%82%d1%81%d1%8f 1
+%d0%b4%d0%be%d1%87%d0%b5%d1%80%d0%bd%d1%8e%d1%8e 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%be%d1%81%d1%8c 2
+%e4%eb%ff 6
+%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c%d1%8e 2
+%e7%e0%f9%e8%f9%e5%ed%ed%fb%e9 5
+%d0%ba%d1%83%d1%80%d1%81%d0%be%d1%80 1
+ecnfyjdbnm 3
+%d0%bf%d0%be 15
+%d0%b8%d0%bb%d0%b8 2
+%d0%be%d1%82%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c 1
+%d0%b1%d0%bb%d1%8e%d1%82%d1%83%d0%b7%d1%83 2
+%d0%a3%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9 1
+%d1%82%d0%b5%d0%bb%d0%b5%d1%84%d0%be%d0%bd%d0%b0 8
+%d0%97%d0%90%d0%a9%d0%95%d0%a9%d0%81%d0%9d 1
+%d1%87%d0%b0%d1%81%d1%82%d0%be%d1%82%d1%8b 1
+winsock 1
+%d1%81%d0%b0%d0%bc%d1%81%d1%83%d0%bd%d0%b3 1
+conky 2
+unable 1
+%d1%83%d0%b4%d0%b0%d0%bb%d1%91%d0%bd%d0%bd%d0%be%d0%b9 2
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%b9 2
+%d1%80%d0%b0%d0%b4%d0%b8%d0%be 1
+mplayer 1
+%d0%b1%d0%b0%d1%80%d0%bc%d0%b8%d0%bd%d0%b0 1
+%d0%9a%d0%90%d0%9a 1
+nano 1
+%d1%82%d0%b0%d0%ba%d0%be%d0%b5 1
+%d0%ba%d0%be%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%82%d0%be%d1%80 2
+%d1%87%d0%b5%d0%b3%d0%be 1
+%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b5%d0%b5 2
+hdb700touch 1
+%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d1%8f%d1%82%d1%8c 14
+%d0%bb%d0%b8%d1%81%d1%82 1
+exit 1
+facility 2
+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80 3
+%d1%81%d0%b5%d1%82%d0%b5%d0%b2%d0%be%d0%b9 3
+%d0%b3%d0%b4%d0%b5 7
+%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9 1
+bash 1
+%d0%ba%d0%be%d0%bc%d0%bf 1
+%d0%bf%d0%b5%d1%80%d0%b5%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c 1
+write 1
+kampyutera 1
+cherez 1
+ejabberd 2
+%d0%bb%d0%be%d0%b3 1
+moderator 1
+%d0%ba%d0%be%d1%80%d0%bf%d1%83%d1%81 2
+starting 3
+%d0%b0%d0%b2%d0%b0%d1%81%d1%82 1
+%d0%ba%d0%be%d0%bc%d1%82%d1%8e%d1%82%d0%be%d1%80 1
+%d1%84%d0%b0%d0%b9%d0%bb%d0%be%d0%b2%d1%8b%d0%b9 3
+freebsd 5
+%d0%b3%d0%be%d1%82%d0%be%d0%b2%d1%8b%d0%b9 1
+%d0%bf%d0%b0%d1%80%d0%b0%d0%bc%d0%b5%d1%82%d1%80 1
+%d0%ba%d0%be%d0%bc%d0%bf%d0%be%d0%bc 5
+virtualbox 6
+pig 1
+usr 3
+%d0%bf%d1%80%d0%be%d1%81%d0%bc%d0%be%d1%82%d1%80 1
+postgresql 11
+%d0%91%d0%b0%d1%80%d0%bc%d0%b8%d0%bd%d0%b0 1
+hp6730b 1
+mysql 7
+%d0%ba%d0%be%d0%bc%d0%bc%d0%b0%d0%bd%d0%b4%d1%8b 1
+%d0%be%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9 1
+%d1%81%d0%b0%d0%b9%d1%82 1
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%be%d0%b9 1
+depends 3
+%d1%81%d0%ba%d0%b2%d0%be%d1%80%d0%b5%d1%87%d0%bd%d0%b8%d0%ba 2
+%d0%be%d1%82%d0%bf%d0%b5%d1%87%d0%b0%d1%82%d0%be%d0%ba 1
+forward 1
+%d0%bf%d0%b0%d0%bb%d1%8c%d1%86%d0%b5%d0%b2 1
+not 2
+%d1%81%d0%b8%d0%b4%d0%b5%d1%82%d1%8c 1
+%e1%eb%fe%f2%f3%e7 6
+session 2
+%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82 5
+ipfw 1
+ati 9
+configuration 4
+%d1%81%d0%be%d0%b5%d0%b4%d0%b8%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f 1
+%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b8%d1%82%d1%8c 4
+%d0%9e%d0%a1 1
+%d1%88%d0%bf%d0%b8%d0%be%d0%bd 1
+%d0%bf%d1%80%d0%b8 1
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b5%d0%bd%d0%bd%d0%be%d0%bc 2
+10 1
+%d1%85%d1%80%d0%b0%d0%bd%d0%b8%d1%82 2
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b 1
+%d0%b0%d0%b4%d0%bc%d0%b8%d0%bd%d0%b0 1
+drop 1
+%d1%81%d0%bb%d1%83%d0%b6%d0%b1%d1%8b 4
+find 6
+%d1%83%d0%b4%d0%b0%d0%bb%d0%b8%d1%82%d1%8c 4
+%d0%ba%d0%be%d0%b4%d1%8b 1
+%d0%b4%d0%b8%d1%81%d1%82%d0%b0%d0%bd%d1%86%d0%b8%d0%be%d0%bd%d0%bd%d0%be%d0%b3%d0%be 1
+%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%b8%d0%b2%d0%b0%d0%b5%d1%82%d1%81%d1%8f 1
+%d0%bc%d0%be%d0%b4%d0%b5%d0%bc 1
+from 1
+%d1%84%d0%b0%d0%b9%d0%bb%d1%8b 1
+root 1
+%d0%bd%d0%b5 8
+%d0%b2%d0%bb%d0%b1%d1%82%d1%83%d0%b7 1
+acronis 1
+httcnhf 1
+%d0%bf%d0%be%d0%bb%d1%83%d1%87%d0%b5%d0%bd%d0%b8%d0%b5 1
+%d0%bc%d0%be%d0%b6%d0%b5%d1%82 1
+live 1
+digest-md5 1
+%d0%b1%d0%b8%d0%be%d1%81 2
+the 4
+%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%b0 1
+elfktyyj 1
+wheezy 1
+dsquery 1
+hkey_current_user 1
+directory 1
+glpi 1
+yt 1
+%d0%92%d0%be%d1%81%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5 5
+k50d 1
+%d0%bb%d0%be%d0%b1%d0%b7%d0%b8%d0%ba%d0%be%d0%bc 1
+%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8e 1
+%d0%ba%d0%be%d1%84%d0%b5 2
+%f0%e0%e7%e4%e5%eb 11
+for 1
+%e4%f0%e0%e9%e2%e5%f0 3
+%d0%bf%d0%be%d0%bc%d0%be%d1%89%d0%b8 1
+rfr 3
+%d1%80%d0%b0%d0%b7%d0%b1%d0%bb%d0%be%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b8 2
+main 1
+%d0%b0%d0%bd%d0%b4%d1%80%d0%be%d0%b9%d0%b4 1
+%d0%bf%d0%be%d0%b4%d0%b4%d0%b5%d1%80%d0%b6%d0%ba%d0%b0 1
+be 2
+%d0%bf%d0%be%d1%81%d1%82 1
+%d0%b2%d0%b8%d0%b4%d0%b5%d0%be%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b0%d1%82%d0%be%d1%80%d0%b0 2
+%d0%b1%d0%b0%d0%b7%d0%b0 1
+talisman 1
+%d0%ba%d1%82%d0%be 1
+%d1%82%d1%80%d0%b8%d0%ba%d0%be%d0%bb%d0%be%d1%80 1
+%d0%bf%d1%80%d0%be%d1%81%d0%bc%d0%be%d1%82%d1%80%d0%b5%d1%82%d1%8c 1
+%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5 1
+drive 1
+%d0%b4%d0%be%d0%bc%d0%b0%d1%88%d0%bd%d0%b5%d0%b5 2
+%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b0 1
+restart 1
+smf 2
+%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba%d0%b8 1
+%f1 1
+%f0%e5%e5%f1%f2%f0 6
+%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0 3
+pre-installation 2
+%d0%ba%d0%be%d0%b4 6
+%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd 1
+5130 1
+%d0%b1%d1%8b 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+403 37 0
+503 5 2205
+302 99 1196
+206 6 123551
+404 306 115578
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 76
+//phpMyAdmin-2.5.5-pl1/index.php 1 -
+//phpMyAdmin-2.5.6-rc2/index.php 1 -
+//wp-content/themes/Default/timthumb.php 1 -
+//web/phpMyAdmin/index.php 1 -
+/robots.txt 140 -
+/index.php+++++++++++++++++++++++++++++++Result:+chosen+nickname+%22sleweemia%22 25 http://forum.odmins-it.ru/index.php+++++++++++++++++++++++++++++++Result:+chosen+nickname+%22sleweemia%22
+//phpmyadmin.old/main.php 1 -
+//admin/main.php 1 -
+//eshop/admin/includes/stylesheet.css 1 -
+//zen/admin/includes/stylesheet.css 1 -
+//phpMyAdmin-2.5.1/index.php 1 -
+//admin/includes/stylesheet.css 1 -
+/index.php+%28%27%EA%EE%EC%EF%27%29+ACCEPTED 3 http://forum.odmins-it.ru/index.php+%28%27%EA%EE%EC%EF%27%29+ACCEPTED
+/page/link/ 1 http://forum.odmins-it.ru/page/link/
+//phpMyAdmin/index.php 2 -
+//web/index.php 1 -
+//php/main.php 1 -
+//phpMyAdmin/main.php 1 -
+/Themes/Prince_of_Darkness/images/bbc/wiki.gif 4 http://forum.odmins-it.ru/index.php
+/index.php+%28%27%F0%E0%E1%EE%F2%E0%27%29+ACCEPTED 1 http://forum.odmins-it.ru/index.php+%28%27%F0%E0%E1%EE%F2%E0%27%29+ACCEPTED
+//b2b/admin/includes/stylesheet.css 1 -
+//admin/pma/index.php 1 -
+//phpMyAdmin-2.5.6/index.php 1 -
+//phpmyadmin/main.php 1 -
+//pma/index.php 1 -
+//phpadmin/index.php 1 -
+/reputation.php 1 -
+//xampp/phpmyadmin/index.php 1 -
+//phpMyAdmin-2.5.5-rc1/index.php 1 -
+//phpMyAdmin-2.5.5/index.php 1 -
+/Themes/Curvy_Caramel/images/russian-utf8/new.gif 2 http://forum.odmins-it.ru/index.php/board,15.0.html
+//mysql/main.php 1 -
+/myadmin/scripts/setup.php 2 http://forum.odmins-it.ru/myadmin/scripts/setup.php
+/article_add/%2B%255bPLM=0%255d%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,10336,10209%255d%2B-%253e%2B%255bN%255d%2BPOST%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,11063%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_ 1 http://forum.odmins-it.ru/article_add/%2B%255bPLM=0%255d%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,10336,10209%255d%2B-%253e%2B%255bN%255d%2BPOST%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,11063%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,10209%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,10209%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b5960,0,10209%255d/
+/Themes/Square/scripts/theme.js 33 http://forum.odmins-it.ru/index.php/topic,347.msg1430.html
+//phpMyAdmin-2.5.7/index.php 1 -
+//shop/admin/includes/stylesheet.css 1 -
+/index.php+++++++++++++++++++++++++++++++Result:+chosen+nickname+%22CrunNyHenonen%22 2 http://forum.odmins-it.ru/index.php+++++++++++++++++++++++++++++++Result:+chosen+nickname+%22CrunNyHenonen%22
+//phpmyadmin2/main.php 1 -
+//phpMyAdmin-2.5.7-pl1/index.php 1 -
+//dbadmin/index.php 1 -
+/apple-touch-icon.png 1 -
+//zc/admin/includes/stylesheet.css 1 -
+/index.php+++++++++++++++++++++++++++++++Result:+chosen+nickname+%22 3 http://forum.odmins-it.ru/index.php+++++++++++++++++++++++++++++++Result:+chosen+nickname+%22#north+face%5Bdddyyyyyddd%5D%22
+//php-my-admin/index.php 2 -
+//mysqladmin/index.php 1 -
+/link/ 1 http://forum.odmins-it.ru/link/
+/muieblackcat 1 -
+/Themes/Square/images/russian-utf8/new.gif 6 http://forum.odmins-it.ru/index.php
+/Themes/Curvy_Caramel/images/bbc/wiki.gif 4 http://forum.odmins-it.ru/index.php
+//phpMyAdmin-2.5.4/index.php 1 -
+//phpmyadmin1/index.php 1 -
+//phpmyadmin/index.php 2 -
+/apple-touch-icon-precomposed.png 1 -
+//phpMyAdmin-2.2.3/index.php 1 -
+//phpmyadmin2/index.php 1 -
+//typo3/phpmyadmin/index.php 1 -
+//phpMyAdmin-2.5.6-rc1/index.php 1 -
+//phpMyAdmin-2/index.php 1 -
+//phpMyAdmin-2.5.5-rc2/index.php 1 -
+/%2B%255bPLM=0%255d%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,10336,10209%255d%2B-%253e%2B%255bN%255d%2BPOST%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,11063%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b 1 http://forum.odmins-it.ru/%2B%255bPLM=0%255d%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,10336,10209%255d%2B-%253e%2B%255bN%255d%2BPOST%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,11063%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,10209%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b0,0,10209%255d%2B-%253e%2B%255bN%255d%2BGET%2Bhttp://odmins-it.ru/article_add/%2B%255b5960,0,10209%255d/
+/index.php+++++++++++++++++++++++++++++++Result:+%CE%D8%C8%C1%CA%C0+%D1%C5%D0%C2%C5%D0%C0+%28host+forum.odmins-it.ru%29 1 http://forum.odmins-it.ru/index.php+++++++++++++++++++++++++++++++Result:+%CE%D8%C8%C1%CA%C0+%D1%C5%D0%C2%C5%D0%C0+%28host+forum.odmins-it.ru%29
+//phpMyAdmin-2.2.6/index.php 1 -
+//cart/admin/includes/stylesheet.css 1 -
+//store/admin/includes/stylesheet.css 1 -
+//pma/main.php 1 -
+//websql/index.php 1 -
+/article_add/ 3 http://forum.odmins-it.ru/article_add/
+//admin/phpmyadmin/index.php 1 -
+/index.php 12 http://forum.odmins-it.ru/index.php
+//db/index.php 1 -
+/Themes/Blue_Steel/images/russian-utf8/new.gif 2 http://forum.odmins-it.ru/index.php
+//admin/index.php 1 -
+//dbadmin/main.php 1 -
+//mysql/index.php 1 -
+//zencart/admin/includes/stylesheet.css 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 1202
+91.122.209.189 872 993 1307375 20120229170227
+188.134.27.17 530 580 525486 20120229235856
+93.72.253.33 420 456 325920 20120229234725
+178.49.18.171 365 520 1551284 20120229234839
+46.17.99.164 246 246 5569726 20120227052526
+91.185.12.110 241 241 11203 20120225110112
+83.149.2.241 235 591 1401857 20120225002044
+46.241.37.80 229 1742 10119897 20120229232252
+93.92.194.26 221 301 806361 20120229155509
+220.161.150.114 220 220 5797360 20120229232637
+120.132.149.19 1 1 66103 20120228155850
+109.169.70.147 4 4 202206 20120226063016
+89.248.120.140 2 36 340102 20120226132355
+178.74.78.208 18 18 256779 20120224190809
+87.207.38.39 7 7 200860 20120222201849
+83.149.2.231 76 265 1002157 20120221164347
+69.146.121.171 1 1 17664 20120229083742
+92.112.30.125 2 20 129190 20120227231340
+109.230.217.46 25 25 765302 20120227095142
+82.145.211.82 4 45 312092 20120229223045
+213.177.100.193 4 37 298641 20120229155726
+95.79.122.246 4 38 292324 20120222063026
+83.170.100.116 6 6 183795 20120228093341
+83.21.209.78 19 19 554337 20120228130923
+87.249.10.227 3 34 273442 20120221160154
+117.26.202.33 7 7 200662 20120228135907
+178.210.219.33 6 42 321649 20120222173333
+188.16.185.44 6 40 299048 20120228203654
+213.246.52.37 5 5 80980 20120222212612
+82.245.160.37 4 38 251529 20120228232216
+46.70.30.46 10 39 280150 20120227001554
+85.141.179.78 14 14 401624 20120222235819
+93.182.168.208 32 32 740082 20120229084031
+74.125.16.152 0 3 33789 
+31.43.132.47 4 4 40233 20120222071927
+80.239.243.109 6 58 531660 20120224164938
+83.149.2.227 2 2 114 20120229141415
+188.165.59.142 32 32 751847 20120227141109
+194.125.244.30 49 82 292247 20120228145746
+202.98.123.126 24 24 574162 20120228215651
+91.149.165.87 5 38 298782 20120226150139
+92.62.50.88 3 38 295411 20120221170830
+201.30.5.131 1 1 17667 20120223181757
+95.78.189.252 7 7 200728 20120229071149
+91.121.185.34 7 7 200761 20120222104942
+72.46.134.138 84 84 1816705 20120228023217
+94.72.3.244 13 13 241994 20120221154250
+205.213.195.70 7 7 41919 20120222105329
+80.80.208.117 3 34 287753 20120229142723
+46.251.237.173 16 16 375714 20120229074255
+184.82.46.107 3 3 19134 20120224041032
+188.134.37.94 2 20 66868 20120226181750
+121.58.195.149 7 7 200444 20120224040817
+217.118.83.188 3 37 293324 20120226130618
+91.231.94.0 2 13 7296 20120226084837
+95.134.118.232 5 41 307246 20120225215006
+83.149.1.207 8 38 25797 20120223172903
+74.125.16.160 0 3 19787 
+46.241.85.145 12 12 283140 20120224072739
+95.27.30.18 5 39 298397 20120224212508
+81.24.214.133 3 43 353368 20120229215402
+85.26.184.124 3 36 292659 20120222172303
+109.230.220.230 14 14 400764 20120228151518
+109.230.246.149 15 15 458817 20120229125831
+77.222.133.182 7 46 353108 20120221150111
+213.87.121.45 4 42 329715 20120223150235
+176.195.85.171 1 15 252747 20120227154024
+82.222.150.221 16 16 369095 20120228060230
+46.188.14.2 19 85 584554 20120224200611
+212.45.1.210 6 41 307108 20120221170247
+74.125.78.83 1 4 25013 20120222232542
+188.134.62.53 3 36 328250 20120223171350
+195.78.112.166 2 22 133038 20120224113640
+213.87.132.80 3 38 310625 20120221162858
+178.137.129.75 12 12 734537 20120228191852
+94.228.254.135 142 176 300101 20120229234040
+95.26.227.74 2 33 281283 20120229195407
+88.236.229.213 1 1 20001 20120223181912
+89.106.233.238 3 40 304461 20120226105721
+77.232.16.51 6 40 299047 20120227172618
+213.184.250.62 4 42 292631 20120221172110
+95.105.76.58 15 94 685653 20120224232031
+46.146.219.57 3 38 293116 20120222233341
+93.85.241.237 3 39 293128 20120223171458
+59.58.156.115 7 7 200588 20120224014500
+95.220.182.148 1 14 233933 20120228123423
+46.17.98.214 42 42 1000619 20120228004603
+95.79.72.249 3 3 56313 20120224192838
+178.21.51.249 8 8 200089 20120222022147
+93.182.190.38 7 7 202297 20120224034242
+80.239.243.178 2 33 281287 20120223162744
+178.204.220.3 5 5 175071 20120227015740
+46.56.210.115 3 37 294737 20120229174641
+62.196.56.130 2 2 35810 20120225154732
+109.171.75.18 3 36 292683 20120224163021
+178.45.198.21 5 42 330431 20120222153715
+91.216.28.10 14 14 314634 20120225233151
+46.71.24.196 2 2 114 20120228004431
+118.97.63.229 1 1 17210 20120227140118
+109.230.213.100 16 16 802608 20120228134836
+213.87.123.31 4 39 320036 20120228095405
+46.0.225.203 3 3 56233 20120221165323
+221.130.162.73 2 2 115402 20120225032612
+64.237.87.117 4 4 201072 20120223140512
+178.125.17.197 7 7 199205 20120225090916
+31.6.102.102 2 22 221575 20120225122403
+31.184.238.120 1 1 10516 20120221140526
+176.214.42.158 5 40 308808 20120222005248
+188.235.24.199 7 7 181397 20120229121231
+176.31.18.236 7 7 199028 20120228224134
+180.214.165.88 7 7 200038 20120224224905
+91.231.94.104 3 23 144092 20120221125844
+195.226.203.2 3 61 292927 20120221211346
+89.189.191.17 3 38 293015 20120229220643
+217.147.19.149 5 40 308621 20120224142813
+95.104.131.128 5 39 303961 20120227200313
+89.149.223.127 16 16 371816 20120227195225
+220.113.15.21 5 5 148169 20120228190632
+74.125.78.81 0 1 1586 
+220.255.2.67 1 1 17868 20120224225005
+60.216.101.232 1 1 65870 20120226235453
+109.87.181.220 6 6 142323 20120224133140
+85.15.67.28 3 35 281721 20120222060736
+91.224.160.129 6 6 123710 20120227204223
+91.207.4.74 7 7 199079 20120228190918
+195.190.13.246 7 7 178980 20120228134544
+218.86.49.37 16 16 372660 20120225093034
+95.134.34.62 22 22 1254 20120223202439
+219.159.105.180 2 2 35806 20120222080515
+74.125.78.86 0 2 33584 
+213.184.239.128 4 37 298640 20120222163124
+95.58.0.219 5 5 285 20120225185140
+188.163.65.226 6 6 60912 20120227155906
+109.169.152.16 4 43 302828 20120229150058
+89.252.58.228 6 6 140165 20120221202913
+109.230.221.136 40 40 1177459 20120229101732
+90.177.160.187 4 39 297187 20120225181849
+74.125.16.157 1 4 1824 20120221185842
+109.120.157.179 6 6 397020 20120227170614
+188.134.30.212 6 6 143442 20120226170301
+176.15.106.160 3 34 86447 20120224130421
+46.73.221.158 1 14 231068 20120227153300
+173.248.155.63 7 7 201026 20120227054547
+84.246.226.180 12 12 349739 20120226011615
+95.134.131.134 4 39 244728 20120225160857
+59.61.159.229 16 16 376899 20120229235639
+213.87.130.195 4 41 332120 20120229222522
+188.138.0.138 1 1 66535 20120222171726
+193.105.210.127 5 5 301555 20120222181912
+141.0.11.10 1 13 178885 20120228155411
+60.210.0.30 7 7 200144 20120222125955
+74.125.78.92 0 2 47937 
+79.165.172.69 6 6 142092 20120228223948
+78.154.171.194 3 41 343173 20120226141204
+113.57.230.3 1 1 48910 20120227140104
+74.125.16.144 0 3 16583 
+81.200.24.173 38 38 743271 20120228113800
+79.89.39.237 7 7 202470 20120224040949
+109.230.221.188 7 7 200439 20120223181002
+128.72.65.85 1 1 57 20120228111556
+193.200.10.71 4 38 298932 20120221161629
+220.161.150.70 48 48 1197996 20120227184508
+83.149.2.238 8 8 456 20120229165942
+61.160.202.201 6 6 141693 20120225115639
+178.66.178.89 3 36 291292 20120222232703
+194.67.55.70 4 37 298641 20120221172234
+95.221.183.174 11 11 627 20120223163858
+94.143.150.242 2 21 132154 20120225084021
+59.58.139.254 22 22 564285 20120223221710
+77.47.164.107 3 41 304730 20120229212957
+80.239.243.9 3 36 292687 20120222200256
+188.143.232.102 7 7 199162 20120227093948
+188.163.67.151 1 1 10646 20120229204642
+94.233.35.220 2 23 226960 20120222173730
+213.138.70.35 4 39 300099 20120229204507
+217.22.169.2 4 37 298644 20120224062333
+109.230.251.123 16 16 412721 20120225130629
+193.151.13.35 3 36 292680 20120221192026
+91.207.8.34 6 6 141384 20120229073235
+80.82.52.55 3 44 317247 20120229175357
+89.105.247.225 6 6 140568 20120224161216
+176.31.50.69 16 16 372257 20120225101248
+218.66.250.106 28 28 639590 20120228060041
+94.41.227.161 3 37 292927 20120222214231
+86.57.244.137 6 45 308401 20120224192919
+46.31.24.19 8 8 176327 20120225061522
+85.26.231.8 3 35 281631 20120222074410
+74.125.16.150 1 8 53361 20120221185836
+95.27.161.17 1 30 278257 20120228135313
+95.132.4.20 6 6 140469 20120228165952
+85.26.233.198 3 36 292685 20120224200812
+109.173.118.200 2 2 23633 20120222191029
+178.157.160.72 21 58 360819 20120227103352
+46.164.171.21 4 42 329370 20120228013201
+188.187.40.197 2 33 281287 20120222020544
+195.190.13.170 52 52 1516174 20120227165227
+94.143.47.40 5 5 176854 20120227172323
+188.163.110.4 2 2 20502 20120225150904
+195.88.72.198 8 54 419078 20120226133640
+91.90.15.51 20 94 635936 20120222221153
+188.134.72.99 80 114 138068 20120226122432
+176.241.107.106 26 65 318812 20120221215339
+176.195.169.22 2 28 485713 20120226131658
+109.86.52.52 5 5 178031 20120225195450
+74.125.78.100 0 2 2913 
+93.182.130.68 7 7 199079 20120229092559
+178.122.77.186 4 42 322293 20120222224437
+193.105.210.108 2 2 77878 20120222160757
+69.162.120.58 162 162 4146371 20120229113006
+89.178.190.166 4 41 299499 20120224120150
+95.79.212.248 1 1 18406 20120222203037
+109.161.65.56 6 6 141963 20120227012109
+188.163.108.96 1 1 10759 20120222212512
+24.20.149.202 5 5 139843 20120222033738
+89.184.13.29 3 38 292934 20120221163658
+178.210.32.201 18 18 408376 20120228035547
+77.120.137.250 2 34 281575 20120224174652
+94.50.178.64 1 18 105364 20120227210626
+199.19.249.196 11 11 208382 20120228133115
+178.95.38.104 8 51 351960 20120227021051
+87.119.224.85 2 39 368319 20120225123957
+95.79.209.92 5 5 93167 20120229191419
+188.163.64.89 7 7 74825 20120226061847
+89.23.128.57 4 41 322812 20120227222516
+180.149.96.69 1 1 58416 20120222065655
+178.132.1.60 7 7 193740 20120225045223
+94.243.241.237 2 34 289881 20120221170836
+213.189.251.147 6 40 296307 20120229073510
+83.21.213.96 18 18 552151 20120229182204
+187.58.200.162 2 2 83940 20120221133502
+178.94.21.222 5 5 156035 20120226184840
+176.98.6.72 5 5 175096 20120225042148
+178.49.136.235 14 14 602 20120222104156
+194.146.229.59 16 16 477014 20120228185526
+31.23.244.246 2 23 221855 20120225005156
+95.220.175.217 1 14 233913 20120223202313
+146.0.74.155 28 28 802691 20120225023512
+94.181.95.108 3 3 12084 20120224114950
+78.24.24.235 3 36 292654 20120225220604
+83.21.203.197 16 16 375907 20120225235945
+195.211.206.241 4 41 322815 20120229151824
+59.58.159.177 21 21 603739 20120226045058
+212.111.192.250 10 45 294793 20120223171525
+188.163.78.207 2 2 21339 20120226034410
+74.125.78.88 1 3 1170 20120222232548
+95.153.171.246 4 37 292736 20120222194619
+37.99.218.149 2 2 30087 20120227070924
+195.162.69.205 32 32 748617 20120228203005
+190.111.77.26 2 2 35803 20120225154723
+95.79.37.208 1 1 19035 20120228034907
+89.179.205.210 4 37 298638 20120229083328
+83.149.3.206 1 15 226506 20120226032405
+220.255.2.65 1 1 11325 20120224225017
+92.37.217.117 14 14 542445 20120222001906
+58.119.6.196 3 3 55607 20120222153838
+91.202.129.158 3 35 288024 20120228010640
+84.52.121.230 2 34 281578 20120226145323
+176.195.190.242 2 29 465956 20120221184626
+188.120.240.83 1 1 11475 20120222220902
+188.231.197.12 20 20 476206 20120228210652
+213.5.128.89 3 36 292683 20120225123639
+74.125.16.155 0 5 54053 
+79.111.225.44 4 41 298512 20120224164607
+217.66.146.12 4 42 329366 20120221232924
+88.198.134.171 1 13 208568 20120223174901
+92.37.164.154 40 40 1503464 20120229130127
+194.30.240.168 2 2 124881 20120229083631
+94.180.167.109 12 46 293450 20120225170050
+188.163.67.239 1 1 10688 20120222051102
+120.43.7.90 2 3 12313 20120229125346
+217.118.79.34 5 38 295893 20120228162945
+93.182.169.139 66 66 1808642 20120229083954
+203.176.138.138 2 2 35800 20120225154849
+178.91.90.171 21 24 68987 20120227192121
+82.193.109.249 41 41 1141492 20120229172611
+37.59.70.8 5 5 88518 20120228065330
+213.87.128.222 4 39 315926 20120225173220
+95.211.99.92 64 64 1273167 20120228110048
+93.100.90.14 6 6 140457 20120229081641
+95.57.109.84 3 37 294741 20120226153719
+66.199.167.79 46 77 306384 20120222171234
+213.141.140.123 2 34 281577 20120225212518
+193.138.131.124 4 39 301209 20120224084635
+113.203.141.71 1 1 66156 20120223181728
+49.212.13.55 5 5 81086 20120227013904
+58.216.168.138 1 1 48876 20120225032557
+89.209.253.7 9 9 300827 20120224091047
+74.125.16.146 0 4 72586 
+95.105.21.36 29 43 218284 20120229224708
+31.214.169.120 2 2 20502 20120224044703
+81.26.190.20 35 69 298661 20120228234939
+31.214.201.168 8 8 79217 20120223233239
+91.210.105.229 1 1 58860 20120225214352
+78.132.159.111 3 36 292645 20120229152036
+188.226.19.191 63 63 942843 20120229194625
+46.201.81.180 3 36 292681 20120223203759
+50.56.104.110 16 16 375670 20120228063310
+93.182.170.30 7 7 201180 20120226104957
+90.151.136.141 2 2 145946 20120227062044
+118.97.18.250 3 3 53508 20120225154837
+146.0.74.198 14 14 306277 20120228070050
+188.163.66.34 1 1 10761 20120224024436
+82.131.1.141 2 2 77394 20120224151028
+83.21.199.103 16 16 372052 20120228060705
+176.213.6.165 3 3 56238 20120226181838
+46.42.34.229 12 63 424590 20120221195021
+81.4.225.137 17 48 302073 20120228130020
+109.254.49.6 27 27 832845 20120229184818
+188.232.154.162 3 37 292771 20120224130929
+74.125.78.90 0 4 30930 
+109.171.38.69 10 10 354842 20120222194607
+188.163.78.67 5 5 50864 20120222153852
+93.2.59.6 9 108 796673 20120229164423
+109.236.209.150 5 39 296149 20120228133653
+188.163.66.107 7 7 72956 20120228104359
+92.37.216.68 18 18 733362 20120223190719
+95.167.48.64 4 40 300165 20120226153108
+178.73.216.214 16 16 412570 20120224094925
+213.222.230.125 4 41 329089 20120222004135
+91.231.94.163 24 208 764557 20120222184557
+178.239.58.143 3 3 172634 20120222042343
+134.249.194.213 5 38 295646 20120224211336
+46.73.226.127 1 14 233203 20120224141352
+200.141.202.162 8 8 218225 20120222022035
+94.230.135.50 4 39 309470 20120224133111
+188.17.116.143 3 36 292685 20120226170803
+188.122.248.167 5 39 293046 20120222131720
+37.59.70.7 5 5 89749 20120229110602
+193.105.210.146 7 7 201850 20120222012823
+74.125.16.154 2 7 21310 20120224213110
+92.37.217.251 14 14 495746 20120225215336
+46.174.64.240 8 8 267000 20120225185257
+46.98.91.100 6 6 111773 20120228023258
+109.194.74.43 3 39 294003 20120228164352
+78.154.171.195 3 37 292931 20120225143618
+78.85.142.132 4 36 288830 20120225170004
+128.72.147.155 0 1 3688 
+93.182.150.28 8 8 160597 20120222070150
+109.230.222.61 5 5 178040 20120223190043
+217.212.230.31 3 36 292685 20120221220213
+193.105.210.111 24 24 1451965 20120227230452
+201.73.83.130 2 2 35808 20120222080537
+188.16.9.50 2 2 76908 20120222003045
+188.143.232.98 5 5 178253 20120229215013
+178.137.164.65 7 7 200891 20120222224045
+109.232.106.20 2 32 280056 20120229104825
+78.61.229.194 14 14 400377 20120223211155
+182.50.8.213 8 8 218161 20120228190206
+178.140.97.215 7 7 200885 20120222195728
+93.182.186.8 7 7 201015 20120228100014
+217.118.93.80 1 1 10908 20120226121105
+178.177.159.196 3 35 287642 20120221141351
+117.26.107.22 32 32 824620 20120221172252
+61.153.219.245 1 1 66167 20120225150853
+85.26.184.151 3 36 292684 20120226202159
+95.105.13.50 12 55 339695 20120223223759
+89.112.27.53 6 41 294565 20120229165029
+200.91.255.5 1 1 44639 20120225032540
+211.100.47.140 7 7 201217 20120229204723
+77.254.121.103 1 1 66058 20120229205804
+217.78.178.135 12 47 302069 20120229234454
+82.134.72.203 2 2 22979 20120224135955
+213.171.47.167 123 192 329712 20120224125739
+91.224.160.133 10 10 356828 20120227123016
+95.220.128.119 30 43 278915 20120227042453
+77.235.121.244 4 40 322529 20120225193934
+195.151.207.16 16 16 376084 20120226142455
+27.159.238.181 8 12 49427 20120228065546
+77.79.13.34 56 56 1282296 20120226205640
+93.182.180.40 8 8 160573 20120222041612
+95.26.168.76 4 35 281402 20120228105556
+79.122.167.58 4 38 300328 20120223165340
+178.47.94.184 7 41 322996 20120222092756
+212.119.197.126 4 38 297096 20120227171154
+91.207.4.18 51 51 1680999 20120228121349
+79.105.159.115 3 36 292685 20120227182520
+178.126.109.107 2 2 13540 20120221143545
+95.220.157.14 13 65 594191 20120228123215
+95.52.104.190 6 44 31628 20120227230845
+188.16.198.55 3 36 292680 20120228142413
+74.125.78.95 1 5 84818 20120222214635
+213.87.130.240 3 36 292291 20120221221347
+74.125.78.85 0 1 56455 
+217.77.50.177 6 37 288009 20120227114711
+95.27.210.218 6 6 140452 20120228130847
+80.239.243.199 3 29 242707 20120228012601
+109.68.173.206 3 36 292682 20120221155240
+218.86.49.179 16 16 371659 20120222005053
+46.39.16.167 5 43 317620 20120223193123
+109.230.220.236 112 112 2877128 20120228072108
+217.118.78.113 3 38 315848 20120229212147
+94.19.191.183 7 7 206970 20120227141813
+87.253.214.234 181 181 10317 20120224151729
+95.72.193.143 3 41 302711 20120228224935
+93.182.153.75 7 7 200877 20120225033253
+46.73.201.135 2 20 374640 20120222133913
+62.245.52.201 4 41 313999 20120224135602
+50.57.134.15 3 3 100590 20120226113551
+74.125.16.147 0 1 2275 
+119.245.136.132 15 15 91188 20120223225046
+93.182.133.4 19 19 732247 20120223213524
+62.201.249.18 4 4 100450 20120228155603
+117.26.223.136 5 5 177595 20120225004553
+2.93.123.82 4 38 294230 20120223211745
+84.204.72.66 5 39 308542 20120227174754
+82.131.50.183 2 2 77263 20120221214310
+95.22.52.5 3 35 290706 20120225231041
+93.80.185.97 13 67 230587 20120228221125
+89.189.191.26 8 44 327052 20120224191910
+78.164.19.68 1 1 11325 20120223181814
+82.210.177.83 16 16 320976 20120226031655
+83.149.46.173 3 37 292929 20120221185207
+128.68.125.185 7 7 199187 20120225152650
+46.246.77.20 7 7 202534 20120226093333
+193.105.210.88 6 6 141571 20120221203624
+190.96.64.234 3 3 88320 20120225154716
+93.166.121.107 3 3 142956 20120228070656
+207.46.195.209 2 14 216305 20120228155252
+80.246.240.83 3 37 283608 20120221130134
+94.24.242.114 2 27 256694 20120224131903
+176.195.90.217 7 7 202493 20120225232751
+93.182.189.11 16 16 375512 20120225132502
+2.135.4.44 3 36 292683 20120222154206
+84.47.187.238 3 23 139775 20120229161432
+178.68.56.200 4 41 313365 20120224002920
+37.59.70.13 1 1 66136 20120229110557
+95.58.207.155 9 46 309861 20120225180953
+89.178.230.159 5 5 131672 20120225154706
+190.202.87.134 13 13 275383 20120225121555
+176.59.179.195 3 33 218938 20120221224334
+94.28.128.183 8 43 340606 20120228102026
+83.246.191.12 15 100 391852 20120223181717
+217.66.152.135 4 46 313812 20120227223325
+118.98.35.251 2 2 35804 20120225154915
+188.16.49.95 7 7 201102 20120227235301
+88.191.74.210 56 56 214008 20120228181644
+91.207.238.7 5 41 307254 20120224190937
+42.83.47.5 4 4 108089 20120225233511
+95.25.251.3 1 15 230985 20120229061251
+80.239.242.211 3 36 292687 20120227124924
+193.106.136.34 6 6 367580 20120224133549
+176.36.176.64 2 2 132613 20120222150126
+109.74.215.16 7 39 288738 20120223194735
+193.201.81.2 8 8 321338 20120228204755
+188.0.137.129 4 39 306167 20120225153330
+79.114.115.44 15 15 366977 20120225021326
+92.47.23.239 2 2 114 20120229070904
+202.163.221.10 2 2 35279 20120228145630
+107.22.108.67 2 2 84336 20120224034726
+91.207.5.50 42 42 1063102 20120229210850
+81.24.80.30 1 33 282632 20120222220023
+188.134.47.1 3 35 288021 20120223220231
+195.138.64.74 2 37 286826 20120228142810
+69.70.69.2 19 50 304845 20120222235718
+81.23.16.58 33 33 1881 20120228182654
+212.164.239.62 7 42 318734 20120228184921
+195.82.189.52 6 6 140668 20120228221529
+176.14.130.78 3 3 38337 20120229154923
+93.72.105.28 3 32 283517 20120228201043
+46.73.184.120 5 62 772188 20120226193531
+83.217.2.140 4 36 287916 20120222103911
+95.211.13.164 14 14 312988 20120229190039
+91.231.94.92 1 2 3595 20120223142625
+95.104.62.148 7 7 199200 20120225160802
+109.230.246.73 35 35 1005095 20120229191842
+95.79.202.230 1 1 18947 20120223153701
+109.111.6.17 5 5 177197 20120227215436
+74.125.78.97 0 2 28830 
+178.209.255.91 4 40 326830 20120228124903
+119.160.149.158 1 1 65484 20120222081649
+95.31.8.192 2 34 281578 20120221232436
+94.23.237.99 1 1 58901 20120224181851
+95.220.152.99 5 52 536637 20120226161652
+50.7.240.10 64 64 1259714 20120229214032
+83.149.9.56 5 41 369209 20120224125004
+82.145.217.24 3 36 292680 20120229142940
+95.29.236.146 6 6 244291 20120228184842
+125.78.222.172 7 7 199294 20120225220939
+109.200.248.133 3 36 292685 20120226074140
+109.230.245.193 16 16 374672 20120222035540
+46.17.96.43 35 35 825896 20120227231852
+77.40.25.140 3 36 292681 20120229145912
+82.200.205.2 4 37 296827 20120227143449
+193.105.210.122 10 10 602450 20120227231823
+41.189.36.26 3 3 100824 20120222073249
+110.34.171.18 7 7 199191 20120227205238
+122.168.195.148 1 1 66142 20120228214756
+204.8.156.142 3 31 236764 20120226090224
+95.58.174.76 7 48 409834 20120228191226
+93.182.174.186 8 8 160592 20120222033824
+77.75.131.139 1 16 139260 20120224191150
+176.210.3.37 2 2 66072 20120228152445
+95.58.15.231 1 1 57 20120228181208
+176.100.70.210 3 36 292660 20120224184831
+59.58.158.238 48 48 1125608 20120229224246
+109.230.220.232 10 10 498924 20120227002828
+221.130.162.80 2 2 30565 20120224110211
+120.40.148.81 7 7 200734 20120229173617
+178.91.71.131 18 56 319439 20120228154758
+94.137.62.226 9 9 129293 20120226131258
+151.0.6.119 9 9 24919 20120222012604
+186.251.177.226 2 2 35808 20120222080504
+195.208.173.250 3 36 292645 20120226225648
+190.204.77.170 1 1 12271 20120227140049
+31.214.169.122 4 4 40233 20120226085042
+109.230.246.133 8 8 402902 20120227195735
+92.37.165.177 14 14 546003 20120225045603
+173.242.114.92 16 16 371373 20120229104721
+212.67.7.190 3 36 288145 20120224131758
+188.168.8.150 4 4 18240 20120228152543
+187.103.44.24 4 4 147877 20120224034956
+58.221.42.119 17 17 370413 20120228004224
+95.139.247.60 4 39 292337 20120224174344
+178.66.221.199 3 37 292931 20120227185551
+94.45.185.209 5 38 298700 20120226191741
+220.161.102.147 1 1 9872 20120229182638
+188.138.116.162 64 64 1648589 20120229163816
+188.17.162.32 7 7 200906 20120225013558
+188.163.65.196 7 7 72949 20120229161355
+87.245.162.124 3 3 197576 20120226154806
+222.92.145.162 10 10 173719 20120229214358
+46.147.125.178 6 6 104385 20120228165630
+89.79.240.139 16 16 371973 20120228221038
+193.106.136.63 3 3 183658 20120227202329
+95.79.77.158 2 2 37155 20120225070636
+95.29.183.38 3 42 305566 20120229203309
+85.26.184.88 3 36 292663 20120221160724
+89.18.141.241 4 58 365896 20120222132034
+178.125.213.235 3 41 314623 20120227195436
+86.111.79.5 6 6 143563 20120229061241
+193.105.210.113 6 6 187122 20120227182223
+8.28.16.254 1 1 31206 20120223195010
+217.149.179.66 4 40 366173 20120222135907
+46.21.144.223 18 18 396066 20120224103932
+78.85.79.195 4 25 149673 20120227094146
+82.135.243.64 13 140 950560 20120224130257
+217.14.195.17 5 44 322912 20120224144517
+182.50.142.66 47 47 1109900 20120228204304
+176.8.210.166 5 45 509181 20120225101353
+113.230.76.234 14 14 309946 20120224145208
+83.149.3.102 4 38 298926 20120222102541
+2.95.117.91 3 36 292686 20120227001258
+91.185.40.237 4 37 298644 20120228095348
+46.61.143.46 8 42 299243 20120228050757
+82.215.65.31 4 43 312739 20120223235939
+2.40.6.166 7 7 200881 20120224201214
+2.134.143.174 11 11 627 20120229141424
+221.194.177.162 8 8 239180 20120227140044
+83.149.2.93 7 36 10852 20120225235332
+168.187.157.196 1 1 25221 20120223181748
+178.169.74.248 20 59 304900 20120222193434
+195.58.240.226 31 242 1752061 20120224105821
+188.143.232.123 16 16 409612 20120227201008
+117.27.138.41 7 7 201249 20120222173512
+91.231.95.255 10 54 60293 20120228200427
+50.28.44.49 2 2 36270 20120224154939
+87.236.82.143 5 41 298876 20120228090159
+136.169.240.107 7 7 202105 20120229191354
+176.77.68.57 4 43 356437 20120229120416
+46.119.142.62 4 42 329872 20120223223237
+117.25.129.125 7 7 200854 20120222212504
+46.72.104.39 1 1 65698 20120222131945
+78.108.79.119 2 33 261643 20120225212650
+46.185.23.212 1 1 10325 20120224223634
+193.110.115.125 42 42 1202967 20120229193759
+87.246.176.75 5 41 327268 20120229214531
+80.239.243.215 3 37 292769 20120226013636
+150.70.75.37 2 2 23658 20120224140502
+188.163.66.235 1 1 10761 20120225221705
+80.237.159.19 1 1 8726 20120228043631
+213.111.153.247 1 1 12586 20120227161926
+74.125.16.162 0 6 38363 
+178.204.89.15 4 37 298637 20120228194043
+213.248.17.11 6 6 142082 20120228222559
+41.190.16.17 2 2 67566 20120227140009
+89.208.208.126 12 12 285963 20120228034116
+188.163.71.8 7 7 74807 20120222050754
+74.125.16.149 0 3 21986 
+93.182.186.3 16 16 375927 20120222031501
+92.255.183.83 4 33 284529 20120224180706
+74.125.16.159 0 1 362 
+110.34.134.106 45 45 1201865 20120228200309
+208.115.221.106 104 104 2581487 20120229225840
+93.182.185.28 18 18 698662 20120221232252
+94.180.199.117 3 36 292680 20120228132821
+79.132.124.99 2 2 114 20120223224739
+82.200.154.115 3 38 292842 20120227160330
+94.50.211.46 3 37 292771 20120228114108
+109.230.245.167 112 112 2883928 20120229141652
+95.79.205.101 1 1 18952 20120228161515
+110.55.108.31 3 3 182848 20120222041820
+95.79.67.152 1 1 19235 20120225172015
+176.36.147.52 10 53 345288 20120228001850
+128.204.201.111 16 16 369691 20120227140054
+58.22.101.247 54 54 990309 20120228141340
+91.207.6.2 5 5 185908 20120228225048
+176.195.50.41 1 14 233929 20120229204219
+109.72.73.40 65 98 293028 20120229215222
+182.149.130.78 4 4 200138 20120229184010
+59.61.83.122 16 16 376116 20120225111819
+80.239.243.159 3 36 292681 20120225153551
+84.204.50.53 80 277 901590 20120229103519
+90.188.92.110 7 38 295182 20120221145022
+94.180.245.46 11 11 627 20120225204052
+109.230.244.90 5 5 176883 20120227185801
+27.159.237.79 7 7 199222 20120222125712
+109.230.251.252 48 48 1117997 20120227001655
+46.48.164.253 5 17 130258 20120229081253
+93.182.172.176 8 8 160626 20120222061655
+78.132.132.71 3 40 317802 20120225144036
+59.57.14.123 48 48 1125065 20120229180253
+91.201.177.6 10 10 160342 20120228153235
+46.251.237.95 5 5 260600 20120222152601
+85.26.164.137 3 37 292933 20120223205109
+74.125.16.158 0 6 76715 
+203.92.61.6 1 1 17873 20120223181810
+217.22.209.125 11 11 285985 20120229060645
+94.79.44.194 6 6 141945 20120222134549
+178.122.199.181 3 36 292657 20120221201107
+93.182.153.15 16 16 375998 20120222030300
+85.26.241.89 5 44 331329 20120222103148
+178.137.19.1 4 37 298638 20120227012929
+109.167.129.41 3 36 291910 20120229235428
+178.169.72.245 6 41 293460 20120228170431
+61.54.26.45 2 2 30350 20120227145401
+124.230.97.175 8 8 241007 20120227003903
+83.149.3.187 2 2 114 20120226231719
+95.24.58.138 8 19 264204 20120229200209
+79.123.184.7 1 1 44872 20120225032544
+109.229.102.114 3 37 349099 20120225202925
+91.231.95.64 5 30 70575 20120225095651
+59.18.103.175 2 3 12307 20120225071834
+220.255.2.75 1 1 17667 20120224225000
+24.128.152.134 1 1 58881 20120226160548
+46.17.100.243 26 26 762378 20120229121557
+50.23.163.83 8 8 281635 20120222180812
+107.21.239.21 5 5 205018 20120223234858
+83.149.2.237 21 21 1197 20120227161758
+88.81.229.234 2 33 281282 20120227144312
+95.79.44.48 3 3 55233 20120221220148
+83.234.179.30 5 38 295885 20120225182624
+93.84.18.185 6 45 334252 20120226163317
+82.195.23.172 4 38 298730 20120224132953
+64.31.11.202 2 2 83540 20120228155924
+188.18.131.89 7 7 201192 20120222145032
+91.202.129.157 1 1 57 20120228012638
+109.254.84.53 3 3 171 20120226100220
+46.251.228.222 13 13 375018 20120223191827
+46.246.77.208 8 8 259688 20120227082153
+84.52.120.91 5 43 347154 20120221161111
+91.224.246.50 6 6 140537 20120227144512
+188.163.65.73 1 1 10757 20120222023416
+95.134.250.17 5 41 307247 20120225191736
+93.182.149.52 7 7 199037 20120228102155
+74.125.78.99 1 3 16915 20120227182826
+193.107.104.226 2 34 283389 20120229164325
+178.204.208.184 1 1 10868 20120225133334
+120.33.244.130 12 12 277129 20120222205913
+62.148.13.132 5 39 298780 20120224112246
+95.173.128.181 3 40 326025 20120222090810
+95.66.201.90 1 1 13149 20120222204748
+168.187.42.100 3 3 171948 20120222082412
+46.185.31.164 1 1 66370 20120228042342
+95.191.39.38 5 40 326189 20120227184503
+79.126.100.89 4 38 309209 20120225180944
+95.86.220.221 4 39 305869 20120227175535
+188.163.107.253 2 2 21442 20120228144707
+95.190.125.154 5 41 298754 20120226103353
+188.134.35.98 3 36 292677 20120227232659
+178.124.66.21 6 6 142819 20120224060844
+31.8.22.49 2 23 221856 20120222105235
+27.50.21.45 2 2 35801 20120225154742
+82.145.208.198 3 36 292685 20120224170003
+109.68.185.68 2 33 281291 20120228134253
+37.113.224.71 3 35 304315 20120225174936
+46.61.141.138 4 40 304645 20120229182153
+176.195.229.90 1 14 248970 20120228115140
+122.155.0.135 2 2 61504 20120225032559
+93.182.153.77 7 7 200580 20120225041833
+213.197.81.53 2 2 35802 20120225154750
+85.26.231.15 5 44 322719 20120224131712
+176.8.90.92 6 6 139992 20120227181027
+79.89.39.46 8 8 266734 20120227212910
+93.182.189.9 14 14 401348 20120226065901
+178.91.80.233 15 50 329040 20120225171140
+217.212.231.63 3 36 292685 20120226165037
+80.254.101.34 3 37 328308 20120221134017
+79.142.73.169 36 36 759365 20120229222159
+93.84.1.231 8 80 358043 20120221184456
+74.125.78.89 1 3 10012 20120227132307
+68.10.249.121 6 6 141940 20120225115615
+109.162.47.139 5 5 178002 20120227060618
+93.182.171.56 7 7 199050 20120229095959
+82.145.208.209 3 29 242705 20120221192946
+85.115.248.249 8 42 299155 20120229125129
+77.108.113.179 37 37 2109 20120222191850
+37.112.76.204 3 3 56414 20120222063220
+95.28.80.174 1 15 253051 20120226041631
+87.249.223.241 3 39 293177 20120222173140
+188.138.89.127 64 64 1582917 20120229201042
+212.33.239.119 4 37 298650 20120227104303
+89.252.9.243 6 6 135620 20120224200529
+74.125.78.80 0 3 7388 
+77.222.108.141 5 5 176834 20120227075101
+190.3.106.163 6 6 140742 20120226173749
+94.25.199.146 1 1 41658 20120228231330
+111.8.172.210 6 6 142863 20120227003841
+195.2.255.46 46 46 931383 20120225115243
+188.134.34.138 4 38 296898 20120225153705
+89.74.14.47 32 32 740337 20120224185148
+109.13.66.151 7 7 200937 20120228135609
+92.43.0.106 64 205 1181368 20120227011830
+74.125.16.151 0 5 8634 
+92.100.194.95 4 42 361078 20120228105903
+46.0.175.39 10 10 354440 20120229124449
+123.150.160.83 1 1 11435 20120223181915
+31.214.201.54 10 10 91741 20120224134846
+95.29.205.172 6 53 82677 20120228183814
+125.89.161.189 2 2 86068 20120225065923
+95.188.101.71 5 38 298788 20120229060823
+212.111.202.234 4 40 319595 20120226162012
+85.26.233.175 6 49 322115 20120222234930
+60.53.208.171 1 1 11435 20120223181818
+193.105.210.107 5 5 301526 20120224075138
+85.192.150.65 6 48 329642 20120224001405
+37.45.118.254 5 5 172650 20120225115549
+208.85.175.27 11 11 240310 20120222034023
+46.201.244.73 12 12 320742 20120223191049
+93.182.130.87 7 7 199798 20120229131803
+89.105.246.20 6 6 140232 20120229164428
+87.252.187.163 4 35 288547 20120225180758
+31.214.133.64 2 2 20035 20120223183228
+217.212.230.116 4 37 292832 20120223230149
+93.182.171.147 7 7 200847 20120225083233
+176.31.18.235 16 16 374795 20120228221058
+195.162.57.39 3 36 292680 20120223154233
+217.151.131.30 14 48 299585 20120222120335
+91.79.209.115 2 30 298125 20120224121925
+94.29.125.93 4 35 287080 20120224170228
+95.27.3.86 1 15 252751 20120224133141
+41.218.230.197 1 1 11435 20120223181908
+61.54.26.43 16 16 376147 20120226155648
+58.83.224.217 11 11 320173 20120228062259
+213.186.46.43 5 5 131660 20120228050832
+95.143.198.21 1 1 44593 20120227140023
+123.65.222.2 15 15 353608 20120226211509
+213.110.133.221 16 16 1055021 20120229162322
+188.113.32.196 5 40 298663 20120223214050
+80.239.243.243 3 29 242703 20120226233741
+88.200.214.55 4 40 326821 20120225234520
+93.182.130.64 7 7 203101 20120225035929
+178.137.18.239 7 7 198528 20120227173659
+86.121.75.39 7 7 199168 20120222132824
+109.230.217.87 16 16 411473 20120227051254
+85.202.191.49 2 38 290936 20120229161741
+74.125.78.82 0 2 1119 
+46.242.26.250 73 76 26345 20120226015547
+109.187.82.132 5 42 308033 20120222210840
+78.106.117.103 3 35 288329 20120226005754
+69.169.145.80 2 2 20623 20120225221801
+193.41.142.248 6 79 421258 20120225092508
+178.216.100.91 3 40 304639 20120226162735
+91.231.95.246 2 14 11505 20120224130326
+109.87.185.205 3 36 292684 20120222194746
+178.130.4.45 8 47 349948 20120222204023
+188.235.14.227 7 7 193242 20120221231320
+194.75.74.178 5 5 139626 20120224131015
+83.21.213.153 16 16 373932 20120228155319
+77.51.8.247 4 37 292830 20120227212515
+88.190.17.3 8 8 258176 20120228085643
+88.190.242.102 16 16 374419 20120226134707
+208.80.194.30 3 3 177181 20120226032115
+95.135.17.161 3 35 288025 20120225183309
+95.52.179.172 5 43 340628 20120229150550
+109.184.124.42 1 1 65569 20120221202547
+188.163.65.106 7 7 73181 20120227042630
+213.189.244.1 4 37 321983 20120229083045
+83.149.1.195 66 194 259368 20120228164212
+89.178.131.111 3 39 304385 20120227004412
+117.27.138.68 63 63 1489238 20120229171317
+193.105.210.139 4 4 243214 20120225221127
+201.45.46.134 2 2 35800 20120222080640
+93.182.174.17 7 7 200569 20120227051021
+151.0.12.31 1 1 8196 20120221152902
+188.138.112.118 3 3 100512 20120228060958
+2.93.253.97 5 5 139588 20120229102250
+74.125.16.156 0 7 6555 
+176.31.78.123 14 14 502820 20120226030553
+94.178.44.233 9 45 338589 20120225203314
+81.25.55.138 7 7 199218 20120229112959
+193.110.115.61 7 7 199246 20120226011715
+188.165.239.210 14 14 621727 20120229205715
+201.30.25.23 1 1 66202 20120224154811
+207.249.9.114 1 1 48909 20120227140115
+178.123.225.128 7 7 165802 20120226141651
+89.149.223.180 11 11 241630 20120224140018
+212.75.194.186 6 52 346246 20120224072050
+195.182.194.214 5 5 176425 20120229195428
+95.27.208.127 3 36 292680 20120225062838
+93.182.174.26 7 7 198849 20120224075054
+193.105.210.94 6 6 143332 20120222111052
+93.186.110.136 7 7 251369 20120225224328
+176.51.166.221 3 36 292657 20120221232315
+109.111.191.53 4 4 147272 20120221133743
+145.255.150.184 1 1 16716 20120223181840
+178.73.63.132 62 62 1236545 20120229222111
+85.234.20.157 14 14 261064 20120228161515
+94.31.255.145 14 14 371027 20120229164828
+109.87.4.147 6 6 196328 20120228031026
+109.230.246.142 16 16 367058 20120226173415
+178.140.85.253 4 42 314647 20120222150148
+95.79.92.96 3 3 56236 20120222161823
+176.9.79.206 2 33 281279 20120221144835
+74.125.16.145 2 6 52660 20120222214642
+92.50.160.166 4 38 298932 20120227072959
+79.240.213.64 19 19 538554 20120221215306
+217.115.83.78 79 266 1595280 20120225110430
+85.115.248.213 2 2 114 20120229151125
+95.29.10.156 4 4 110952 20120222202233
+91.149.162.168 5 5 174332 20120228075500
+188.17.67.2 5 41 304488 20120222130649
+210.51.43.82 16 16 375849 20120227060851
+92.249.93.99 14 14 439869 20120226175908
+74.125.78.93 0 1 292 
+91.222.216.86 1 1 44593 20120227140018
+83.21.196.202 19 19 457828 20120224160257
+46.0.178.221 3 3 55538 20120227213605
+217.118.78.37 4 41 340559 20120222214515
+83.149.2.244 54 124 153453 20120222155031
+61.32.75.88 1 1 65486 20120222065633
+78.36.35.19 4 44 305883 20120221220319
+46.17.97.76 7 7 200780 20120226015455
+83.149.3.149 135 355 1877342 20120229234102
+31.192.105.2 12 12 124143 20120228223047
+85.26.165.163 4 40 382995 20120223183232
+46.17.98.212 30 30 716896 20120224180355
+95.31.214.222 3 35 304311 20120228140323
+89.178.87.196 8 8 155469 20120228192357
+95.135.8.64 3 37 293506 20120225145708
+60.190.77.98 1 1 66197 20120222153804
+109.230.222.36 12 12 278989 20120227015302
+46.252.245.206 14 34 75398 20120225223205
+85.234.20.141 11 11 206943 20120229191420
+37.45.82.23 4 42 329370 20120226195226
+193.105.210.114 14 14 400940 20120227003959
+79.164.14.154 5 43 300461 20120228185443
+46.17.98.88 16 16 375694 20120228103342
+37.55.61.12 3 36 292659 20120221233305
+37.59.70.14 1 1 66058 20120228065325
+31.214.144.217 2 2 20501 20120225162249
+77.234.9.58 4 44 300715 20120222165257
+109.225.5.153 3 36 292654 20120223202753
+201.248.68.11 19 19 532681 20120227112121
+213.108.200.189 4 33 284532 20120222075910
+176.195.217.23 1 15 252769 20120222140746
+187.91.18.181 1 1 30947 20120223181830
+178.122.228.137 6 6 139612 20120221153630
+37.58.37.166 6 45 322782 20120229214100
+92.115.86.152 4 38 268946 20120226152129
+194.30.240.169 9 9 242824 20120228190508
+208.80.194.28 1 1 59020 20120228122056
+95.79.151.121 3 3 56238 20120221152230
+93.94.155.32 23 116 588223 20120226101057
+80.240.36.73 2 23 132650 20120228133022
+178.187.148.68 1 1 65851 20120229145843
+80.239.242.190 12 12 516 20120227234557
+46.17.97.139 79 79 2318522 20120228200036
+109.200.124.213 2 33 281300 20120225164044
+80.80.122.139 3 37 292936 20120229101652
+121.14.9.75 4 4 107494 20120228061040
+58.22.151.6 21 21 477657 20120228194859
+82.193.117.23 219 219 8044772 20120229233424
+217.66.146.187 2 2 17808 20120229171230
+202.91.246.215 2 2 35801 20120222080604
+178.210.211.254 10 10 356503 20120225040127
+124.199.126.26 1 1 18482 20120222080622
+93.185.147.107 2 29 283693 20120225202041
+46.228.116.101 2 38 320705 20120227160638
+89.162.183.114 19 52 299491 20120227164917
+89.179.55.131 3 34 287748 20120227121802
+119.59.122.65 2 2 124535 20120224081021
+109.230.244.2 16 16 310122 20120226212121
+31.178.7.2 63 63 628283 20120229132945
+46.251.227.105 19 19 580815 20120224043301
+94.230.160.64 2 34 281577 20120224213717
+91.212.226.82 6 6 132516 20120224125011
+83.149.48.38 3 36 292687 20120228122018
+184.18.50.184 5 5 76737 20120226160536
+78.110.246.50 7 50 372475 20120229144125
+79.133.86.101 6 39 303842 20120228110534
+77.65.48.239 23 23 572573 20120227094912
+158.255.133.143 2 48 224747 20120223165728
+220.161.150.130 32 32 828037 20120229180919
+91.231.94.152 1 11 3595 20120226212105
+82.145.208.128 2 33 325243 20120221160230
+217.212.231.93 3 36 292681 20120226151621
+178.177.72.155 1 7 120432 20120223165314
+79.139.156.52 3 37 292924 20120221200623
+217.23.68.74 4 42 320230 20120228112425
+87.239.26.16 11 43 304772 20120228170736
+188.163.65.202 7 7 72940 20120225090812
+109.106.144.128 6 6 140947 20120227185847
+61.164.87.130 2 2 23746 20120224155019
+94.41.189.243 3 36 292675 20120229181933
+109.124.64.222 9 67 584483 20120228163823
+178.19.255.28 4 38 293079 20120224012533
+59.46.197.98 2 2 35805 20120222080652
+83.167.82.100 3 34 305230 20120224133405
+94.242.142.247 3 28 163439 20120223200610
+46.251.229.92 7 7 199213 20120225203645
+80.239.243.0 3 36 292685 20120225184830
+81.22.140.5 3 36 281929 20120222012955
+77.50.101.152 1 1 66175 20120227123552
+176.213.45.164 3 3 56272 20120223212615
+200.251.58.190 4 4 149040 20120228214757
+78.85.14.215 3 3 13707 20120225155443
+193.105.210.182 12 12 280656 20120229180551
+218.86.50.241 7 7 199210 20120227171514
+89.232.232.178 5 40 326598 20120228125108
+91.224.160.77 15 15 903146 20120228053130
+93.182.153.76 19 19 736734 20120225035158
+74.125.78.84 0 1 251 
+74.125.78.91 0 6 103141 
+93.182.190.13 32 32 735741 20120229105641
+37.112.70.147 4 4 76331 20120226054247
+93.182.173.42 8 8 158756 20120222061600
+109.254.126.125 4 40 322532 20120224024903
+93.182.133.25 8 8 157435 20120222185831
+176.31.218.203 7 7 199429 20120226200447
+95.67.249.172 5 5 81196 20120221205424
+176.53.212.31 2 33 281281 20120221223026
+80.239.242.175 1 1 57195 20120223160422
+93.88.130.141 6 44 308460 20120222192420
+176.195.56.146 5 37 279562 20120223234528
+175.44.7.153 10 10 356260 20120229234955
+79.165.47.173 3 29 258966 20120226000718
+200.107.226.251 2 2 35802 20120222080524
+93.182.189.20 14 14 402479 20120227210048
+49.212.112.118 5 5 76734 20120228093512
+77.45.198.49 5 37 288974 20120226170544
+178.93.58.39 12 84 645281 20120221230734
+109.224.53.149 2 2 35800 20120222080615
+80.243.144.9 4 37 298638 20120222180520
+79.170.50.40 23 23 574319 20120229125356
+74.125.16.148 1 2 696 20120222232547
+217.172.178.47 7 7 199214 20120227125059
+94.60.180.128 19 19 517188 20120222013716
+85.26.231.123 2 26 222162 20120224171655
+178.66.224.209 11 45 335632 20120228235119
+213.132.71.134 10 90 731459 20120229091630
+77.122.126.57 4 45 307735 20120226180929
+58.246.200.114 6 6 140559 20120227154318
+92.63.15.226 4 4 71600 20120225154859
+95.79.27.5 17 89 1608952 20120222105531
+46.165.10.151 3 37 292936 20120223212140
+78.40.218.82 5 39 310960 20120222172000
+178.251.137.72 8 8 310278 20120225041826
+213.0.122.4 14 14 317585 20120227095306
+178.204.241.125 6 55 350941 20120225154656
+80.91.181.40 3 40 304640 20120224173332
+128.204.197.131 16 16 332231 20120222124029
+96.127.163.106 16 16 311358 20120228154814
+82.198.23.146 2 2 31033 20120227014020
+178.46.106.239 3 36 292683 20120226095854
+95.220.235.28 4 31 274183 20120223132740
+136.169.139.114 1 1 57 20120229230705
+109.161.11.129 5 44 338656 20120225233109
+81.23.16.57 31 64 300180 20120228180654
+176.214.85.106 4 35 281397 20120222150533
+83.149.8.69 0 1 639 
+195.78.252.35 3 40 392062 20120227162131
+46.159.108.80 7 7 180594 20120224085402
+178.73.202.190 6 6 142132 20120223143626
+188.134.40.29 3 36 292688 20120224171952
+62.149.1.75 1 1 10022 20120229000006
+83.149.2.246 11 41 11142 20120229114814
+78.26.173.151 23 23 842002 20120229202845
+187.141.81.182 3 3 100244 20120229142809
+93.182.152.41 7 7 200822 20120227073545
+193.151.3.73 3 40 331932 20120228144304
+81.200.24.164 3 3 65807 20120227134848
+91.206.252.226 133 133 3815822 20120229221309
+92.99.207.247 11 11 238355 20120224131117
+109.188.241.213 3 35 304314 20120221183727
+110.136.149.35 2 2 21521 20120224024537
+95.52.98.119 5 42 31493 20120226121345
+188.163.64.0 7 7 71300 20120224065632
+83.170.113.110 3 3 103517 20120225121333
+212.33.13.186 6 10 153374 20120222152859
+81.4.230.223 2 2 9138 20120227113352
+217.106.3.242 17 17 969 20120221182533
+83.21.203.192 7 7 200837 20120227064439
+89.184.25.148 3 38 292930 20120224150557
+218.6.15.112 112 112 2614098 20120229105537
+193.111.114.21 7 7 200132 20120222123934
+85.222.96.83 48 48 951114 20120229102302
+109.74.213.109 6 6 342 20120223214737
+217.23.68.206 3 36 292686 20120222112120
+121.11.149.250 2 2 83649 20120224233110
+188.122.232.141 2 33 281299 20120221213549
+93.182.181.24 7 7 200233 20120227141209
+94.143.42.39 50 50 1466181 20120224235628
+92.249.127.111 14 14 922681 20120229060042
+89.78.124.225 7 7 200876 20120222183240
+220.255.2.29 1 1 59167 20120224225023
+90.188.98.147 1 1 57 20120222201843
+2.95.2.56 6 6 142001 20120226111430
+84.46.19.154 5 38 295646 20120226022401
+94.50.61.11 4 38 298930 20120227212913
+37.59.70.6 1 1 65609 20120229201758
+81.0.254.172 7 7 198525 20120226113809
+178.167.57.47 6 6 140527 20120226095939
+94.41.83.210 4 44 307523 20120226201149
+62.244.61.50 4 37 298641 20120224160249
+150.70.172.107 1 1 12273 20120226012115
+46.138.192.34 3 36 292682 20120229194542
+82.145.208.114 4 37 328592 20120225034923
+80.239.242.95 1 1 43 20120224175724
+190.66.17.53 16 16 84698 20120224203846
+88.229.183.150 1 1 40333 20120223181821
+93.127.40.41 24 24 564627 20120226030757
+78.29.66.82 3 39 300697 20120227161335
+204.12.248.2 2 2 76496 20120227015328
+59.103.204.1 16 16 372197 20120225154949
+46.73.250.60 1 15 234859 20120222004733
+199.19.109.28 14 14 398362 20120227170846
+74.125.16.153 2 7 35379 20120227132307
+119.255.6.205 7 7 200752 20120226232654
+93.182.188.56 7 7 202506 20120227212252
+175.42.83.141 16 16 370990 20120223164327
+109.172.56.22 3 41 346532 20120229123630
+213.135.152.156 3 41 303030 20120229155805
+94.137.13.38 9 9 128873 20120222182328
+188.143.232.112 9 9 333297 20120225225609
+95.24.118.197 2 33 281300 20120227094144
+212.26.62.20 1 1 5569 20120225221803
+95.79.137.202 3 3 56201 20120227191733
+46.166.85.120 5 39 303958 20120226100301
+213.179.255.254 6 48 402203 20120224164901
+195.222.76.128 5 46 327642 20120227115718
+91.199.13.10 9 75 597353 20120221181234
+188.134.46.150 4 44 305876 20120229182009
+31.23.140.71 2 20 218659 20120227091820
+213.150.70.242 14 104 490248 20120224131821
+85.26.235.103 3 37 292931 20120226223809
+194.150.140.165 3 37 292768 20120229095627
+74.125.78.103 1 4 23793 20120227132305
+91.207.8.46 7 7 200884 20120226191832
+85.233.159.136 6 39 314299 20120227073044
+46.0.220.205 3 40 315162 20120222172235
+188.32.176.90 3 36 292681 20120227115805
+2.92.126.52 5 49 127789 20120227195523
+150.70.97.41 1 1 12273 20120227191836
+93.180.45.92 2 30 298119 20120226193628
+93.80.151.56 9 52 396215 20120228195556
+178.32.122.166 2 2 36829 20120229152223
+175.100.144.242 3 3 88076 20120222080438
+122.154.140.50 14 14 284652 20120224081127
+178.124.13.54 3 40 312950 20120223173405
+150.70.172.203 1 6 124060 20120226013958
+94.31.250.175 7 7 199154 20120226220756
+109.230.213.188 30 30 735610 20120222044814
+217.118.81.30 4 41 326910 20120222144829
+95.105.10.62 29 151 988434 20120226210025
+193.105.210.163 10 10 601099 20120226005341
+74.125.16.163 0 7 53826 
+220.152.202.79 5 5 167660 20120224050219
+188.114.3.11 3 37 292934 20120226234439
+188.168.94.24 11 11 43127 20120229155806
+109.230.244.106 16 16 411083 20120226101451
+82.194.188.250 4 38 322367 20120226025712
+212.40.205.204 2 34 281574 20120229102803
+89.252.58.37 7 7 200782 20120224055555
+95.156.238.35 16 16 333148 20120221181255
+46.63.146.46 7 7 207463 20120229195507
+93.85.33.231 3 38 312402 20120225132213
+108.62.211.102 21 21 837325 20120228231933
+24.43.5.23 32 32 744501 20120229194154
+188.143.232.200 14 14 399603 20120229172056
+93.182.149.37 18 18 700292 20120224073551
+77.45.189.101 2 32 261404 20120226230607
+46.21.144.52 36 36 846740 20120229075834
+74.125.16.161 1 9 24338 20120221185843
+184.105.153.238 16 16 371156 20120222185431
+95.79.124.236 17 17 357898 20120228224949
+93.85.207.10 5 49 383720 20120223221442
+89.255.106.118 8 41 298953 20120229180007
+95.55.184.82 5 41 307251 20120224192343
+112.216.58.42 6 6 182429 20120221170456
+46.246.72.231 7 7 199900 20120224054751
+176.195.198.135 7 7 200795 20120223205704
+134.255.155.36 3 37 292768 20120229215155
+198.36.39.3 2 2 26558 20120222040103
+128.68.170.38 1 14 271128 20120227045925
+82.199.108.142 13 66 383425 20120225212130
+188.239.8.193 9 9 231639 20120226113657
+120.36.18.235 16 16 372185 20120222135220
+109.130.63.88 1 1 17433 20120222065645
+212.111.198.40 3 30 282728 20120221190402
+95.58.12.102 5 40 300613 20120227080919
+46.0.157.205 2 40 312275 20120222165325
+216.144.243.202 7 7 198216 20120222112432
+59.125.82.23 1 1 65703 20120226011736
+217.118.83.238 1 1 11440 20120227200025
+117.26.119.217 5 5 178048 20120225213043
+95.134.81.202 4 38 304203 20120225194859
+77.246.49.202 3 3 96531 20120229214250
+213.176.230.204 3 37 292932 20120223163113
+178.130.1.26 3 36 288950 20120227184522
+83.149.3.184 65 152 47657 20120226205719
+188.18.122.254 5 40 296238 20120221140018
+188.122.229.242 7 41 293155 20120222145517
+159.160.40.127 1 10 75463 20120223160600
+158.181.171.174 7 51 393479 20120226130510
+94.50.219.161 4 43 348092 20120229110954
+82.145.217.2 4 37 292830 20120224042205
+95.128.226.221 8 45 529494 20120224151649
+195.234.6.84 3 35 288026 20120224004138
+37.59.131.236 15 15 534421 20120225035707
+46.247.197.197 3 36 292685 20120222233258
+88.86.69.126 10 43 298987 20120228161753
+193.110.115.189 42 42 1207197 20120227095645
+84.240.202.117 14 221 929017 20120226210720
+195.138.88.105 16 16 368677 20120229120848
+92.54.116.115 4 39 303525 20120225215052
+129.228.15.142 1 1 18526 20120225221722
+91.214.16.28 4 40 292634 20120225185329
+89.235.167.98 5 5 285 20120224142653
+218.29.97.165 16 16 409798 20120222215402
+178.93.37.21 3 36 292687 20120221234734
+136.169.152.247 13 38 344309 20120225231854
+201.18.135.4 4 4 71608 20120225154815
+59.58.139.148 7 7 198942 20120225182917
+93.182.171.170 7 7 201562 20120224034158
+108.62.211.109 6 6 140075 20120222063639
+93.182.172.181 7 7 201046 20120228020247
+80.255.84.30 4 4 153501 20120229171514
+87.239.27.233 6 6 140559 20120222151247
+213.187.112.189 2 32 236783 20120221203230
+92.255.234.23 4 37 298634 20120228141155
+78.172.148.33 1 1 11435 20120223181837
+59.58.139.162 14 14 330898 20120228081244
+178.129.85.192 6 6 141479 20120223175628
+82.131.91.193 5 41 325636 20120225150145
+92.101.132.179 6 6 141805 20120227032514
+37.59.70.4 5 5 88498 20120229201803
+46.191.142.125 3 38 298696 20120226100009
+188.19.154.192 3 36 264699 20120226180823
+188.16.221.210 1 1 66178 20120225181435
+89.178.105.140 5 55 597427 20120228142100
+218.208.102.34 1 1 66043 20120227140110
+79.139.254.59 5 5 170625 20120226192410
+175.141.132.106 1 1 17451 20120223181804
+31.132.114.173 2 22 221575 20120222000632
+212.58.205.226 4 40 304529 20120226230444
+125.88.75.139 3 3 76313 20120225032554
+74.125.78.96 1 2 396 20120227132311
+77.50.244.210 1 1 57 20120221130033
+217.118.64.42 5 44 322932 20120227155111
+212.44.94.2 5 45 304486 20120226231953
+93.124.8.44 3 37 292932 20120224175558
+93.144.28.110 7 7 156312 20120222022001
+77.122.18.249 6 6 141934 20120227144941
+92.124.70.135 2 34 299313 20120221175159
+220.255.2.92 1 1 66010 20120224224947
+31.163.38.31 4 27 228138 20120228185756
+178.122.142.58 5 43 333592 20120221150529
+84.108.116.47 27 27 795783 20120227155301
+220.255.2.58 1 1 17451 20120224225003
+190.107.140.74 1 1 66163 20120226160317
+1.161.130.124 14 14 307720 20120227040211
+176.15.140.55 15 95 389438 20120222133917
+178.65.133.196 2 37 351806 20120229184838
+178.250.47.252 23 23 467244 20120229171811
+220.255.2.69 1 1 11473 20120224225020
+109.95.38.6 3 37 290864 20120228012859
+178.218.81.15 3 40 309817 20120226163442
+93.182.153.10 7 7 199175 20120225065430
+178.93.43.49 3 37 292932 20120224001603
+46.0.131.26 4 39 299875 20120228110745
+121.78.233.162 1 1 66199 20120224200453
+178.91.128.173 3 36 306890 20120222220739
+95.106.235.235 19 200 1653683 20120227221220
+210.42.38.106 2 2 83588 20120228214809
+79.134.10.4 3 37 292935 20120222144550
+91.192.218.144 7 7 200899 20120224182118
+95.79.40.65 3 3 55055 20120227060837
+46.17.100.99 25 25 768944 20120226231257
+74.125.78.98 0 3 44854 
+121.58.195.147 3 3 142572 20120228145242
+92.127.104.14 4 38 298928 20120224163429
+217.66.152.23 5 44 300755 20120225221317
+37.55.114.204 6 6 141974 20120228040425
+85.234.20.126 16 16 299309 20120228034908
+81.24.80.228 3 36 292685 20120221203925
+108.21.103.51 32 32 742226 20120227114955
+210.101.131.231 56 56 1692163 20120229152253
+82.145.208.112 3 40 328280 20120225105606
+86.167.178.1 7 7 200803 20120225112411
+91.144.166.105 220 220 952036 20120229234456
+194.11.79.45 4 38 305598 20120228170814
+83.149.34.164 4 37 298638 20120221144714
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 9
+20120221 1180 3956 33364186 150
+20120222 2080 4960 52277362 279
+20120223 858 2215 21675363 119
+20120224 2048 4837 46609825 233
+20120225 1808 3755 45432439 228
+20120226 1596 3979 40556925 189
+20120227 2010 4306 50483905 257
+20120228 2047 4452 50539773 236
+20120229 1602 4203 43322015 187
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 188
+5mn-15mn 30
+2mn-5mn 55
+30s-2mn 219
+15mn-30mn 53
+0s-30s 1280
+30mn-1h 53
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 207
+/index.php 12318 169484177 1638 1181
+/Themes/default/hs4smf/graphics/zoomout.cur 512 160392 10 344
+/index.php/board,42.0.html 335 6676944 0 6
+/index.php/board,15.0.html 224 6656058 2 10
+/index.php/board,43.0.html 203 4028430 1 15
+/index.php/board,45.0.html 176 5787388 0 84
+/ 151 5169483 97 38
+/index.php/board,7.0.html 134 2215115 1 2
+/index.php/board,11.0.html 128 4622755 2 7
+/Themes/default/hs4smf/graphics/zoomin.cur 117 38142 1 7
+/index.php/topic,463.0/topicseen.html 2 14517 0 0
+/index.php/board,46.0.html 81 1349108 1 58
+/index.php/topic,137.0.html 1 11622 0 0
+/index.php/board,5.0.html 4 108884 0 0
+/index.php/topic,464.0.html 3 24007 0 0
+/index.php/topic,330.0.html 5 223056 2 2
+/index.php/topic,142.0.html 1 7785 0 1
+http://forum.odmins-it.ru/index.php/board,42.0.html 2 39365 1 0
+/index.php/topic,78.0.html 10 224514 0 0
+/index.php/board,25.0/sort,starter.html 1 23106 0 0
+/index.php/topic,426.0.html 4 117622 0 0
+/index.php/topic,342.0.html 2 47701 0 0
+/index.php/topic,459.msg2024/topicseen.html 1 6198 0 0
+/index.php/topic,337.0/prev_next,prev.html 2 13540 1 1
+/index.php/board,38.0.html 5 116360 0 0
+/index.php/board,52.0.html 7 177005 0 0
+/index.php/topic,462.0.html 21 195607 7 0
+/index.php/topic,177.0.html 4 103558 0 0
+/index.php/topic,463.msg2028/boardseen.html 1 7486 0 1
+/index.php/board,24.0/sort,subject.html 1 25027 0 0
+http://forum.odmins-it.ru/index.php/board,15.0.html 1 30717 0 0
+/index.php/topic,29.0.html 1 24393 0 0
+/index.php/topic,200.0.html 14 462614 1 0
+/index.php/topic,460.0/topicseen.html 1 7160 0 0
+/index.php/topic,348.0.html 15 466790 3 1
+/index.php/topic,461.0/topicseen.html 1 7355 0 0
+/index.php/topic,296.0.html 1 25750 0 0
+/index.php/topic,105.0.html 2 53575 1 0
+/index.php/board,24.0/sort,subject/desc.html 1 25024 0 1
+/index.php/board,24.0/sort,last_post.html 2 50054 0 0
+/index.php/board,40.0.html 5 122212 0 0
+/index.php/board,22.0.html 24 411622 0 16
+/index.php/board,44.40.html 2 80990 0 0
+/index.php/board,12.0.html 6 179174 0 0
+/index.php/topic,59.0.html 1 51810 0 0
+/index.php/topic,455.0.html 2 38832 1 0
+/index.php/topic,315.0.html 1 32401 1 0
+/index.php/topic,391.0.html 2 145955 2 1
+/index.php/topic,26.0.html 1 28182 0 0
+/index.php/topic,461.msg2028.html 1 7873 0 0
+/index.php/topic,115.0.html 1 10132 0 0
+/index.php/topic,404.0.html 18 1180167 6 2
+/index.php/board,27.0.html 16 576892 9 7
+/index.php/topic,121.0.html 1 13120 0 0
+/index.php/topic,184.0.html 1 8185 0 0
+/index.php/topic,457.0.html 14 192468 6 0
+/index.php/topic,301.0.html 1 31166 0 0
+/index.php/topic,195.0.html 1 8805 0 0
+/index.php/topic,418.0.html 3 155572 0 0
+/index.php/topic,461.msg1238/boardseen.html 1 7514 0 0
+/index.php/topic,316.0.html 2 45665 0 1
+http://forum.odmins-it.ru/index.php/board,45.0.html 1 32885 0 0
+/index.php/topic,399.0.html 1 29418 0 0
+/index.php/topic,28.0.html 13 290465 1 1
+/index.php/topic,459.0/topicseen.html 1 7044 0 0
+/index.php/topic,354.msg1455.html 2 26558 1 1
+/index.php/board,24.0.html 8 202600 1 2
+/index.php/board,37.0.html 5 176898 0 1
+/index.php/topic,407.0.html 10 292053 6 4
+/index.php/topic,453.0.html 3 29523 0 0
+/index.php/topic,197.0.html 1 8134 0 0
+/index.php/topic,454.0.html 1 6732 0 1
+/index.php/topic,453.msg2031/topicseen.html 1 8789 0 0
+/index.php/topic,247.0.html 7 194161 4 1
+http://forum.odmins-it.ru/index.php/board,46.0.html 1 16640 0 1
+/index.php/topic,68.0.html 22 1420617 0 2
+/index.php/topic,462.0/topicseen.html 2 16825 0 1
+/index.php/topic,257.0.html 3 90958 2 1
+/index.php/topic,306.0.html 1 44177 0 0
+/index.php/topic,212.0.html 1 37555 0 0
+/index.php/topic,249.0.html 1 8204 0 0
+/index.php/topic,454.0/topicseen.html 1 8016 0 0
+/index.php/topic,438.15.html 1 7694 0 0
+/index.php/topic,299.0.html 2 23167 0 0
+/index.php/topic,152.0.html 5 144444 1 1
+/index.php/topic,465.0.html 1 8131 0 0
+/index.php/topic,170.0.html 1 87428 0 0
+/index.php/board,25.0/sort,subject/desc.html 2 45729 0 1
+/index.php/topic,75.0.html 1 8088 0 0
+http://forum.odmins-it.ru/index.php/board,7.0.html 1 16486 0 0
+/index.php/board,49.0.html 5 112194 0 0
+/index.php/topic,461.msg2026/topicseen.html 1 6239 0 0
+/index.php/topic,347.msg1430.html 5 101861 2 0
+/index.php/topic,254.0.html 3 314290 2 0
+/index.php/topic,382.0/topicseen.html 1 10234 0 0
+/index.php/topic,273.0.html 1 8692 0 0
+/index.php/topic,205.0.html 11 244734 3 3
+/index.php/board,16.0.html 5 140077 0 0
+/index.php/topic,39.0.html 3 74591 0 1
+/index.php/topic,272.0.html 1 28240 1 0
+/index.php/topic,40.0.html 1 5878 0 0
+/index.php/board,47.0.html 6 167892 0 0
+/index.php/board,28.0.html 6 121746 0 0
+/index.php/topic,337.0.html 1 7742 0 0
+/index.php/topic,438.0.html 3 247498 2 0
+/index.php/topic%2c461.0.html 1 9977 0 0
+/index.php/topic,464.msg2035.html 2 15372 0 0
+/index.php/topic,461.0.html 6 43910 2 0
+http://forum.odmins-it.ru/index.php/board,43.0.html 1 19769 0 0
+/index.php/topic,72.0.html 5 244758 4 5
+/index.php/topic,25.0.html 1 57500 1 1
+/index.php/topic,19.0.html 7 264501 0 1
+/index.php/topic,463.0.html 9 111688 7 3
+/index.php/topic,76.0.html 18 425827 0 2
+/index.php/board,23.0.html 8 143885 0 0
+/index.php/topic,434.0.html 1 43891 1 1
+/index.php/board,53.0.html 12 143965 0 0
+/index.php/topic,53.0.html 1 7542 0 0
+/index.php/topic,97.0.html 1 7629 0 1
+/index.php/topic,464.new.html 1 7452 0 0
+/index.php/board,35.0.html 2 29834 0 0
+/index.php/board,44.20.html 1 40085 0 0
+/index.php/topic,120.0.html 1 41219 0 0
+/index.php/topic,454.msg2004/boardseen.html 1 41682 0 0
+/index.php/topic,396.0.html 1 10485 0 0
+/index.php/board,39.20.html 1 5245 0 0
+/index.php/topic,271.0/prev_next,next.html 1 3286 0 1
+/index.php/board,36.0.html 5 94634 0 0
+/index.php/topic,182.0.html 1 8927 0 0
+/index.php/topic,439.0.html 12 119132 8 0
+/index.php/board,34.0.html 3 46251 0 0
+/index.php/board,17.0.html 5 113041 0 0
+/index.php/board,25.0/sort,starter/desc.html 1 23103 0 0
+/index.php/topic,154.0.html 1 53215 0 1
+/index.php/topic,393.0.html 1 44359 0 0
+/index.php/topic,461.msg2026.html 1 6240 0 0
+/index.php/board,25.0.html 11 249538 0 0
+/index.php/topic,389.0.html 1 22876 0 0
+/index.php/topic,47.0.html 1 48883 1 1
+/myadmin/index.php 56 214008 1 1
+/index.php/topic,387.0.html 2 109956 1 1
+/index.php/topic,259.0.html 3 87791 1 1
+/index.php/topic,442.0.html 2 54258 1 0
+/index.php/topic,256.0.html 3 164160 0 2
+/index.php/topic,298.0.html 1 7475 0 0
+/index.php/board,39.0.html 6 209192 0 0
+/index.php/topic,457.new.html 1 12570 0 0
+//myadmin/main.php 1 8726 1 1
+/index.php/topic,24.0.html 1 21355 0 0
+/index.php/board,18.0.html 5 101174 0 0
+/index.php/topic,8.0.html 1 6760 0 1
+/index.php/board,25.0/sort,subject.html 2 45734 0 0
+/index.php/topic,461.msg1868/boardseen.html 1 34130 0 0
+/index.php/topic,224.0.html 3 60536 0 1
+/index.php/topic,417.0.html 4 170981 2 0
+/index.php/topic,457.msg2036.html 2 24153 0 1
+/index.php/board,25.0/sort,last_post.html 7 160787 0 0
+/index.php/topic,56.0.html 11 296657 4 6
+/index.php/topic,455.0/topicseen.html 1 8562 0 0
+/index.php/board,26.0.html 9 162895 0 0
+/index.php/topic,457.msg2034.html 5 59996 0 0
+/index.php/board,11.20.html 2 13006 0 0
+/index.php/topic,461.msg2027/boardseen.html 1 7893 0 0
+/index.php/topic,458.0/topicseen.html 1 7425 0 0
+/index.php/topic,359.0.html 1 30824 0 0
+/index.php/board,44.0.html 17 456292 0 0
+/index.php/topic,375.0.html 4 110258 2 1
+http://forum.odmins-it.ru/index.php/board,11.0.html 1 40161 0 0
+/index.php/topic,108.0.html 1 39425 0 0
+/index.php/board,10.0.html 5 197324 0 0
+/index.php/topic,104.0.html 3 71464 0 2
+/index.php/topic,460.msg2025/topicseen.html 2 14085 0 1
+/index.php/topic,457.0/topicseen.html 1 10340 0 0
+/index.php/topic,464.msg2036.html 1 7761 0 0
+/index.php/topic,196.0.html 2 45560 1 1
+/index.php/board,25.0/sort,replies.html 1 23104 0 1
+/index.php/topic,14.0.html 5 133883 0 1
+/index.php/topic,7.0.html 38 1135840 0 2
+/index.php/topic,457.msg2033/topicseen.html 2 21973 0 0
+/index.php/topic,165.0.html 2 58465 1 2
+/index.php/board,27.20.html 1 5607 0 0
+/index.php/topic,77.0.html 1 25791 1 1
+/index.php/board,41.0.html 6 116088 0 0
+/index.php/topic,267.0.html 2 46032 1 1
+/index.php/topic,85.0.html 28 970103 6 9
+/index.php/topic,35.0.html 1 6298 0 0
+/index.php/topic,304.0.html 1 12358 0 0
+/index.php/topic,63.0.html 1 7704 1 0
+/index.php/topic,209.0.html 11 456618 0 2
+/index.php/topic,370.0/topicseen.html 1 10182 0 0
+/index.php/topic,458.0.html 1 23102 1 0
+/index.php/topic,330 1 13880 0 1
+/index.php/topic,413.0.html 1 77231 0 1
+/index.php/topic,458.msg2023/topicseen.html 1 6594 0 0
+/index.php/board,29.0.html 7 216825 0 1
+/index.php/topic,453.0/topicseen.html 2 20970 0 0
+/index.php/topic,297.0.html 1 47237 0 0
+/index.php/topic,452.0/topicseen.html 1 9394 0 0
+/index.php/topic,395.0.html 3 28007 0 0
+/index.php/board,19.0.html 6 197886 0 1
+/index.php/topic,412.0.html 3 108267 0 0
+http://forum.odmins-it.ru/index.php 30 694847 9 6
+/index.php/topic,147.0.html 3 115114 0 0
+/index.php/topic,419.0.html 3 122483 0 3
+/index.php/topic,34.0.html 1 22823 0 1
+/index.php/topic,64.0.html 17 368591 0 0
+/index.php/topic,215.0.html 1 7717 0 0
+END_SIDER

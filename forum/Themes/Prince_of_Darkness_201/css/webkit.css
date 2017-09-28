@@ -1,0 +1,23 @@
+/*
+	Special styles for Safari (and other Webkit-based browsers like Chrome)
+	Webkit needs this otherwise the post goes off to the right.
+	Causes issues in IE browsers, and breaks cached search engines pages.
+*/
+table.table_list tbody.header td div.cat_bar
+{
+	margin-bottom: -1px;
+}
+select
+{
+	font-size: 1.05em;
+}
+#guest_form  select
+{
+	height: 20px;
+	color: #000;
+}
+#guest_form  .button_submit
+{
+	vertical-align: top;
+	padding: 2px 4px 3px 4px;
+}

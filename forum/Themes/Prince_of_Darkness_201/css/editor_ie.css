@@ -1,0 +1,40 @@
+/* This is the editor's playground (textarea for non-wysiwyg, iframe for wysiwyg). */
+.editor
+{
+	width: 635px;
+	max-width: 100%;
+	min-width: 100%;
+}
+/* This is the IFRAME that holds the editor. */
+.rich_editor_frame
+{
+	border: 1px solid #6F5C45;
+}
+/* This is the WYSIWYG editor */
+.rich_editor
+{
+	border: none;
+	padding: 2px !important;
+	background: #2a2a2a;
+	color: #afafaf;
+	font: 80%/140% "Verdana", "Arial", "Helvetica", sans-serif;
+}
+.rich_editor p
+{
+	margin: 0;
+}
+.rich_editor a img
+{
+	border: 0;
+}
+/* The resize handle. */
+.richedit_resize
+{
+	height: 7px;
+	font-size: 0;
+	background: #080808 url(../images/bbc/resize-handle.gif) no-repeat 50% 2px;
+	border: 1px solid #82705B;
+	border-top-width: 0;
+	cursor: s-resize;
+	width: 100%;
+}

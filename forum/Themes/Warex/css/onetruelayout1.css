@@ -1,0 +1,375 @@
+.block_1
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;
+	}
+.block_2
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;
+	}
+.block_3
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color:#848484;
+	}
+.block_3 a:link
+{
+color : #ecb700;
+font-size:12pt;
+}
+.block_3 a:visited
+{
+color : #ecb700;
+font-size:12pt;
+}
+
+.block_3 a:hover
+{
+font-effect:underline;
+}
+
+.block_4
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;
+	}
+.block_5
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color:#858585;font-size:10pt;
+	}
+.block_6
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;
+	}
+.block_7
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color:#868686;
+	}
+.wrapper
+	{
+	background: #4c4941 url(../images/categorymid.png);
+	background-color: #4c4941;
+	background-repeat: repeat;
+	}
+.categoryframe
+	{
+	background: #615c52 url(../images/bg.png);
+	background-color: #615c52;
+	background-repeat: repeat;
+}
+.header
+	{
+	padding: 0.5em 0;
+	background: #9999dd;
+	}
+.footer1
+	{
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color:#868686;
+	}
+div, .wrapper h2, .header h1, .wrapper p, .header p, .footer1 p, div p
+	{
+	margin: 0;
+	padding: 0;
+	}
+.seperator
+{
+background-image: url(../images/seperatormid.png);width:17px;
+background-repeat: repeat-y;
+}
+.seperatortop
+{
+background: #f3f3f3 url(../images/seperatortop.png);width:1%;
+}
+.seperatorbot
+{
+background: #f3f3f3 url(../images/seperatorbot.png);width:1%;
+}
+.block_1
+	{
+	float: left;
+	width: 7%;
+	}
+.block_2
+	{
+	float: left;
+	width: 1%;
+	}
+.block_3
+	{
+	float: left;
+	width: 54%;
+	}
+.block_4
+	{
+	float: left;
+	width: 1%;
+	}
+.block_5
+	{
+	float: left;
+	width: 10%;
+	}
+.block_6
+	{
+	float: left;
+	width: 1%;
+	}
+.block_7
+	{
+	float: left;
+	width: 21%;
+	}
+/* Start Mac IE5 filter \*/
+.block_1, .block_2, .block_3, .block_4, .block_5, .block_6, .block_7
+	{
+	padding-bottom: 32767px !important;
+	margin-bottom: -32767px !important; 
+	}
+@media all and (min-width: 0px) {
+.block_1, .block_2, .block_3, .block_4, .block_5, .block_6, .block_7
+	{
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important; 
+	}
+.block_1:before, .block_2:before, .block_3:before, .block_4:before, .block_5:before, .block_6:before, .block_7:before
+	{
+	content: '[DO NOT LEAVE IT IS NOT REAL]';
+	display: block;
+	background: inherit;
+	padding-top: 32767px !important;
+	margin-bottom: -32767px !important;
+	height: 0;
+	}
+}
+/* End Mac IE5 filter */
+.wrapper
+	{
+	overflow: hidden; /* This hides the excess padding in non-IE browsers */
+	}
+/* we need this for IE 5.01 - otherwise the wrapper does not expand to the
+necessary height (unless fixed, this problem becomes even more acute 
+weirdness as the method is enhanced */
+.wrapper
+	{
+/* Normally a Holly-style hack height: 1% would suffice but that causes 
+IE 5.01 to completely collapse the wrapper - instead we float it */
+	float: left;
+/* NB. possibly only IE 5.01 needs to get this float value - otherwise 5.5 sometimes 
+(I saw it happen many moons ago) makes the width of wrapper too small 
+the float: none with the comment is ignored by 5.01,
+5.5 and above see it and carry on about their business
+It's probably fine to just remove it, but it's left here 
+just in case that many moons ago problem rears its head again */
+	float/**/: none;
+	}
+/* easy clearing */
+.wrapper:after
+	{
+	content: '[DO NOT LEAVE IT IS NOT REAL]'; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+.wrapper
+	{
+	display: inline-block;
+	}
+/*\*/
+.wrapper
+	{
+	display: block;
+	}
+/* end easy clearing */
+.footer1
+	{
+	clear: both;
+	}
+/* Safari needs this - otherwise the ghost overflow, though painted 
+correctly obscures links and form elements that by rights should be above it.
+An unintended side-effect is that it cause such elements to vanish in IE 5.01
+and 5.5, hence the child selector hack */
+* > .footer1, * > form, * > .notes, * > .output
+	{
+	position: relative;
+	z-index: 1000;
+	}
+
+
+.iblock_1
+	{
+	float: left;
+	width: 7%;
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color : #ecb700;
+	}
+.iblock_2
+	{
+	float: left;
+	width: 1%;
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color : #ecb700;
+	}
+.iblock_3
+	{
+	float: left;
+	width: 89%;
+	background: #4c4941 url(../images/categorymid.png) repeat;
+	background-color: #4c4941;color:#868686;
+	}
+/* Start Mac IE5 filter \*/
+.iblock_1, .iblock_2, .iblock_3
+	{
+	padding-bottom: 32767px !important;
+	margin-bottom: -32767px !important; 
+	}
+@media all and (min-width: 0px) {
+.iblock_1, .iblock_2, .iblock_3
+	{
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important; 
+	}
+.iblock_1:before, .iblock_2:before, .iblock_3:before
+	{
+	content: '[DO NOT LEAVE IT IS NOT REAL]';
+	display: block;
+	background: inherit;
+	padding-top: 32767px !important;
+	margin-bottom: -32767px !important;
+	height: 0;
+	}
+}
+/* End Mac IE5 filter */
+.iwrapper
+	{
+	overflow: hidden; /* This hides the excess padding in non-IE browsers */
+	}
+/* we need this for IE 5.01 - otherwise the wrapper does not expand to the
+necessary height (unless fixed, this problem becomes even more acute 
+weirdness as the method is enhanced */
+.iwrapper
+	{
+/* Normally a Holly-style hack height: 1% would suffice but that causes 
+IE 5.01 to completely collapse the wrapper - instead we float it */
+	float: left;
+/* NB. possibly only IE 5.01 needs to get this float value - otherwise 5.5 sometimes 
+(I saw it happen many moons ago) makes the width of wrapper too small 
+the float: none with the comment is ignored by 5.01,
+5.5 and above see it and carry on about their business
+It's probably fine to just remove it, but it's left here 
+just in case that many moons ago problem rears its head again */
+	float/**/: none;
+	}
+/* easy clearing */
+.iwrapper:after
+	{
+	content: '[DO NOT LEAVE IT IS NOT REAL]'; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+.iwrapper
+	{
+	display: inline-block;
+	}
+/*\*/
+.iwrapper
+	{
+	display: block;
+	background: #4c4941 url(../images/categorymid.png);
+	background-color: #4c4941;
+	background-repeat: repeat;
+	}
+/* end easy clearing */
+.ifooter
+	{
+	clear: both;
+	}
+/* Safari needs this - otherwise the ghost overflow, though painted 
+correctly obscures links and form elements that by rights should be above it.
+An unintended side-effect is that it cause such elements to vanish in IE 5.01
+and 5.5, hence the child selector hack */
+* > .ifooter, * > form, * > .inotes, * > .output
+	{
+	position: relative;
+	z-index: 1000;
+	}
+.boardtop {
+background : #656055 url('../images/boardtop.png') repeat-x 0 100%;
+}
+.boardtop1 {
+background : #656055 url('../images/bot.png') repeat-x 0 100%;
+}
+.lefttopboard {
+height : 11px;
+background : url('../images/righttopboard.png') no-repeat 100% 100%;
+}
+.righttopboard {
+background : url('../images/lefttopboard.png') no-repeat 0 100%;
+}
+.boardleft {
+padding-left : 3px;
+background : url('../images/boardleft.png') repeat-y top left;
+
+}
+.boardright {
+padding-right : 3px;
+background : url('../images/boardright.png') repeat-y top right;
+
+}
+.bot {
+background : #656055 url('../images/bot.png') repeat-x 0 100%;
+}
+.leftbotboard {
+height : 14px;
+background : url('../images/rightbotboard.png') no-repeat 100% 100%;
+}
+.rightbotboard {
+background : url('../images/leftbotboard.png')  no-repeat 0 100%;
+}
+
+
+
+.newstop {
+background : #656055 url('../images/newstop.png') repeat-x 0 100%;
+}
+.newsbot {
+background : #656055 url('../images/newsbot.png') repeat-x 0 100%;
+}
+.newstopleft {
+height : 32px;
+background : url('../images/newstopright.png') no-repeat 100% 100%;
+}
+.newstopright {
+background : url('../images/newstopleft.png') no-repeat 0 100%;
+}
+.newsleft {
+padding-left : 45px;
+background : url('../images/newsleft.png') repeat-y top left;
+
+}
+.newsright {
+padding-right : 44px;
+background : url('../images/newsright.png') repeat-y top right;
+
+}
+.newsbotleft {
+height : 15px;
+background : url('../images/newsbotright.png') no-repeat 100% 100%;
+}
+.newsbotright {
+background : url('../images/newsbotleft.png')  no-repeat 0 100%;
+}
+.newsmid
+	{
+	display: block;height:35px;
+	background-image: url(../images/newsmid.png);
+	background-color: #615c52;
+	background-repeat: repeat-x;color:#fff;
+}

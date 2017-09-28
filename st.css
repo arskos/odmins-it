@@ -1,0 +1,99 @@
+body {
+	background: url(fon.gif);
+}
+.Code{
+	background: #FAFCFE;
+	color: #465584;
+	font-family: Courier, "Courier New", Verdana, Arial;
+	margin: 0 auto 0 auto;
+	padding: 2px;
+	max-height: 300px;
+	overflow: auto;
+}
+a:visited  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #e70d3b;
+	text-decoration: none;
+}
+a:link  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #e70d3b;
+	text-decoration: none;
+}
+a:hover, a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #e70d3b;
+	text-decoration: underline;
+}
+.red1 {
+	font-family: "Comic Sans MS", Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: RED;
+	text-decoration: none;
+}
+html {
+  height: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.copy {
+	font-size: 12px;
+	color: #000000;
+}
+h1{
+   font-size:13px;
+   color: BLACK;
+   height:24px;
+   font-weight:bold;
+}.txt {
+	font-size: 12px;
+	color: #000000;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ndata {
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+	color: #000000;
+}
+.ntxt {
+	font-size: 10px;
+	color: #6B6B6B;
+	text-align: left;
+}
+.copy {
+	font-size: 10px;
+	color: #6B6B6B;
+	text-align: right;
+}
+.lnk {
+	font-size: 10px;
+	color: #FF3400;
+	text-decoration: none;
+}
+.pg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #005386;
+	text-decoration: none;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.pgsel {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: BLACK;
+	text-decoration: none;
+	font-weight: bold;
+	padding-right: 4px;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}

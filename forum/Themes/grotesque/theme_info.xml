@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<theme-info xmlns="http://www.simplemachines.org/xml/theme-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>sloopz:Grotesque</id>
+	<version>1</version>	
+	<name>Grotesque</name>
+	<author name="Sloopz">sloopz@paganforum.com</author>
+	<website>http://www.paganforum.com</website>
+	<layers>main</layers>
+	<templates>index</templates>
+	<based-on></based-on>
+</theme-info>

@@ -1,0 +1,3 @@
+AddHandler server-parsed .shtml .shtm .html .htm
+AddType text/html .shtml .html .htm
+AddOutputFilter INCLUDES .shtml .html .htm

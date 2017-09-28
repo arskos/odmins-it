@@ -1,0 +1,22 @@
+#smi a{display: inline-block; margin: 0 2px 6px;}
+.normal-bs{background: url(../images/normal_icons.png) no-repeat top left;}
+.round-bs{background: url(../images/round_icons.png) no-repeat top left;}
+.icon-blogger{ background-position: 0 0; width: 32px; height: 32px; }
+.icon-bobrdobr{ background-position: -82px 0; width: 32px; height: 32px; }
+.icon-delicious{ background-position: -164px 0; width: 32px; height: 32px; }
+.icon-digg{ background-position: -246px 0; width: 32px; height: 32px; }
+.icon-facebook{ background-position: -328px 0; width: 32px; height: 32px; }
+.icon-friendfeed{ background-position: -410px 0; width: 32px; height: 32px; }
+.icon-google-buzz{ background-position: -492px 0; width: 32px; height: 32px; }
+.icon-google{ background-position: -574px 0; width: 32px; height: 32px; }
+.icon-linkedin{ background-position: -656px 0; width: 32px; height: 32px; }
+.icon-livejournal{ background-position: -738px 0; width: 32px; height: 32px; }
+.icon-memori{ background-position: -820px 0; width: 32px; height: 32px; }
+.icon-mister-wong{ background-position: -902px 0; width: 32px; height: 32px; }
+.icon-moy-mir{ background-position: -984px 0; width: 32px; height: 32px; }
+.icon-myspace{ background-position: -1066px 0; width: 32px; height: 32px; }
+.icon-odnoklassninki{ background-position: -1148px 0; width: 32px; height: 32px; }
+.icon-technorati{ background-position: -1230px 0; width: 32px; height: 32px; }
+.icon-twitter{ background-position: -1312px 0; width: 32px; height: 32px; }
+.icon-vkontakte{ background-position: -1394px 0; width: 32px; height: 32px; }
+.icon-yandex{ background-position: -1476px 0; width: 32px; height: 32px; }
