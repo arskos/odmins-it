@@ -1,0 +1,57 @@
+#php_value register_globals Off
+
+DirectoryIndex index.html index.php admin.php
+
+# ErrorDocument 404 http://odmins-it.ru/
+
+# Options -Indexes
+#IndexIgnore *.php*
+
+
+RewriteEngine On
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} .*/browse\.php$
+RewriteRule ^(.*)$ index.php [F,L]
+
+Options +FollowSymlinks
+
+RewriteRule ^page/(.*)/$ /index.php?name=page&ids=$1 [L]
+
+RewriteRule ^book/$ /index.php?name=book [L]
+RewriteRule ^book/(.*)/$ /index.php?name=book&ids=$1 [L]
+
+RewriteRule ^disc/$ /index.php?name=disc [L]
+RewriteRule ^disc/cat/(.*)/$ /index.php?name=disc&act=cat&ids=$1 [L]
+RewriteRule ^disc/item/(.*)/$ /index.php?name=disc&act=item&ids=$1 [L]
+
+RewriteRule ^article_add/$ /index.php?name=article_add [L]
+
+RewriteRule ^logs/$ /index.php?name=logs [L]
+
+RewriteRule ^humor_add/$ /index.php?name=humor_add [L]
+
+RewriteRule ^email/$ /index.php?name=email [L]
+
+RewriteRule ^humor/$ /index.php?name=humor [L]
+RewriteRule ^humor/st/(.*)/$ /index.php?name=humor&humor_kol=$1 [L]
+
+RewriteRule ^news/st/(.*)/$ /index.php?name=news&news_kol=$1 [L]
+# RewriteRule ^news/(.*)/(.*)/$ /index.php?name=news&ids=$1&news_kol=$2 [L]
+RewriteRule ^news/(.*)/$ /index.php?name=news&ids=$1 [L]
+RewriteRule ^news/$ /index.php?name=news [L]
+
+RewriteRule ^article/st/(.*)/$ /index.php?name=article&article_kol=$1 [L]
+# RewriteRule ^article/(.*)/(.*)/$ /index.php?name=article&ids=$1&article_kol=$2 [L]
+RewriteRule ^article/(.*)/$ /index.php?name=article&ids=$1 [L]
+RewriteRule ^article/$ /index.php?name=article [L]
+
+# FLOG
+RewriteRule ^arskos/$ http://www.odmins-it.ru/forum/index.php/board,44.0.html [L]
+RewriteRule ^kir64/$ http://www.odmins-it.ru/forum/index.php/board,47.0.html [L]
+RewriteRule ^k3lwin/$ http://www.odmins-it.ru/forum/index.php/board,39.0.html [L]
+RewriteRule ^lolchto/$ http://www.odmins-it.ru/forum/index.php/board,52.0.html [L]
+# END FLOG
+
+RewriteCond %{REQUEST_URI} (.*/[^/.]+)($|\?) 
+RewriteRule .* %1/ [R,L,QSA]
